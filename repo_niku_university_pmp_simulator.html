@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repo Niku University PMP Simulator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        indigo: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        },
+                        slate: {
+                            850: '#151f32',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for clean UI */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="app.switchView('dashboard')">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-indigo-200 to-indigo-400 bg-clip-text text-transparent">Repo Niku University</span>
+                    <span class="block text-xs font-medium text-indigo-400 tracking-wider uppercase">PMP Exam Simulator</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button onclick="app.resetUserData()" title="Reset Simulator Data" class="text-xs text-slate-400 hover:text-slate-200 bg-slate-800/80 hover:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700/60 transition flex items-center space-x-1.5">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span class="hidden sm:inline">Reset Stats</span>
+                </button>
+                <div class="flex items-center space-x-2 pl-2 border-l border-slate-800">
+                    <div class="w-8 h-8 rounded-full bg-indigo-900/60 border border-indigo-500/30 flex items-center justify-center text-indigo-300 font-semibold text-sm">
+                        RN
+                    </div>
+                    <span class="text-sm font-medium hidden md:inline text-slate-300">PMP Aspirant</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main App Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- VIEW 1: DASHBOARD -->
+        <div id="view-dashboard" class="space-y-8">
+            <!-- Welcome Banner -->
+            <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-indigo-900/40 via-slate-900 to-slate-900 border border-indigo-500/20 p-6 sm:p-8 shadow-xl">
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium mb-3">
+                            <i class="fa-solid fa-bolt text-indigo-400"></i>
+                            <span>PMBOK 7th Edition & Agile Practice Guide Aligned</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-white">Master the PMI Mindset & Pass PMP</h1>
+                        <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+                            Welcome back to Repo Niku University. Test your readiness with our rigorous situational scenario simulator covering People (42%), Process (50%), and Business Environment (8%).
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                        <button onclick="app.startExam('quick')" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-200 font-medium transition flex items-center justify-center space-x-2 shadow-sm">
+                            <i class="fa-solid fa-bolt-lightning text-amber-400"></i>
+                            <span>Quick Quiz (5 Qs)</span>
+                        </button>
+                        <button onclick="app.startExam('full')" class="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white font-semibold shadow-lg shadow-indigo-600/30 transition flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Full Simulator (12 Qs)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Overview Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Stat 1 -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-400 text-sm font-medium">Total Exams Taken</span>
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-baseline justify-between">
+                        <h3 id="stat-total-exams" class="text-3xl font-bold text-white">0</h3>
+                        <span class="text-xs text-slate-400 font-medium">Completed</span>
+                    </div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-400 text-sm font-medium">Average Score</span>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-baseline justify-between">
+                        <h3 id="stat-avg-score" class="text-3xl font-bold text-white">0%</h3>
+                        <span id="stat-pass-rate-badge" class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-400">Target: 70%+</span>
+                    </div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-400 text-sm font-medium">Exam Readiness</span>
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-baseline justify-between">
+                        <h3 id="stat-readiness" class="text-3xl font-bold text-indigo-400">0%</h3>
+                        <span id="stat-readiness-label" class="text-xs font-medium text-slate-400">Needs Practice</span>
+                    </div>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                    <div class="flex items-center justify-between">
+                        <span class="text-slate-400 text-sm font-medium">Best Score</span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-baseline justify-between">
+                        <h3 id="stat-best-score" class="text-3xl font-bold text-white">0%</h3>
+                        <span class="text-xs text-amber-400/90 font-medium">Personal Best</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Domain Breakdown Section -->
+            <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                    <div>
+                        <h2 class="text-lg font-bold text-white">PMI Exam Domain Breakdown</h2>
+                        <p class="text-sm text-slate-400">Your historical accuracy across the 3 core PMP domains</p>
+                    </div>
+                    <div class="flex items-center space-x-2 text-xs text-slate-400">
+                        <span class="w-3 h-3 rounded-full bg-indigo-500 inline-block"></span>
+                        <span>Weight in Real Exam</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Domain 1: People -->
+                    <div class="bg-slate-850 border border-slate-800 rounded-xl p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Domain I</span>
+                                <h3 class="font-bold text-slate-200 mt-2">People</h3>
+                            </div>
+                            <span class="text-xs font-medium text-slate-400">Weight: 42%</span>
+                        </div>
+                        <div class="space-y-2 mt-4">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Proficiency</span>
+                                <span id="domain-people-score" class="font-bold text-white">0%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                                <div id="domain-people-bar" class="bg-indigo-500 h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-3">Leadership, team building, conflict management, stakeholder engagement.</p>
+                    </div>
+
+                    <!-- Domain 2: Process -->
+                    <div class="bg-slate-850 border border-slate-800 rounded-xl p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20">Domain II</span>
+                                <h3 class="font-bold text-slate-200 mt-2">Process</h3>
+                            </div>
+                            <span class="text-xs font-medium text-slate-400">Weight: 50%</span>
+                        </div>
+                        <div class="space-y-2 mt-4">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Proficiency</span>
+                                <span id="domain-process-score" class="font-bold text-white">0%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                                <div id="domain-process-bar" class="bg-purple-500 h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-3">Agile/Predictive methodologies, scope, schedule, cost, quality, risk management.</p>
+                    </div>
+
+                    <!-- Domain 3: Business Environment -->
+                    <div class="bg-slate-850 border border-slate-800 rounded-xl p-5">
+                        <div class="flex justify-between items-start mb-3">
+                            <div>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Domain III</span>
+                                <h3 class="font-bold text-slate-200 mt-2">Business Environment</h3>
+                            </div>
+                            <span class="text-xs font-medium text-slate-400">Weight: 8%</span>
+                        </div>
+                        <div class="space-y-2 mt-4">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-slate-400">Proficiency</span>
+                                <span id="domain-biz-score" class="font-bold text-white">0%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                                <div id="domain-biz-bar" class="bg-emerald-500 h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-3">Compliance, benefits realization, organizational change management, governance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent History Section -->
+            <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-sm">
+                <h2 class="text-lg font-bold text-white mb-4">Exam History & Performance Logs</h2>
+                <div id="history-container" class="overflow-x-auto">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 2: EXAM INTERFACE -->
+        <div id="view-exam" class="hidden space-y-6">
+            <!-- Exam Top Bar -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 sticky top-20 z-40 shadow-lg">
+                <div class="flex items-center space-x-4 w-full sm:w-auto justify-between sm:justify-start">
+                    <div>
+                        <span id="exam-mode-badge" class="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">Full Simulator</span>
+                        <h2 id="exam-progress-title" class="text-base font-bold text-white mt-1">Question 1 of 12</h2>
+                    </div>
+                    <button onclick="app.confirmQuitExam()" class="sm:hidden text-xs text-red-400 hover:text-red-300 px-3 py-1.5 rounded-lg bg-red-500/10 border border-red-500/20 transition">
+                        Quit
+                    </button>
+                </div>
+
+                <!-- Timer & Controls -->
+                <div class="flex items-center justify-between w-full sm:w-auto space-x-6">
+                    <div class="flex items-center space-x-3 bg-slate-850 px-4 py-2 rounded-xl border border-slate-800">
+                        <i class="fa-regular fa-clock text-indigo-400 text-lg"></i>
+                        <div>
+                            <span class="block text-[10px] uppercase font-semibold text-slate-400 tracking-wider">Time Remaining</span>
+                            <span id="exam-timer-display" class="font-mono font-bold text-white text-lg">--:--</span>
+                        </div>
+                    </div>
+
+                    <button onclick="app.confirmQuitExam()" class="hidden sm:flex text-sm text-slate-400 hover:text-red-400 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-850 border border-slate-700 transition items-center space-x-2">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Exit Exam</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Question Card & Navigation Grid Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Question Card (3 Cols) -->
+                <div class="lg:col-span-3 bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <!-- Domain & Flag Header -->
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-2">
+                                <span id="question-domain-badge" class="text-xs font-semibold px-3 py-1 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">People</span>
+                                <span id="question-type-badge" class="text-xs text-slate-400 bg-slate-800 px-2.5 py-1 rounded">Single Choice</span>
+                            </div>
+                            <button id="flag-btn" onclick="app.toggleFlagCurrentQuestion()" class="text-xs font-medium px-3 py-1.5 rounded-lg border border-slate-700 text-slate-400 hover:text-slate-200 bg-slate-800/50 transition flex items-center space-x-1.5">
+                                <i id="flag-icon" class="fa-regular fa-flag"></i>
+                                <span id="flag-text">Flag for Review</span>
+                            </button>
+                        </div>
+
+                        <!-- Scenario & Question Text -->
+                        <div class="space-y-4">
+                            <div id="question-scenario" class="text-slate-300 text-sm sm:text-base leading-relaxed bg-slate-850/60 p-4 rounded-xl border border-slate-800/80">
+                                <!-- Scenario loaded dynamically -->
+                            </div>
+                            <h3 id="question-prompt" class="text-base sm:text-lg font-semibold text-white">
+                                <!-- Prompt loaded dynamically -->
+                            </h3>
+                        </div>
+
+                        <!-- Options Container -->
+                        <div id="options-container" class="mt-6 space-y-3">
+                            <!-- Options loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Bottom Question Navigation Buttons -->
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <button id="prev-btn" onclick="app.prevQuestion()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-300 font-medium text-sm transition flex items-center space-x-2 disabled:opacity-40 disabled:cursor-not-allowed">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous</span>
+                        </button>
+
+                        <div class="text-xs text-slate-400 hidden sm:block">
+                            Tip: Always apply the PMI servant leadership mindset.
+                        </div>
+
+                        <button id="next-btn" onclick="app.nextQuestion()" class="px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm shadow-lg shadow-indigo-600/20 transition flex items-center space-x-2">
+                            <span id="next-btn-text">Next Question</span>
+                            <i id="next-btn-icon" class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question Navigator Grid Sidebar (1 Col) -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-sm flex flex-col justify-between h-fit">
+                    <div>
+                        <h3 class="text-sm font-bold text-white mb-2">Question Navigator</h3>
+                        <p class="text-xs text-slate-400 mb-4">Click any question number to jump directly.</p>
+                        
+                        <div id="navigator-grid" class="grid grid-cols-4 gap-2.5 mb-6">
+                            <!-- Populated dynamically -->
+                        </div>
+
+                        <!-- Legend -->
+                        <div class="space-y-2 text-xs text-slate-400 pt-4 border-t border-slate-800">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded bg-indigo-600 inline-block"></span>
+                                <span>Current Question</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded bg-slate-700 inline-block"></span>
+                                <span>Answered</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded bg-slate-800 border border-slate-700 inline-block"></span>
+                                <span>Unanswered</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded bg-amber-500/20 border border-amber-500 text-amber-400 flex items-center justify-center text-[8px] font-bold">⚑</span>
+                                <span>Flagged for Review</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button onclick="app.confirmSubmitExam()" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-600/20 transition flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Submit Exam</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 3: RESULTS & ANALYTICS PAGE -->
+        <div id="view-results" class="hidden space-y-8">
+            <!-- Results Header Card -->
+            <div id="results-banner" class="rounded-2xl p-8 border shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <div id="result-status-badge" class="inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-bold mb-3">
+                        <!-- Populated dynamically -->
+                    </div>
+                    <h1 id="result-title" class="text-3xl font-bold text-white">Exam Completed Successfully</h1>
+                    <p id="result-subtitle" class="text-slate-300 text-sm mt-2 max-w-xl">
+                        Review your performance below. Repo Niku University recommends a minimum score of 70% before sitting for the official PMP exam.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-6 bg-slate-900/80 backdrop-blur-md p-6 rounded-2xl border border-slate-800">
+                    <div class="text-center">
+                        <span class="block text-xs text-slate-400 font-medium uppercase tracking-wider">Final Score</span>
+                        <span id="result-score-percentage" class="text-4xl font-extrabold text-white">0%</span>
+                    </div>
+                    <div class="w-px h-12 bg-slate-800"></div>
+                    <div class="text-center">
+                        <span class="block text-xs text-slate-400 font-medium uppercase tracking-wider">Correct</span>
+                        <span id="result-score-fraction" class="text-2xl font-bold text-indigo-400">0/0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-4">
+                <button onclick="app.switchView('dashboard')" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition flex items-center space-x-2 shadow-lg shadow-indigo-600/20">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Return to Dashboard</span>
+                </button>
+                <button onclick="app.startExam(app.currentMode)" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700 text-slate-200 font-semibold transition flex items-center space-x-2">
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <span>Retake Exam Mode</span>
+                </button>
+            </div>
+
+            <!-- Detailed Question Review List -->
+            <div class="bg-slate-900 border border-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+                <div>
+                    <h2 class="text-xl font-bold text-white">Detailed Question Review & Explanations</h2>
+                    <p class="text-sm text-slate-400">Explanations aligned with PMI standards, PMBOK 7th Edition, and Agile Practice Guide.</p>
+                </div>
+
+                <div id="detailed-review-list" class="space-y-6">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Custom Modal Dialog (No native alert/confirm) -->
+    <div id="custom-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 max-w-md w-full mx-4 shadow-2xl space-y-4">
+            <div class="flex items-center space-x-3 text-amber-400" id="modal-icon-container">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center">
+                    <i id="modal-icon" class="fa-solid fa-triangle-exclamation text-lg"></i>
+                </div>
+                <h3 id="modal-title" class="text-lg font-bold text-white">Confirmation</h3>
+            </div>
+            <p id="modal-message" class="text-sm text-slate-300 leading-relaxed">
+                Are you sure you want to proceed?
+            </p>
+            <div class="flex items-center justify-end space-x-3 pt-4 border-t border-slate-800">
+                <button id="modal-cancel-btn" onclick="app.closeModal()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-300 text-sm font-medium transition">
+                    Cancel
+                </button>
+                <button id="modal-confirm-btn" class="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold shadow-lg shadow-indigo-600/20 transition">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-900/50 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+            <p>&copy; 2026 Repo Niku University. All rights reserved. PMP is a registered mark of the Project Management Institute, Inc.</p>
+            <div class="flex items-center space-x-6">
+                <span class="hover:text-slate-300 cursor-pointer">PMBOK 7</span>
+                <span class="hover:text-slate-300 cursor-pointer">Agile Guide</span>
+                <span class="hover:text-slate-300 cursor-pointer">PMI Mindset</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script>
+        // PMP Question Bank (Repo Niku University Curated)
+        const PMP_QUESTION_BANK = [
+            {
+                id: 1,
+                domain: "People",
+                type: "single",
+                scenario: "A newly formed cross-functional agile team is experiencing interpersonal friction, disagreements over technical approaches, and low velocity during their second sprint.",
+                prompt: "What is the project manager's best course of action according to Tuckman's ladder and servant leadership?",
+                options: [
+                    { id: 0, text: "Reassign the conflicting team members to separate projects immediately to restore harmony." },
+                    { id: 1, text: "Facilitate open communication and team-building sessions to help the team navigate through the storming stage." },
+                    { id: 2, text: "Escalate the team's interpersonal issues to their functional managers for formal disciplinary action." },
+                    { id: 3, text: "Directly assign strict technical processes and tasks to eliminate ambiguity and disagreement." }
+                ],
+                correct: 1,
+                explanation: "According to Tuckman's ladder of team development (Forming, Storming, Norming, Performing), conflict is natural during the Storming stage. A servant leader should facilitate collaboration, empower the team to resolve differences, and guide them toward Norming rather than dictating solutions or separating members."
+            },
+            {
+                id: 2,
+                domain: "Process",
+                type: "single",
+                scenario: "During the execution of a high-visibility hybrid software project, a key stakeholder approaches the project manager demanding an urgent additional feature that was not in the original scope baseline.",
+                prompt: "What should the project manager do first?",
+                options: [
+                    { id: 0, text: "Immediately instruct the development team to build the feature to ensure high stakeholder satisfaction." },
+                    { id: 1, text: "Evaluate the impact of the requested feature on scope, schedule, budget, and risk, then submit a change request." },
+                    { id: 2, text: "Reject the request outright because it violates the approved project management plan." },
+                    { id: 3, text: "Add the feature directly to the product backlog without formal review if it is small enough." }
+                ],
+                correct: 1,
+                explanation: "Per PMBOK, any scope addition requires formal change management. The project manager must first analyze the impact across constraints (schedule, cost, quality, risk) and submit a formal change request to the change control board (CCB) or product owner depending on governance."
+            },
+            {
+                id: 3,
+                domain: "Process",
+                type: "single",
+                scenario: "An agile project team is struggling to deliver user stories consistently by the end of two-week sprints due to ambiguous requirements and frequent shifting priorities from the product owner.",
+                prompt: "What is the most effective action for the project manager / Scrum Master?",
+                options: [
+                    { id: 0, text: "Extend the sprint duration to four weeks so the team has more time to finish backlog items." },
+                    { id: 1, text: "Coach the Product Owner on refining backlog items into small, testable, and well-defined user stories with clear acceptance criteria." },
+                    { id: 2, text: "Punish the team for failing their sprint commitments during the retrospective." },
+                    { id: 3, text: "Switch the project back to a rigid predictive waterfall model to lock down requirements." }
+                ],
+                correct: 1,
+                explanation: "In agile, unstable velocity and unfinished stories often stem from poorly refined backlog items. The servant leader/Scrum Master should coach the Product Owner on backlog refinement and defining clear acceptance criteria."
+            },
+            {
+                id: 4,
+                domain: "People",
+                type: "single",
+                scenario: "A senior technical expert on a critical project consistently misses deliverable deadlines, claiming they are overwhelmed with operational support tasks outside the project scope.",
+                prompt: "How should the project manager handle this situation?",
+                options: [
+                    { id: 0, text: "Publicly reprimand the expert during the weekly status meeting to deter similar behavior." },
+                    { id: 1, text: "Schedule a private one-on-one conversation to understand their workload bottlenecks and negotiate workload balance with functional managers." },
+                    { id: 2, text: "Remove the expert from the project team immediately and hire an external consultant." },
+                    { id: 3, text: "Take over the expert's technical tasks to ensure deadlines are met." }
+                ],
+                correct: 1,
+                explanation: "Servant leadership and emotional intelligence require empathetic problem-solving. Having a private 1-on-1 helps uncover root causes and negotiate resource allocation without damaging morale or resorting to punitive measures."
+            },
+            {
+                id: 5,
+                domain: "Business Environment",
+                type: "single",
+                scenario: "Halfway through a multi-year infrastructure project, new government regulations are enacted regarding environmental sustainability that directly impact the project's construction methodology.",
+                prompt: "What is the project manager's best immediate response?",
+                options: [
+                    { id: 0, text: "Ignore the regulations since the project charter was approved before the law was passed." },
+                    { id: 1, text: "Assess the regulatory impact on project compliance, update the risk register, and engage compliance stakeholders." },
+                    { id: 2, text: "Immediately halt all project activities indefinitely until government officers inspect the site." },
+                    { id: 3, text: "Bribe local inspectors to bypass compliance and keep the schedule on track." }
+                ],
+                correct: 1,
+                explanation: "Business environment domain focuses on compliance, governance, and organizational context. The PM must evaluate compliance impacts, update risk registers, and engage appropriate governance bodies."
+            },
+            {
+                id: 6,
+                domain: "Process",
+                type: "single",
+                scenario: "A project manager is managing a complex R&D project with high technological uncertainty. Stakeholders are asking for a detailed 18-month Gantt chart with fixed milestone dates.",
+                prompt: "How should the project manager respond to this stakeholder request?",
+                options: [
+                    { id: 0, text: "Create a rigid 18-month schedule and hold the team strictly accountable to every milestone date." },
+                    { id: 1, text: "Explain that high uncertainty makes predictive long-term scheduling inaccurate, and propose a rolling wave planning or hybrid adaptive approach." },
+                    { id: 2, text: "Refuse to provide any schedule or status updates to the stakeholders." },
+                    { id: 3, text: "Delegate schedule creation entirely to junior team members without review." }
+                ],
+                correct: 1,
+                explanation: "When requirements or technology carry high uncertainty, predictive planning fails. The PMI mindset values transparency and tailoring—proposing rolling wave planning or adaptive frameworks is the correct professional approach."
+            },
+            {
+                id: 7,
+                domain: "People",
+                type: "single",
+                scenario: "Two key developers have an intense disagreement over architectural design patterns during a daily standup, resulting in raised voices and halting the meeting.",
+                prompt: "What should the Scrum Master / Project Manager do?",
+                options: [
+                    { id: 0, text: "Dictate which architectural design pattern the team must use to end the argument." },
+                    { id: 1, text: "Acknowledge the passion, encourage a time-boxed offline technical discussion between the two developers, and move the standup forward." },
+                    { id: 2, text: "Fire both developers for unprofessional behavior." },
+                    { id: 3, text: "Cancel all future daily standups to prevent further arguments." }
+                ],
+                correct: 1,
+                explanation: "Daily standups are time-boxed to 15 minutes and are not for problem-solving. A servant leader encourages team collaboration, deflects deep technical debates into offline sessions ('take it offline'), and maintains team focus."
+            },
+            {
+                id: 8,
+                domain: "Process",
+                type: "single",
+                scenario: "During a project retrospective, team members complain that quality defects are repeatedly discovered late during user acceptance testing (UAT).",
+                prompt: "What tool or practice should the project manager recommend implementing?",
+                options: [
+                    { id: 0, text: "Extend the UAT phase by two months to allow more time for bug fixing." },
+                    { id: 1, text: "Incorporate automated testing, continuous integration, and peer code reviews earlier in the development lifecycle." },
+                    { id: 2, text: "Eliminate testing altogether to save time and budget." },
+                    { id: 3, text: "Blame the QA testing department for missing the defects earlier." }
+                ],
+                correct: 1,
+                explanation: "Quality assurance and prevention over inspection is a core PMBOK principle. Shifting quality left by introducing automated testing, peer reviews, and continuous integration catches defects early."
+            },
+            {
+                id: 9,
+                domain: "Business Environment",
+                type: "single",
+                scenario: "A newly assigned project manager discovers that the project's projected business value and financial ROI have significantly decreased due to shifting market conditions.",
+                prompt: "What is the appropriate action for the project manager?",
+                options: [
+                    { id: 0, text: "Keep the information confidential so team morale is not affected." },
+                    { id: 1, text: "Escalate the finding to the project sponsor and key business stakeholders to re-evaluate project viability and potential termination." },
+                    { id: 2, text: "Double the project budget to make up for lost ROI." },
+                    { id: 3, text: "Ignore the financials and focus exclusively on completing project deliverables on time." }
+                ],
+                correct: 1,
+                explanation: "Project managers must maintain continuous alignment with business value and governance. If business value evaporates, the PM must transparently report to sponsors and governance bodies for strategic decision-making."
+            },
+            {
+                id: 10,
+                domain: "People",
+                type: "single",
+                scenario: "A project manager is leading a culturally diverse virtual team across five time zones. Communication is breaking down, and team members feel isolated.",
+                prompt: "What should the project manager implement first?",
+                options: [
+                    { id: 0, text: "Mandate that all team members relocate to the primary headquarters office." },
+                    { id: 1, text: "Establish team working agreements, communication charters, and utilize collaboration tools that accommodate time zones." },
+                    { id: 2, text: "Reduce project communication to asynchronous emails only." },
+                    { id: 3, text: "Assign all leadership decisions solely to local team members." }
+                ],
+                correct: 1,
+                explanation: "For virtual and diverse teams, establishing clear team agreements, communication norms, and using collaborative tools fosters psychological safety and alignment."
+            },
+            {
+                id: 11,
+                domain: "Process",
+                type: "single",
+                scenario: "An agile team completes a sprint, but the customer representative refuses to accept the increment because it does not match their unstated expectations.",
+                prompt: "How could this miscommunication have been prevented?",
+                options: [
+                    { id: 0, text: "By locking down a 500-page requirements specification document at project kickoff." },
+                    { id: 1, text: "By ensuring continuous stakeholder engagement, frequent demos, and clear acceptance criteria agreed upon during backlog refinement." },
+                    { id: 2, text: "By forcing the customer to sign a waiver accepting whatever the team builds." },
+                    { id: 3, text: "By excluding the customer from review meetings." }
+                ],
+                correct: 1,
+                explanation: "Agile relies on frequent inspection and close collaboration with customers. Involving stakeholders continuously and defining clear acceptance criteria prevents end-of-iteration surprises."
+            },
+            {
+                id: 12,
+                domain: "Process",
+                type: "single",
+                scenario: "A high-priority project has a known risk of supply chain delays for specialized server hardware. The project manager wants to ensure the impact is minimized if the risk occurs.",
+                prompt: "Which response strategy is the project manager considering?",
+                options: [
+                    { id: 0, text: "Avoidance" },
+                    { id: 1, text: "Mitigation" },
+                    { id: 2, text: "Acceptance" },
+                    { id: 3, text: "Exploitation" }
+                ],
+                correct: 1,
+                explanation: "Mitigation involves reducing the probability and/or impact of an adverse risk event to an acceptable threshold (e.g., identifying secondary supplier backups)."
+            }
+        ];
+
+        // Application State
+        class PMPApp {
+            constructor() {
+                this.currentView = 'dashboard';
+                this.currentMode = 'full'; // 'quick' or 'full'
+                this.questions = [];
+                this.currentIndex = 0;
+                this.userAnswers = {}; // { questionId: selectedOptionIndex }
+                this.flaggedQuestions = new Set();
+                this.timerInterval = null;
+                this.timeRemaining = 0; // in seconds
+                this.examHistory = [];
+
+                this.loadUserData();
+            }
+
+            loadUserData() {
+                try {
+                    const savedHistory = localStorage.getItem('repo_niku_pmp_history');
+                    if (savedHistory) {
+                        this.examHistory = JSON.parse(savedHistory);
+                    }
+                } catch (e) {
+                    console.error("Error loading local storage data", e);
+                }
+                this.updateDashboardStats();
+            }
+
+            saveUserData() {
+                try {
+                    localStorage.setItem('repo_niku_pmp_history', JSON.stringify(this.examHistory));
+                } catch (e) {
+                    console.error("Error saving local storage data", e);
+                }
+            }
+
+            resetUserData() {
+                this.showModal(
+                    "Reset All Stats",
+                    "Are you sure you want to clear all exam history and performance statistics? This action cannot be undone.",
+                    () => {
+                        this.examHistory = [];
+                        localStorage.removeItem('repo_niku_pmp_history');
+                        this.updateDashboardStats();
+                        this.closeModal();
+                    }
+                );
+            }
+
+            updateDashboardStats() {
+                const totalExams = this.examHistory.length;
+                document.getElementById('stat-total-exams').textContent = totalExams;
+
+                if (totalExams === 0) {
+                    document.getElementById('stat-avg-score').textContent = '0%';
+                    document.getElementById('stat-best-score').textContent = '0%';
+                    document.getElementById('stat-readiness').textContent = '0%';
+                    document.getElementById('stat-readiness-label').textContent = 'Needs Practice';
+                    document.getElementById('stat-pass-rate-badge').textContent = 'Target: 70%+';
+                    document.getElementById('stat-pass-rate-badge').className = 'text-xs font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-400';
+                    
+                    // Reset domains
+                    ['people', 'process', 'biz'].forEach(d => {
+                        document.getElementById(`domain-${d}-score`).textContent = '0%';
+                        document.getElementById(`domain-${d}-bar`).style.width = '0%';
+                    });
+
+                    document.getElementById('history-container').innerHTML = `
+                        <div class="text-center py-8 text-slate-500 text-sm">
+                            <i class="fa-regular fa-folder-open text-3xl mb-2 block"></i>
+                            No exam attempts recorded yet. Start a Quick Quiz or Full Simulator above!
+                        </div>
+                    `;
+                    return;
+                }
+
+                let totalScoreSum = 0;
+                let bestScore = 0;
+                let passedCount = 0;
+
+                // Domain accumulators
+                const domainStats = {
+                    People: { correct: 0, total: 0 },
+                    Process: { correct: 0, total: 0 },
+                    "Business Environment": { correct: 0, total: 0 }
+                };
+
+                this.examHistory.forEach(exam => {
+                    totalScoreSum += exam.percentage;
+                    if (exam.percentage > bestScore) bestScore = exam.percentage;
+                    if (exam.passed) passedCount++;
+
+                    if (exam.domainBreakdown) {
+                        for (let dom in exam.domainBreakdown) {
+                            if (domainStats[dom]) {
+                                domainStats[dom].correct += exam.domainBreakdown[dom].correct;
+                                domainStats[dom].total += exam.domainBreakdown[dom].total;
+                            }
+                        }
+                    }
+                });
+
+                const avgScore = Math.round(totalScoreSum / totalExams);
+                document.getElementById('stat-avg-score').textContent = avgScore + '%';
+                document.getElementById('stat-best-score').textContent = bestScore + '%';
+                document.getElementById('stat-readiness').textContent = avgScore + '%';
+
+                const readinessLabel = document.getElementById('stat-readiness-label');
+                const passBadge = document.getElementById('stat-pass-rate-badge');
+
+                if (avgScore >= 70) {
+                    readinessLabel.textContent = 'Exam Ready 🚀';
+                    readinessLabel.className = 'text-xs font-medium text-emerald-400';
+                    passBadge.textContent = 'Passing Rate ✅';
+                    passBadge.className = 'text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+                } else {
+                    readinessLabel.textContent = 'Needs Practice 📚';
+                    readinessLabel.className = 'text-xs font-medium text-amber-400';
+                    passBadge.textContent = 'Target: 70%+';
+                    passBadge.className = 'text-xs font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-400';
+                }
+
+                // Update Domain Breakdowns
+                const updateDomainUI = (name, key) => {
+                    const stats = domainStats[name];
+                    const pct = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+                    document.getElementById(`domain-${key}-score`).textContent = pct + '%';
+                    document.getElementById(`domain-${key}-bar`).style.width = pct + '%';
+                };
+
+                updateDomainUI('People', 'people');
+                updateDomainUI('Process', 'process');
+                updateDomainUI('Business Environment', 'biz');
+
+                // Render History Table
+                let historyHTML = `
+                    <table class="w-full text-left text-sm text-slate-300">
+                        <thead class="bg-slate-800/80 text-xs uppercase text-slate-400 border-b border-slate-750">
+                            <tr>
+                                <th class="px-4 py-3 rounded-l-lg">Date</th>
+                                <th class="px-4 py-3">Mode</th>
+                                <th class="px-4 py-3">Score</th>
+                                <th class="px-4 py-3">Correct</th>
+                                <th class="px-4 py-3 rounded-r-lg">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800">
+                `;
+
+                // Sort newest first
+                const sortedHistory = [...this.examHistory].reverse();
+                sortedHistory.forEach(item => {
+                    const dateStr = new Date(item.timestamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+                    const statusClass = item.passed ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20';
+                    const statusText = item.passed ? 'PASS (≥70%)' : 'FAIL (<70%)';
+                    
+                    historyHTML += `
+                        <tr class="hover:bg-slate-850/50 transition">
+                            <td class="px-4 py-3.5 font-medium text-slate-200">${dateStr}</td>
+                            <td class="px-4 py-3.5 capitalize"><span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 text-xs">${item.mode} Mode</span></td>
+                            <td class="px-4 py-3.5 font-bold text-white">${item.percentage}%</td>
+                            <td class="px-4 py-3.5 text-slate-400">${item.score} / ${item.total}</td>
+                            <td class="px-4 py-3.5"><span class="px-2.5 py-1 rounded-md text-xs font-semibold ${statusClass}">${statusText}</span></td>
+                        </tr>
+                    `;
+                });
+
+                historyHTML += `</tbody></table>`;
+                document.getElementById('history-container').innerHTML = historyHTML;
+            }
+
+            switchView(viewName) {
+                this.currentView = viewName;
+                document.getElementById('view-dashboard').classList.add('hidden');
+                document.getElementById('view-exam').classList.add('hidden');
+                document.getElementById('view-results').classList.add('hidden');
+
+                if (viewName === 'dashboard') {
+                    document.getElementById('view-dashboard').classList.remove('hidden');
+                    this.updateDashboardStats();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else if (viewName === 'exam') {
+                    document.getElementById('view-exam').classList.remove('hidden');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else if (viewName === 'results') {
+                    document.getElementById('view-results').classList.remove('hidden');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            startExam(mode) {
+                this.currentMode = mode;
+                this.userAnswers = {};
+                this.flaggedQuestions.clear();
+                this.currentIndex = 0;
+
+                // Shuffle & slice questions
+                const shuffled = [...PMP_QUESTION_BANK].sort(() => 0.5 - Math.random());
+                const count = mode === 'quick' ? 5 : 12;
+                this.questions = shuffled.slice(0, count);
+
+                // Set timer (e.g., 2 minutes per question)
+                this.timeRemaining = this.questions.length * 120;
+                this.startTimer();
+
+                document.getElementById('exam-mode-badge').textContent = mode === 'quick' ? 'Quick Quiz (5 Qs)' : 'Full Simulator (12 Qs)';
+                
+                this.switchView('exam');
+                this.renderCurrentQuestion();
+                this.renderNavigatorGrid();
+            }
+
+            startTimer() {
+                if (this.timerInterval) clearInterval(this.timerInterval);
+
+                this.timerInterval = setInterval(() => {
+                    this.timeRemaining--;
+                    this.updateTimerDisplay();
+
+                    if (this.timeRemaining <= 0) {
+                        clearInterval(this.timerInterval);
+                        this.submitExam(true); // Auto submit when time runs out
+                    }
+                }, 1000);
+            }
+
+            updateTimerDisplay() {
+                const minutes = Math.floor(this.timeRemaining / 60);
+                const seconds = this.timeRemaining % 60;
+                const display = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                document.getElementById('exam-timer-display').textContent = display;
+
+                if (this.timeRemaining < 120) {
+                    document.getElementById('exam-timer-display').classList.add('text-red-400', 'animate-pulse');
+                } else {
+                    document.getElementById('exam-timer-display').classList.remove('text-red-400', 'animate-pulse');
+                }
+            }
+
+            renderCurrentQuestion() {
+                const q = this.questions[this.currentIndex];
+                const total = this.questions.length;
+
+                document.getElementById('exam-progress-title').textContent = `Question ${this.currentIndex + 1} of ${total}`;
+                document.getElementById('question-domain-badge').textContent = q.domain;
+                document.getElementById('question-scenario').textContent = q.scenario;
+                document.getElementById('question-prompt').textContent = q.prompt;
+
+                // Flag button state
+                const isFlagged = this.flaggedQuestions.has(this.currentIndex);
+                const flagIcon = document.getElementById('flag-icon');
+                const flagBtn = document.getElementById('flag-btn');
+                const flagText = document.getElementById('flag-text');
+
+                if (isFlagged) {
+                    flagIcon.className = 'fa-solid fa-flag text-amber-400';
+                    flagText.textContent = 'Flagged';
+                    flagBtn.className = 'text-xs font-medium px-3 py-1.5 rounded-lg border border-amber-500/40 text-amber-300 bg-amber-500/10 transition flex items-center space-x-1.5';
+                } else {
+                    flagIcon.className = 'fa-regular fa-flag';
+                    flagText.textContent = 'Flag for Review';
+                    flagBtn.className = 'text-xs font-medium px-3 py-1.5 rounded-lg border border-slate-700 text-slate-400 hover:text-slate-200 bg-slate-800/50 transition flex items-center space-x-1.5';
+                }
+
+                // Render Options
+                const optionsContainer = document.getElementById('options-container');
+                let optionsHTML = '';
+                const selectedOption = this.userAnswers[this.currentIndex];
+
+                q.options.forEach((opt, idx) => {
+                    const isSelected = selectedOption === idx;
+                    const borderClass = isSelected ? 'border-indigo-500 bg-indigo-950/40 text-white shadow-md shadow-indigo-600/10' : 'border-slate-800 bg-slate-850 hover:border-slate-700 text-slate-300';
+                    const radioCircle = isSelected ? 'bg-indigo-600 border-indigo-400 text-white' : 'border-slate-600 bg-slate-800';
+                    const innerDot = isSelected ? '<span class="w-2 h-2 rounded-full bg-white"></span>' : '';
+
+                    optionsHTML += `
+                        <div onclick="app.selectOption(${idx})" class="flex items-start space-x-3.5 p-4 rounded-xl border ${borderClass} cursor-pointer transition">
+                            <div class="w-5 h-5 rounded-full border ${radioCircle} flex items-center justify-center flex-shrink-0 mt-0.5 transition">
+                                ${innerDot}
+                            </div>
+                            <div class="flex-grow text-sm leading-relaxed">
+                                <span class="font-semibold text-indigo-300 mr-2">${String.fromCharCode(65 + idx)}.</span>
+                                ${opt.text}
+                            </div>
+                        </div>
+                    `;
+                });
+
+                optionsContainer.innerHTML = optionsHTML;
+
+                // Prev / Next button states
+                document.getElementById('prev-btn').disabled = this.currentIndex === 0;
+                const nextBtnText = document.getElementById('next-btn-text');
+                const nextBtnIcon = document.getElementById('next-btn-icon');
+
+                if (this.currentIndex === total - 1) {
+                    nextBtnText.textContent = 'Review & Submit';
+                    nextBtnIcon.className = 'fa-solid fa-check';
+                } else {
+                    nextBtnText.textContent = 'Next Question';
+                    nextBtnIcon.className = 'fa-solid fa-arrow-right';
+                }
+
+                this.renderNavigatorGrid();
+            }
+
+            selectOption(optionIndex) {
+                this.userAnswers[this.currentIndex] = optionIndex;
+                this.renderCurrentQuestion();
+            }
+
+            toggleFlagCurrentQuestion() {
+                if (this.flaggedQuestions.has(this.currentIndex)) {
+                    this.flaggedQuestions.delete(this.currentIndex);
+                } else {
+                    this.flaggedQuestions.add(this.currentIndex);
+                }
+                this.renderCurrentQuestion();
+            }
+
+            jumpToQuestion(index) {
+                this.currentIndex = index;
+                this.renderCurrentQuestion();
+            }
+
+            prevQuestion() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.renderCurrentQuestion();
+                }
+            }
+
+            nextQuestion() {
+                if (this.currentIndex < this.questions.length - 1) {
+                    this.currentIndex++;
+                    this.renderCurrentQuestion();
+                } else {
+                    this.confirmSubmitExam();
+                }
+            }
+
+            renderNavigatorGrid() {
+                const grid = document.getElementById('navigator-grid');
+                let html = '';
+
+                this.questions.forEach((q, idx) => {
+                    const isCurrent = idx === this.currentIndex;
+                    const isAnswered = this.userAnswers[idx] !== undefined;
+                    const isFlagged = this.flaggedQuestions.has(idx);
+
+                    let btnClass = 'bg-slate-800 text-slate-300 border border-slate-700/60 hover:border-slate-600';
+                    if (isCurrent) {
+                        btnClass = 'bg-indigo-600 text-white font-bold border-2 border-indigo-400 shadow-md shadow-indigo-600/30';
+                    } else if (isAnswered) {
+                        btnClass = 'bg-slate-750 text-slate-200 border border-slate-600 font-semibold';
+                    }
+
+                    let flagBadge = '';
+                    if (isFlagged) {
+                        flagBadge = `<span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-amber-500 text-slate-950 text-[9px] font-bold flex items-center justify-center">⚑</span>`;
+                    }
+
+                    html += `
+                        <button onclick="app.jumpToQuestion(${idx})" class="relative h-10 rounded-xl text-xs font-medium transition flex items-center justify-center ${btnClass}">
+                            ${idx + 1}
+                            ${flagBadge}
+                        </button>
+                    `;
+                });
+
+                grid.innerHTML = html;
+            }
+
+            confirmQuitExam() {
+                this.showModal(
+                    "Quit Exam?",
+                    "Are you sure you want to quit this exam? Your current progress will be lost and not recorded in history.",
+                    () => {
+                        if (this.timerInterval) clearInterval(this.timerInterval);
+                        this.closeModal();
+                        this.switchView('dashboard');
+                    }
+                );
+            }
+
+            confirmSubmitExam() {
+                const unansweredCount = this.questions.length - Object.keys(this.userAnswers).length;
+                let msg = "Are you sure you are ready to submit your exam and view your score?";
+                if (unansweredCount > 0) {
+                    msg = `You have ${unansweredCount} unanswered question(s). Are you sure you want to submit?`;
+                }
+
+                this.showModal(
+                    "Submit Exam",
+                    msg,
+                    () => {
+                        if (this.timerInterval) clearInterval(this.timerInterval);
+                        this.closeModal();
+                        this.submitExam(false);
+                    }
+                );
+            }
+
+            submitExam(isTimeOut) {
+                if (isTimeOut) {
+                    this.showModal(
+                        "Time's Up!",
+                        "Your exam timer has expired. Repo Niku University simulator has automatically submitted your exam.",
+                        () => { this.closeModal(); },
+                        false // hide cancel
+                    );
+                }
+
+                // Calculate results
+                let correctCount = 0;
+                const domainBreakdown = {
+                    People: { correct: 0, total: 0 },
+                    Process: { correct: 0, total: 0 },
+                    "Business Environment": { correct: 0, total: 0 }
+                };
+
+                this.questions.forEach((q, idx) => {
+                    const userAns = this.userAnswers[idx];
+                    const isCorrect = userAns === q.correct;
+                    if (isCorrect) correctCount++;
+
+                    if (domainBreakdown[q.domain]) {
+                        domainBreakdown[q.domain].total++;
+                        if (isCorrect) domainBreakdown[q.domain].correct++;
+                    }
+                });
+
+                const totalQ = this.questions.length;
+                const percentage = Math.round((correctCount / totalQ) * 100);
+                const passed = percentage >= 70;
+
+                const examResult = {
+                    timestamp: Date.now(),
+                    mode: this.currentMode,
+                    score: correctCount,
+                    total: totalQ,
+                    percentage: percentage,
+                    passed: passed,
+                    domainBreakdown: domainBreakdown
+                };
+
+                this.examHistory.push(examResult);
+                this.saveUserData();
+
+                this.renderResultsPage(examResult);
+                this.switchView('results');
+            }
+
+            renderResultsPage(result) {
+                const banner = document.getElementById('results-banner');
+                const statusBadge = document.getElementById('result-status-badge');
+                const title = document.getElementById('result-title');
+                const subtitle = document.getElementById('result-subtitle');
+
+                if (result.passed) {
+                    banner.className = 'rounded-2xl p-8 border border-emerald-500/30 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6';
+                    statusBadge.className = 'inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+                    statusBadge.innerHTML = `<i class="fa-solid fa-circle-check"></i><span>EXAM PASSED</span>`;
+                    title.textContent = "Congratulations, PMP Aspirant!";
+                    subtitle.textContent = `Outstanding performance! You achieved ${result.percentage}%, exceeding the 70% PMP passing mark. You demonstrate a solid grasp of the PMI mindset.`;
+                } else {
+                    banner.className = 'rounded-2xl p-8 border border-red-500/30 bg-gradient-to-r from-red-950/40 via-slate-900 to-slate-900 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6';
+                    statusBadge.className = 'inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-bold bg-red-500/20 text-red-300 border border-red-500/30';
+                    statusBadge.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i><span>NEEDS IMPROVEMENT</span>`;
+                    title.textContent = "Keep Practicing, You're Getting Closer!";
+                    subtitle.textContent = `You scored ${result.percentage}%. The official PMP exam passing threshold is approximately 70%. Review the detailed explanations below to refine your PMI mindset.`;
+                }
+
+                document.getElementById('result-score-percentage').textContent = result.percentage + '%';
+                document.getElementById('result-score-fraction').textContent = `${result.score} / ${result.total}`;
+
+                // Render Detailed Review List
+                const reviewListContainer = document.getElementById('detailed-review-list');
+                let reviewHTML = '';
+
+                this.questions.forEach((q, idx) => {
+                    const userAns = this.userAnswers[idx];
+                    const isCorrect = userAns === q.correct;
+                    const badgeClass = isCorrect ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20';
+                    const badgeText = isCorrect ? 'Correct' : (userAns !== undefined ? 'Incorrect' : 'Unanswered');
+
+                    let optionsReviewHTML = '';
+                    q.options.forEach((opt, optIdx) => {
+                        let optStyle = 'border-slate-800 bg-slate-850/50 text-slate-400';
+                        let iconMarker = '';
+
+                        if (optIdx === q.correct) {
+                            optStyle = 'border-emerald-500/50 bg-emerald-950/30 text-emerald-200 font-semibold';
+                            iconMarker = '<i class="fa-solid fa-check text-emerald-400 ml-2"></i>';
+                        } else if (optIdx === userAns && !isCorrect) {
+                            optStyle = 'border-red-500/50 bg-red-950/30 text-red-200';
+                            iconMarker = '<i class="fa-solid fa-xmark text-red-400 ml-2"></i>';
+                        }
+
+                        optionsReviewHTML += `
+                            <div class="p-3 rounded-xl border ${optStyle} text-sm flex items-start justify-between">
+                                <div>
+                                    <span class="font-bold mr-2">${String.fromCharCode(65 + optIdx)}.</span>
+                                    ${opt.text}
+                                </div>
+                                ${iconMarker}
+                            </div>
+                        `;
+                    });
+
+                    reviewHTML += `
+                        <div class="bg-slate-850 border border-slate-800 rounded-2xl p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-xs font-bold px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Q${idx + 1}</span>
+                                    <span class="text-xs text-slate-400">${q.domain}</span>
+                                </div>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-md ${badgeClass}">${badgeText}</span>
+                            </div>
+
+                            <div class="space-y-2">
+                                <p class="text-slate-300 text-sm italic">${q.scenario}</p>
+                                <h4 class="text-white font-semibold text-sm sm:text-base">${q.prompt}</h4>
+                            </div>
+
+                            <div class="space-y-2 pt-2">
+                                ${optionsReviewHTML}
+                            </div>
+
+                            <div class="mt-4 p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/20 text-sm text-indigo-200 space-y-1">
+                                <div class="font-bold flex items-center space-x-2 text-indigo-300 mb-1">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <span>PMI Mindset & Explanation:</span>
+                                </div>
+                                <p class="leading-relaxed text-slate-300">${q.explanation}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                reviewListContainer.innerHTML = reviewHTML;
+            }
+
+            showModal(title, message, onConfirm, showCancel = true) {
+                document.getElementById('modal-title').textContent = title;
+                document.getElementById('modal-message').textContent = message;
+                
+                const cancelBtn = document.getElementById('modal-cancel-btn');
+                if (showCancel) {
+                    cancelBtn.classList.remove('hidden');
+                } else {
+                    cancelBtn.classList.add('hidden');
+                }
+
+                const confirmBtn = document.getElementById('modal-confirm-btn');
+                // Replace onclick cleanly
+                const newConfirmBtn = confirmBtn.cloneNode(true);
+                confirmBtn.parentNode.replaceChild(newConfirmBtn, confirmBtn);
+                
+                newConfirmBtn.addEventListener('click', () => {
+                    onConfirm();
+                });
+
+                document.getElementById('custom-modal').classList.remove('hidden');
+            }
+
+            closeModal() {
+                document.getElementById('custom-modal').classList.add('hidden');
+            }
+        }
+
+        // Initialize App
+        const app = new PMPApp();
+    </script>
+</body>
+</html>
