@@ -1,0 +1,2165 @@
+{
+  "title": "PMP High-Yield Pass-in-One-Attempt V23",
+  "questions": [
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Choose the group with more influence",
+        "Delay the decision indefinitely",
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Delegate it without analysis"
+      ],
+      "answer": 2,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a digital banking rollout, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Remove the requirement",
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Ask the team to interpret it",
+        "Proceed with assumptions"
+      ],
+      "answer": 1,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Ask the team to decide",
+        "Implement it to satisfy the stakeholder",
+        "Reject it because delivery is late"
+      ],
+      "answer": 0,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a digital banking rollout, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Manage closely with daily technical updates",
+        "Keep satisfied through concise, relevant executive communication",
+        "Ignore until closure",
+        "Monitor with minimal effort"
+      ],
+      "answer": 1,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Move to predictive delivery immediately",
+        "Ask the team to work faster",
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Increase sprint length"
+      ],
+      "answer": 2,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a digital banking rollout, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Accept it because approvals are uncertain",
+        "Ignore it until it occurs",
+        "Transfer it to the regulator",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time"
+      ],
+      "answer": 3,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it",
+        "Declare success",
+        "Rebuild without analysis"
+      ],
+      "answer": 0,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a digital banking rollout, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Wait until the date passes",
+        "Communicate promptly with impact, root cause, options, and a recommended action",
+        "Report only positive news",
+        "Blame another team"
+      ],
+      "answer": 1,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Understand the barrier and reinforce the value of timely, accurate updates",
+        "Issue a warning",
+        "Update it themselves",
+        "Remove the board"
+      ],
+      "answer": 0,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital system implementation, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Start work to maintain momentum",
+        "Ask the team to volunteer",
+        "Explain that authorization and funding approval are required before work begins",
+        "Start low-cost work quietly"
+      ],
+      "answer": 2,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Celebrate progress",
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Reduce scope silently",
+        "Request more budget immediately"
+      ],
+      "answer": 1,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital system implementation, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Release and fix later",
+        "Reclassify the defect",
+        "Delay all work",
+        "Contain the issue, assess impact, and initiate corrective and preventive action"
+      ],
+      "answer": 3,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Implement both",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Choose the senior stakeholder",
+        "Reject both"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital system implementation, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only vendor reputation",
+        "Only cost",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only location"
+      ],
+      "answer": 2,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Add more meetings",
+        "Record meetings instead of deciding",
+        "Cancel all collaboration",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives"
+      ],
+      "answer": 3,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital system implementation, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Facilitate alignment and document the agreed direction",
+        "Stop work indefinitely",
+        "Follow the more senior sponsor",
+        "Follow both directions"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Assume approval will occur",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Remove the milestone",
+        "Delay all work"
+      ],
+      "answer": 1,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital system implementation, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Give feedback publicly",
+        "Stop giving feedback",
+        "Avoid performance discussions"
+      ],
+      "answer": 0,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only references",
+        "Only delivery date",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms",
+        "Only price"
+      ],
+      "answer": 2,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a manufacturing automation project, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only go-live date",
+        "Only documentation",
+        "Only technical deployment"
+      ],
+      "answer": 0,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Choose the group with more influence",
+        "Delay the decision indefinitely",
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Delegate it without analysis"
+      ],
+      "answer": 2,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a manufacturing automation project, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Remove the requirement",
+        "Ask the team to interpret it",
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Proceed with assumptions"
+      ],
+      "answer": 2,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Ask the team to decide",
+        "Implement it to satisfy the stakeholder",
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Reject it because delivery is late"
+      ],
+      "answer": 2,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a manufacturing automation project, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Keep satisfied through concise, relevant executive communication",
+        "Manage closely with daily technical updates",
+        "Monitor with minimal effort",
+        "Ignore until closure"
+      ],
+      "answer": 0,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Increase sprint length",
+        "Move to predictive delivery immediately",
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Ask the team to work faster"
+      ],
+      "answer": 2,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a manufacturing automation project, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Ignore it until it occurs",
+        "Accept it because approvals are uncertain",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Transfer it to the regulator"
+      ],
+      "answer": 2,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Declare success",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it",
+        "Rebuild without analysis"
+      ],
+      "answer": 1,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a government service portal, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Blame another team",
+        "Report only positive news",
+        "Wait until the date passes",
+        "Communicate promptly with impact, root cause, options, and a recommended action"
+      ],
+      "answer": 3,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Update it themselves",
+        "Remove the board",
+        "Issue a warning",
+        "Understand the barrier and reinforce the value of timely, accurate updates"
+      ],
+      "answer": 3,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government service portal, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Start low-cost work quietly",
+        "Start work to maintain momentum",
+        "Ask the team to volunteer",
+        "Explain that authorization and funding approval are required before work begins"
+      ],
+      "answer": 3,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Reduce scope silently",
+        "Celebrate progress",
+        "Request more budget immediately"
+      ],
+      "answer": 0,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a government service portal, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Delay all work",
+        "Release and fix later",
+        "Contain the issue, assess impact, and initiate corrective and preventive action",
+        "Reclassify the defect"
+      ],
+      "answer": 2,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Choose the senior stakeholder",
+        "Implement both",
+        "Reject both",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria"
+      ],
+      "answer": 3,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government service portal, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only vendor reputation",
+        "Only location",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only cost"
+      ],
+      "answer": 2,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Cancel all collaboration",
+        "Record meetings instead of deciding",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives",
+        "Add more meetings"
+      ],
+      "answer": 2,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government service portal, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Stop work indefinitely",
+        "Facilitate alignment and document the agreed direction",
+        "Follow the more senior sponsor",
+        "Follow both directions"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Assume approval will occur",
+        "Remove the milestone",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Delay all work"
+      ],
+      "answer": 2,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail platform launch, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Stop giving feedback",
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Avoid performance discussions",
+        "Give feedback publicly"
+      ],
+      "answer": 1,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only price",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms",
+        "Only references",
+        "Only delivery date"
+      ],
+      "answer": 1,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail platform launch, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Only documentation",
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only go-live date",
+        "Only technical deployment"
+      ],
+      "answer": 1,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Delay the decision indefinitely",
+        "Choose the group with more influence",
+        "Delegate it without analysis",
+        "Assess value, impact, fairness, and governance implications before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a retail platform launch, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Ask the team to interpret it",
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Proceed with assumptions",
+        "Remove the requirement"
+      ],
+      "answer": 1,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Ask the team to decide",
+        "Reject it because delivery is late",
+        "Implement it to satisfy the stakeholder",
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control"
+      ],
+      "answer": 3,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail platform launch, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Keep satisfied through concise, relevant executive communication",
+        "Ignore until closure",
+        "Manage closely with daily technical updates",
+        "Monitor with minimal effort"
+      ],
+      "answer": 0,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Move to predictive delivery immediately",
+        "Increase sprint length",
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Ask the team to work faster"
+      ],
+      "answer": 2,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom network upgrade, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Accept it because approvals are uncertain",
+        "Ignore it until it occurs",
+        "Transfer it to the regulator"
+      ],
+      "answer": 0,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Declare success",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it",
+        "Rebuild without analysis"
+      ],
+      "answer": 1,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom network upgrade, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Wait until the date passes",
+        "Report only positive news",
+        "Blame another team",
+        "Communicate promptly with impact, root cause, options, and a recommended action"
+      ],
+      "answer": 3,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Remove the board",
+        "Update it themselves",
+        "Issue a warning",
+        "Understand the barrier and reinforce the value of timely, accurate updates"
+      ],
+      "answer": 3,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network upgrade, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Explain that authorization and funding approval are required before work begins",
+        "Start work to maintain momentum",
+        "Ask the team to volunteer",
+        "Start low-cost work quietly"
+      ],
+      "answer": 0,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Request more budget immediately",
+        "Celebrate progress",
+        "Reduce scope silently",
+        "Analyze variances, identify root causes, and develop corrective actions"
+      ],
+      "answer": 3,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom network upgrade, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Reclassify the defect",
+        "Contain the issue, assess impact, and initiate corrective and preventive action",
+        "Release and fix later",
+        "Delay all work"
+      ],
+      "answer": 1,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Choose the senior stakeholder",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Implement both",
+        "Reject both"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network upgrade, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only location",
+        "Only vendor reputation",
+        "Only cost",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead"
+      ],
+      "answer": 3,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Add more meetings",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives",
+        "Cancel all collaboration",
+        "Record meetings instead of deciding"
+      ],
+      "answer": 1,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a pharmaceutical program, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Stop work indefinitely",
+        "Facilitate alignment and document the agreed direction",
+        "Follow the more senior sponsor",
+        "Follow both directions"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Assume approval will occur",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Remove the milestone",
+        "Delay all work"
+      ],
+      "answer": 1,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical program, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Stop giving feedback",
+        "Avoid performance discussions",
+        "Give feedback publicly"
+      ],
+      "answer": 0,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only price",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms",
+        "Only references",
+        "Only delivery date"
+      ],
+      "answer": 1,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical program, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only go-live date",
+        "Only documentation",
+        "Only technical deployment"
+      ],
+      "answer": 0,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Delay the decision indefinitely",
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Choose the group with more influence",
+        "Delegate it without analysis"
+      ],
+      "answer": 1,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a pharmaceutical program, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Remove the requirement",
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Ask the team to interpret it",
+        "Proceed with assumptions"
+      ],
+      "answer": 1,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Reject it because delivery is late",
+        "Implement it to satisfy the stakeholder",
+        "Ask the team to decide"
+      ],
+      "answer": 0,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics transformation, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Manage closely with daily technical updates",
+        "Ignore until closure",
+        "Monitor with minimal effort",
+        "Keep satisfied through concise, relevant executive communication"
+      ],
+      "answer": 3,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Move to predictive delivery immediately",
+        "Ask the team to work faster",
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Increase sprint length"
+      ],
+      "answer": 2,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics transformation, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Ignore it until it occurs",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Transfer it to the regulator",
+        "Accept it because approvals are uncertain"
+      ],
+      "answer": 1,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Rebuild without analysis",
+        "Declare success",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it"
+      ],
+      "answer": 2,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics transformation, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Wait until the date passes",
+        "Communicate promptly with impact, root cause, options, and a recommended action",
+        "Blame another team",
+        "Report only positive news"
+      ],
+      "answer": 1,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Update it themselves",
+        "Remove the board",
+        "Understand the barrier and reinforce the value of timely, accurate updates",
+        "Issue a warning"
+      ],
+      "answer": 2,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics transformation, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Explain that authorization and funding approval are required before work begins",
+        "Start low-cost work quietly",
+        "Start work to maintain momentum",
+        "Ask the team to volunteer"
+      ],
+      "answer": 0,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Request more budget immediately",
+        "Celebrate progress",
+        "Reduce scope silently"
+      ],
+      "answer": 0,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics transformation, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Contain the issue, assess impact, and initiate corrective and preventive action",
+        "Delay all work",
+        "Reclassify the defect",
+        "Release and fix later"
+      ],
+      "answer": 0,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Choose the senior stakeholder",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Implement both",
+        "Reject both"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cybersecurity program, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only vendor reputation",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only cost",
+        "Only location"
+      ],
+      "answer": 1,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Record meetings instead of deciding",
+        "Cancel all collaboration",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives",
+        "Add more meetings"
+      ],
+      "answer": 2,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cybersecurity program, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Facilitate alignment and document the agreed direction",
+        "Follow the more senior sponsor",
+        "Stop work indefinitely",
+        "Follow both directions"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Assume approval will occur",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Delay all work",
+        "Remove the milestone"
+      ],
+      "answer": 1,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity program, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Stop giving feedback",
+        "Give feedback publicly",
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Avoid performance discussions"
+      ],
+      "answer": 2,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only delivery date",
+        "Only references",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms",
+        "Only price"
+      ],
+      "answer": 2,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity program, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Only go-live date",
+        "Only documentation",
+        "Only technical deployment",
+        "Readiness, training, support, communication, and adoption metrics"
+      ],
+      "answer": 3,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Delay the decision indefinitely",
+        "Choose the group with more influence",
+        "Delegate it without analysis"
+      ],
+      "answer": 0,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a cloud migration, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Proceed with assumptions",
+        "Remove the requirement",
+        "Ask the team to interpret it",
+        "Facilitate clarification with the stakeholder and document the agreed requirement"
+      ],
+      "answer": 3,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Reject it because delivery is late",
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Implement it to satisfy the stakeholder",
+        "Ask the team to decide"
+      ],
+      "answer": 1,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Keep satisfied through concise, relevant executive communication",
+        "Manage closely with daily technical updates",
+        "Monitor with minimal effort",
+        "Ignore until closure"
+      ],
+      "answer": 0,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Increase sprint length",
+        "Move to predictive delivery immediately",
+        "Ask the team to work faster"
+      ],
+      "answer": 0,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Ignore it until it occurs",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Accept it because approvals are uncertain",
+        "Transfer it to the regulator"
+      ],
+      "answer": 1,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Ask the customer to accept it",
+        "Declare success",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Rebuild without analysis"
+      ],
+      "answer": 2,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Communicate promptly with impact, root cause, options, and a recommended action",
+        "Blame another team",
+        "Report only positive news",
+        "Wait until the date passes"
+      ],
+      "answer": 0,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Update it themselves",
+        "Remove the board",
+        "Issue a warning",
+        "Understand the barrier and reinforce the value of timely, accurate updates"
+      ],
+      "answer": 3,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cloud migration, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Start low-cost work quietly",
+        "Ask the team to volunteer",
+        "Start work to maintain momentum",
+        "Explain that authorization and funding approval are required before work begins"
+      ],
+      "answer": 3,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Request more budget immediately",
+        "Celebrate progress",
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Reduce scope silently"
+      ],
+      "answer": 2,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a digital banking rollout, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Reclassify the defect",
+        "Delay all work",
+        "Release and fix later",
+        "Contain the issue, assess impact, and initiate corrective and preventive action"
+      ],
+      "answer": 3,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Choose the senior stakeholder",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Reject both",
+        "Implement both"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital banking rollout, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only vendor reputation",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only location",
+        "Only cost"
+      ],
+      "answer": 1,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Cancel all collaboration",
+        "Add more meetings",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives",
+        "Record meetings instead of deciding"
+      ],
+      "answer": 2,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital banking rollout, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Follow the more senior sponsor",
+        "Stop work indefinitely",
+        "Facilitate alignment and document the agreed direction",
+        "Follow both directions"
+      ],
+      "answer": 2,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Remove the milestone",
+        "Delay all work",
+        "Assume approval will occur",
+        "Identify the owner, track lead time, engage early, and prepare contingency"
+      ],
+      "answer": 3,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a digital banking rollout, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Avoid performance discussions",
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Give feedback publicly",
+        "Stop giving feedback"
+      ],
+      "answer": 1,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms",
+        "Only delivery date",
+        "Only price",
+        "Only references"
+      ],
+      "answer": 0,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital system implementation, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Only documentation",
+        "Only technical deployment",
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only go-live date"
+      ],
+      "answer": 2,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Delay the decision indefinitely",
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Delegate it without analysis",
+        "Choose the group with more influence"
+      ],
+      "answer": 1,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a hospital system implementation, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Remove the requirement",
+        "Proceed with assumptions",
+        "Ask the team to interpret it"
+      ],
+      "answer": 0,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Ask the team to decide",
+        "Implement it to satisfy the stakeholder",
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Reject it because delivery is late"
+      ],
+      "answer": 2,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital system implementation, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Ignore until closure",
+        "Keep satisfied through concise, relevant executive communication",
+        "Manage closely with daily technical updates",
+        "Monitor with minimal effort"
+      ],
+      "answer": 1,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Move to predictive delivery immediately",
+        "Increase sprint length",
+        "Ask the team to work faster"
+      ],
+      "answer": 0,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital system implementation, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Accept it because approvals are uncertain",
+        "Ignore it until it occurs",
+        "Transfer it to the regulator",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time"
+      ],
+      "answer": 3,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Declare success",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it",
+        "Rebuild without analysis"
+      ],
+      "answer": 1,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital system implementation, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Wait until the date passes",
+        "Blame another team",
+        "Communicate promptly with impact, root cause, options, and a recommended action",
+        "Report only positive news"
+      ],
+      "answer": 2,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Issue a warning",
+        "Understand the barrier and reinforce the value of timely, accurate updates",
+        "Update it themselves",
+        "Remove the board"
+      ],
+      "answer": 1,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation project, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Start work to maintain momentum",
+        "Explain that authorization and funding approval are required before work begins",
+        "Start low-cost work quietly",
+        "Ask the team to volunteer"
+      ],
+      "answer": 1,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Reduce scope silently",
+        "Request more budget immediately",
+        "Celebrate progress"
+      ],
+      "answer": 0,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a manufacturing automation project, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Contain the issue, assess impact, and initiate corrective and preventive action",
+        "Delay all work",
+        "Reclassify the defect",
+        "Release and fix later"
+      ],
+      "answer": 0,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Reject both",
+        "Choose the senior stakeholder",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Implement both"
+      ],
+      "answer": 2,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation project, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only cost",
+        "Only vendor reputation",
+        "Only location"
+      ],
+      "answer": 0,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Cancel all collaboration",
+        "Record meetings instead of deciding",
+        "Add more meetings",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives"
+      ],
+      "answer": 3,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation project, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Stop work indefinitely",
+        "Follow both directions",
+        "Follow the more senior sponsor",
+        "Facilitate alignment and document the agreed direction"
+      ],
+      "answer": 3,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Delay all work",
+        "Assume approval will occur",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Remove the milestone"
+      ],
+      "answer": 2,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a government service portal, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Avoid performance discussions",
+        "Give feedback publicly",
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Stop giving feedback"
+      ],
+      "answer": 2,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only price",
+        "Only references",
+        "Only delivery date",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms"
+      ],
+      "answer": 3,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a government service portal, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only go-live date",
+        "Only documentation",
+        "Only technical deployment"
+      ],
+      "answer": 0,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Choose the group with more influence",
+        "Delegate it without analysis",
+        "Delay the decision indefinitely"
+      ],
+      "answer": 0,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a government service portal, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Proceed with assumptions",
+        "Remove the requirement",
+        "Ask the team to interpret it"
+      ],
+      "answer": 0,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Reject it because delivery is late",
+        "Implement it to satisfy the stakeholder",
+        "Ask the team to decide"
+      ],
+      "answer": 0,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a government service portal, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Ignore until closure",
+        "Manage closely with daily technical updates",
+        "Monitor with minimal effort",
+        "Keep satisfied through concise, relevant executive communication"
+      ],
+      "answer": 3,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Move to predictive delivery immediately",
+        "Ask the team to work faster",
+        "Increase sprint length"
+      ],
+      "answer": 0,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a government service portal, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Transfer it to the regulator",
+        "Accept it because approvals are uncertain",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Ignore it until it occurs"
+      ],
+      "answer": 2,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it",
+        "Declare success",
+        "Rebuild without analysis"
+      ],
+      "answer": 0,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail platform launch, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Communicate promptly with impact, root cause, options, and a recommended action",
+        "Blame another team",
+        "Wait until the date passes",
+        "Report only positive news"
+      ],
+      "answer": 0,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Understand the barrier and reinforce the value of timely, accurate updates",
+        "Update it themselves",
+        "Remove the board",
+        "Issue a warning"
+      ],
+      "answer": 0,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail platform launch, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Ask the team to volunteer",
+        "Explain that authorization and funding approval are required before work begins",
+        "Start work to maintain momentum",
+        "Start low-cost work quietly"
+      ],
+      "answer": 1,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Reduce scope silently",
+        "Request more budget immediately",
+        "Celebrate progress"
+      ],
+      "answer": 0,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail platform launch, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Release and fix later",
+        "Reclassify the defect",
+        "Contain the issue, assess impact, and initiate corrective and preventive action",
+        "Delay all work"
+      ],
+      "answer": 2,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Choose the senior stakeholder",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Reject both",
+        "Implement both"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail platform launch, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only location",
+        "Only cost",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only vendor reputation"
+      ],
+      "answer": 2,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Cancel all collaboration",
+        "Add more meetings",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives",
+        "Record meetings instead of deciding"
+      ],
+      "answer": 2,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network upgrade, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Follow the more senior sponsor",
+        "Stop work indefinitely",
+        "Follow both directions",
+        "Facilitate alignment and document the agreed direction"
+      ],
+      "answer": 3,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Delay all work",
+        "Remove the milestone",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Assume approval will occur"
+      ],
+      "answer": 2,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom network upgrade, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Stop giving feedback",
+        "Avoid performance discussions",
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Give feedback publicly"
+      ],
+      "answer": 2,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms",
+        "Only references",
+        "Only price",
+        "Only delivery date"
+      ],
+      "answer": 0,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom network upgrade, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only documentation",
+        "Only go-live date",
+        "Only technical deployment"
+      ],
+      "answer": 0,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Choose the group with more influence",
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Delay the decision indefinitely",
+        "Delegate it without analysis"
+      ],
+      "answer": 1,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a telecom network upgrade, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Ask the team to interpret it",
+        "Proceed with assumptions",
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Remove the requirement"
+      ],
+      "answer": 2,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Ask the team to decide",
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control",
+        "Reject it because delivery is late",
+        "Implement it to satisfy the stakeholder"
+      ],
+      "answer": 1,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom network upgrade, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Keep satisfied through concise, relevant executive communication",
+        "Monitor with minimal effort",
+        "Manage closely with daily technical updates",
+        "Ignore until closure"
+      ],
+      "answer": 0,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Move to predictive delivery immediately",
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Increase sprint length",
+        "Ask the team to work faster"
+      ],
+      "answer": 1,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical program, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Accept it because approvals are uncertain",
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Ignore it until it occurs",
+        "Transfer it to the regulator"
+      ],
+      "answer": 1,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Declare success",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Rebuild without analysis",
+        "Ask the customer to accept it"
+      ],
+      "answer": 1,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical program, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Wait until the date passes",
+        "Blame another team",
+        "Communicate promptly with impact, root cause, options, and a recommended action",
+        "Report only positive news"
+      ],
+      "answer": 2,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Understand the barrier and reinforce the value of timely, accurate updates",
+        "Issue a warning",
+        "Update it themselves",
+        "Remove the board"
+      ],
+      "answer": 0,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a pharmaceutical program, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Start low-cost work quietly",
+        "Ask the team to volunteer",
+        "Explain that authorization and funding approval are required before work begins",
+        "Start work to maintain momentum"
+      ],
+      "answer": 2,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Celebrate progress",
+        "Request more budget immediately",
+        "Reduce scope silently"
+      ],
+      "answer": 0,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical program, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Release and fix later",
+        "Delay all work",
+        "Reclassify the defect",
+        "Contain the issue, assess impact, and initiate corrective and preventive action"
+      ],
+      "answer": 3,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Implement both",
+        "Reject both",
+        "Choose the senior stakeholder",
+        "Facilitate alignment using value, risk, dependency, and strategic criteria"
+      ],
+      "answer": 3,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics transformation, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only cost",
+        "Only vendor reputation",
+        "Only location"
+      ],
+      "answer": 0,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Record meetings instead of deciding",
+        "Add more meetings",
+        "Cancel all collaboration",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives"
+      ],
+      "answer": 3,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics transformation, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Facilitate alignment and document the agreed direction",
+        "Follow both directions",
+        "Follow the more senior sponsor",
+        "Stop work indefinitely"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Delay all work",
+        "Remove the milestone",
+        "Identify the owner, track lead time, engage early, and prepare contingency",
+        "Assume approval will occur"
+      ],
+      "answer": 2,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics transformation, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Give feedback publicly",
+        "Use specific, behavior-based feedback and agree on follow-up actions",
+        "Avoid performance discussions",
+        "Stop giving feedback"
+      ],
+      "answer": 1,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only delivery date",
+        "Only price",
+        "Only references",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms"
+      ],
+      "answer": 3,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics transformation, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only documentation",
+        "Only technical deployment",
+        "Only go-live date"
+      ],
+      "answer": 0,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    },
+    {
+      "question": "A stakeholder asks the project manager to make a decision that benefits one group but harms another. What should the project manager do first?",
+      "options": [
+        "Delay the decision indefinitely",
+        "Delegate it without analysis",
+        "Assess value, impact, fairness, and governance implications before deciding",
+        "Choose the group with more influence"
+      ],
+      "answer": 2,
+      "explanation": "Ethical, value-based decisions require impact assessment, fairness, and appropriate governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics transformation, a team member says a requirement is unclear. What should the project manager do first?",
+      "options": [
+        "Proceed with assumptions",
+        "Remove the requirement",
+        "Facilitate clarification with the stakeholder and document the agreed requirement",
+        "Ask the team to interpret it"
+      ],
+      "answer": 2,
+      "explanation": "Ambiguity should be resolved with the stakeholder and documented before build work proceeds.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager receives a change request late in delivery. What should the project manager do first?",
+      "options": [
+        "Implement it to satisfy the stakeholder",
+        "Ask the team to decide",
+        "Reject it because delivery is late",
+        "Assess impacts on scope, schedule, cost, quality, risk, and benefits, then use change control"
+      ],
+      "answer": 3,
+      "explanation": "All changes require integrated impact assessment and change control, regardless of project phase.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity program, a key stakeholder is highly influential but disengaged. What is the best engagement approach?",
+      "options": [
+        "Manage closely with daily technical updates",
+        "Ignore until closure",
+        "Keep satisfied through concise, relevant executive communication",
+        "Monitor with minimal effort"
+      ],
+      "answer": 2,
+      "explanation": "High-power, low-interest stakeholders generally need to be kept satisfied through focused communication.",
+      "domain": "People"
+    },
+    {
+      "question": "A team is missing sprint goals because requirements change daily. What should the project manager do first?",
+      "options": [
+        "Move to predictive delivery immediately",
+        "Clarify product goals, backlog ownership, and change-management approach",
+        "Increase sprint length",
+        "Ask the team to work faster"
+      ],
+      "answer": 1,
+      "explanation": "Adaptive delivery needs clear product goals, backlog ownership, and a controlled approach to changing priorities.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity program, a project manager identifies a risk that could delay a regulatory approval. What is the best response?",
+      "options": [
+        "Create a mitigation plan, assign an owner, and track triggers and lead time",
+        "Ignore it until it occurs",
+        "Accept it because approvals are uncertain",
+        "Transfer it to the regulator"
+      ],
+      "answer": 0,
+      "explanation": "Regulatory risks require active mitigation, ownership, trigger tracking, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable meets specifications but the customer is dissatisfied. What should the project manager do first?",
+      "options": [
+        "Declare success",
+        "Rebuild without analysis",
+        "Review requirements traceability, validation criteria, and stakeholder expectations",
+        "Ask the customer to accept it"
+      ],
+      "answer": 2,
+      "explanation": "Dissatisfaction may indicate a requirements, validation, or expectation-management gap that should be investigated.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity program, a project manager must communicate a schedule slip. What is the best approach?",
+      "options": [
+        "Report only positive news",
+        "Blame another team",
+        "Wait until the date passes",
+        "Communicate promptly with impact, root cause, options, and a recommended action"
+      ],
+      "answer": 3,
+      "explanation": "Transparent, timely communication with analysis and options supports stakeholder trust and decision-making.",
+      "domain": "Business"
+    },
+    {
+      "question": "A team member completes work but does not update the board. What should the project manager do first?",
+      "options": [
+        "Update it themselves",
+        "Remove the board",
+        "Understand the barrier and reinforce the value of timely, accurate updates",
+        "Issue a warning"
+      ],
+      "answer": 2,
+      "explanation": "The project manager should identify root causes such as tool friction, workload, or unclear expectations before enforcing compliance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cybersecurity program, a sponsor asks the project manager to start work before funding approval. What is the appropriate response?",
+      "options": [
+        "Explain that authorization and funding approval are required before work begins",
+        "Ask the team to volunteer",
+        "Start work to maintain momentum",
+        "Start low-cost work quietly"
+      ],
+      "answer": 0,
+      "explanation": "Work should begin only with proper authorization and funding to protect governance and accountability.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project has a CPI of 0.80 and SPI of 0.85. What should the project manager do first?",
+      "options": [
+        "Analyze variances, identify root causes, and develop corrective actions",
+        "Reduce scope silently",
+        "Celebrate progress",
+        "Request more budget immediately"
+      ],
+      "answer": 0,
+      "explanation": "Both indexes below 1.0 indicate cost and schedule problems; root-cause analysis should precede corrective action.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a team identifies a defect that could affect safety. What should the project manager do first?",
+      "options": [
+        "Contain the issue, assess impact, and initiate corrective and preventive action",
+        "Release and fix later",
+        "Reclassify the defect",
+        "Delay all work"
+      ],
+      "answer": 0,
+      "explanation": "Safety issues require immediate containment, impact assessment, and corrective/preventive action.",
+      "domain": "Process"
+    },
+    {
+      "question": "A stakeholder requests a feature that conflicts with another stakeholder’s priority. What should the project manager do first?",
+      "options": [
+        "Facilitate alignment using value, risk, dependency, and strategic criteria",
+        "Choose the senior stakeholder",
+        "Implement both",
+        "Reject both"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting priorities should be resolved through transparent criteria and governance escalation if needed.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cloud migration, a project manager must decide whether to outsource work. What is the most relevant consideration?",
+      "options": [
+        "Only location",
+        "Capability, capacity, IP, quality, security, schedule, risk, and management overhead",
+        "Only cost",
+        "Only vendor reputation"
+      ],
+      "answer": 1,
+      "explanation": "Outsourcing decisions require holistic evaluation of capability, risk, IP, security, cost, and oversight.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices that a team is spending too much time in meetings. What is the best response?",
+      "options": [
+        "Cancel all collaboration",
+        "Add more meetings",
+        "Clarify meeting purpose, attendees, decisions, and use asynchronous alternatives",
+        "Record meetings instead of deciding"
+      ],
+      "answer": 2,
+      "explanation": "Meeting effectiveness improves by clarifying purpose, limiting attendees, and using asynchronous options where appropriate.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cloud migration, a project manager receives conflicting direction from two sponsors. What should the project manager do?",
+      "options": [
+        "Follow both directions",
+        "Facilitate alignment and document the agreed direction",
+        "Stop work indefinitely",
+        "Follow the more senior sponsor"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting sponsorship should be resolved through facilitation, alignment, and documented governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager identifies that a milestone depends on an external approval. What is the best response?",
+      "options": [
+        "Remove the milestone",
+        "Delay all work",
+        "Assume approval will occur",
+        "Identify the owner, track lead time, engage early, and prepare contingency"
+      ],
+      "answer": 3,
+      "explanation": "External approvals require early engagement, lead-time tracking, ownership, and contingency planning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a team member asks for feedback but becomes defensive. What is the best approach?",
+      "options": [
+        "Stop giving feedback",
+        "Give feedback publicly",
+        "Avoid performance discussions",
+        "Use specific, behavior-based feedback and agree on follow-up actions"
+      ],
+      "answer": 3,
+      "explanation": "Effective feedback is private, specific, respectful, and focused on observable behavior and next steps.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to accept a low bid. What should be evaluated?",
+      "options": [
+        "Only price",
+        "Only delivery date",
+        "Only references",
+        "Total cost of ownership, capability, quality, capacity, risk, and contract terms"
+      ],
+      "answer": 3,
+      "explanation": "Low bids must be evaluated for total value, capability, quality, risk, and contract terms.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager must improve adoption of a new system. What should be planned?",
+      "options": [
+        "Readiness, training, support, communication, and adoption metrics",
+        "Only go-live date",
+        "Only technical deployment",
+        "Only documentation"
+      ],
+      "answer": 0,
+      "explanation": "Adoption requires readiness, enablement, support, communication, and measurement—not deployment alone.",
+      "domain": "Business"
+    }
+  ]
+}

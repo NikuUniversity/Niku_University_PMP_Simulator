@@ -1,0 +1,2165 @@
+{
+  "title": "PMP Simulator V17",
+  "questions": [
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Punish the next concern raised",
+        "Create psychological safety and respond constructively when concerns are raised",
+        "Require daily concern reports",
+        "Ignore the behavior"
+      ],
+      "answer": 1,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital identity platform, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Explain that the decision is final",
+        "Ask them to accept it",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement",
+        "Escalate immediately"
+      ],
+      "answer": 2,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Publicly criticize them",
+        "Understand the reason and coach collaborative behavior",
+        "Ignore it because results are strong",
+        "Remove them from the team"
+      ],
+      "answer": 1,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a renewable-energy construction project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Limit their involvement",
+        "Assume silence means agreement",
+        "Use targeted engagement and structured input methods",
+        "Wait for complaints"
+      ],
+      "answer": 2,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Micromanage them",
+        "Grant full autonomy immediately",
+        "Deny the request",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy"
+      ],
+      "answer": 3,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government permitting portal, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Reject all changes",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance",
+        "Ask the team to absorb changes",
+        "Implement every change"
+      ],
+      "answer": 1,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Reject it to preserve stability",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding",
+        "Implement it immediately",
+        "Ask the team to avoid change"
+      ],
+      "answer": 1,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom 5G rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Invite more people",
+        "Cancel all meetings",
+        "Increase meeting length",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Discuss it publicly",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Assign more work",
+        "Ignore the failure"
+      ],
+      "answer": 1,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a university learning platform, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Share only the register",
+        "Say it was minor"
+      ],
+      "answer": 1,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only compression amount",
+        "Only team availability",
+        "Only sponsor preference"
+      ],
+      "answer": 0,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity compliance program, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Ask customers to accept defects",
+        "Increase final inspection",
+        "Perform root-cause analysis and improve the causing process",
+        "Reduce quality standards"
+      ],
+      "answer": 2,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It validates assumptions and reduces risk before broader rollout",
+        "It removes training needs",
+        "It eliminates change management",
+        "It avoids measurement"
+      ],
+      "answer": 0,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical trial system, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Reassess residual exposure and adjust or replace the response",
+        "Transfer the risk",
+        "Close the risk",
+        "Ignore the risk"
+      ],
+      "answer": 0,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "The lowest-cost option only",
+        "A weighted scoring model with transparent criteria",
+        "Personal preference",
+        "The fastest option only"
+      ],
+      "answer": 1,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit modernization, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Pay early",
+        "Terminate immediately",
+        "Accept the delay",
+        "Review contractual remedies, critical-path impact, recovery options, and root causes"
+      ],
+      "answer": 3,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only budget",
+        "Only developer preference",
+        "Only cost"
+      ],
+      "answer": 0,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit fundraising platform, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Report only exceptions",
+        "Ask for optimistic reports",
+        "Use verbal updates",
+        "Define metrics, data sources, cadence, and verification practices"
+      ],
+      "answer": 3,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Visualize dependencies, identify bottlenecks, and limit work in progress",
+        "Add more work in progress",
+        "Increase meetings",
+        "Reduce planning"
+      ],
+      "answer": 0,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive software program, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only morale",
+        "Business case, remaining value, risks, alternatives, and governance decision",
+        "Only schedule progress",
+        "Only budget spent"
+      ],
+      "answer": 1,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Require daily concern reports",
+        "Ignore the behavior",
+        "Create psychological safety and respond constructively when concerns are raised",
+        "Punish the next concern raised"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a fintech payments rollout, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Explain that the decision is final",
+        "Ask them to accept it",
+        "Escalate immediately",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement"
+      ],
+      "answer": 3,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Ignore it because results are strong",
+        "Publicly criticize them",
+        "Understand the reason and coach collaborative behavior",
+        "Remove them from the team"
+      ],
+      "answer": 2,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-grid project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Use targeted engagement and structured input methods",
+        "Assume silence means agreement",
+        "Wait for complaints",
+        "Limit their involvement"
+      ],
+      "answer": 0,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Micromanage them",
+        "Deny the request",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy",
+        "Grant full autonomy immediately"
+      ],
+      "answer": 2,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation initiative, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Clarify objectives, assess impacts, and establish prioritization and change governance",
+        "Implement every change",
+        "Ask the team to absorb changes",
+        "Reject all changes"
+      ],
+      "answer": 0,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Reject it to preserve stability",
+        "Implement it immediately",
+        "Ask the team to avoid change",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital records rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions",
+        "Invite more people",
+        "Increase meeting length",
+        "Cancel all meetings"
+      ],
+      "answer": 0,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Ignore the failure",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Assign more work",
+        "Discuss it publicly"
+      ],
+      "answer": 1,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network deployment, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Share only the register",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Say it was minor"
+      ],
+      "answer": 2,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Only team availability",
+        "Only compression amount",
+        "Only sponsor preference",
+        "Critical path, dependencies, cost, quality, risk, and commitments"
+      ],
+      "answer": 3,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an energy grid project, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Ask customers to accept defects",
+        "Perform root-cause analysis and improve the causing process",
+        "Increase final inspection",
+        "Reduce quality standards"
+      ],
+      "answer": 1,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It removes training needs",
+        "It avoids measurement",
+        "It eliminates change management",
+        "It validates assumptions and reduces risk before broader rollout"
+      ],
+      "answer": 3,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an education platform, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Transfer the risk",
+        "Close the risk",
+        "Ignore the risk",
+        "Reassess residual exposure and adjust or replace the response"
+      ],
+      "answer": 3,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "The fastest option only",
+        "The lowest-cost option only",
+        "A weighted scoring model with transparent criteria",
+        "Personal preference"
+      ],
+      "answer": 2,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit community program, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Terminate immediately",
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay",
+        "Pay early"
+      ],
+      "answer": 1,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only budget",
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only developer preference",
+        "Only cost"
+      ],
+      "answer": 1,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Use verbal updates",
+        "Report only exceptions",
+        "Ask for optimistic reports",
+        "Define metrics, data sources, cadence, and verification practices"
+      ],
+      "answer": 3,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Increase meetings",
+        "Reduce planning",
+        "Visualize dependencies, identify bottlenecks, and limit work in progress",
+        "Add more work in progress"
+      ],
+      "answer": 2,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a supply-chain project, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only schedule progress",
+        "Only morale",
+        "Only budget spent",
+        "Business case, remaining value, risks, alternatives, and governance decision"
+      ],
+      "answer": 3,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Ignore the behavior",
+        "Require daily concern reports",
+        "Punish the next concern raised",
+        "Create psychological safety and respond constructively when concerns are raised"
+      ],
+      "answer": 3,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital identity platform, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Escalate immediately",
+        "Explain that the decision is final",
+        "Ask them to accept it",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement"
+      ],
+      "answer": 3,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Remove them from the team",
+        "Publicly criticize them",
+        "Understand the reason and coach collaborative behavior",
+        "Ignore it because results are strong"
+      ],
+      "answer": 2,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a renewable-energy construction project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Wait for complaints",
+        "Limit their involvement",
+        "Assume silence means agreement",
+        "Use targeted engagement and structured input methods"
+      ],
+      "answer": 3,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Micromanage them",
+        "Grant full autonomy immediately",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy",
+        "Deny the request"
+      ],
+      "answer": 2,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government permitting portal, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Implement every change",
+        "Ask the team to absorb changes",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance",
+        "Reject all changes"
+      ],
+      "answer": 2,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Implement it immediately",
+        "Ask the team to avoid change",
+        "Reject it to preserve stability",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom 5G rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Cancel all meetings",
+        "Increase meeting length",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions",
+        "Invite more people"
+      ],
+      "answer": 2,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Ignore the failure",
+        "Assign more work",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Discuss it publicly"
+      ],
+      "answer": 2,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a university learning platform, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Say it was minor",
+        "Avoid discussion",
+        "Share only the register",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach"
+      ],
+      "answer": 3,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Only sponsor preference",
+        "Only compression amount",
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only team availability"
+      ],
+      "answer": 2,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity compliance program, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Ask customers to accept defects",
+        "Reduce quality standards",
+        "Perform root-cause analysis and improve the causing process",
+        "Increase final inspection"
+      ],
+      "answer": 2,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It avoids measurement",
+        "It removes training needs",
+        "It eliminates change management",
+        "It validates assumptions and reduces risk before broader rollout"
+      ],
+      "answer": 3,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical trial system, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Reassess residual exposure and adjust or replace the response",
+        "Transfer the risk",
+        "Ignore the risk",
+        "Close the risk"
+      ],
+      "answer": 0,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "The fastest option only",
+        "Personal preference",
+        "The lowest-cost option only",
+        "A weighted scoring model with transparent criteria"
+      ],
+      "answer": 3,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit modernization, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Terminate immediately",
+        "Pay early",
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay"
+      ],
+      "answer": 2,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only cost",
+        "Only budget",
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only developer preference"
+      ],
+      "answer": 2,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit fundraising platform, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Ask for optimistic reports",
+        "Use verbal updates",
+        "Define metrics, data sources, cadence, and verification practices",
+        "Report only exceptions"
+      ],
+      "answer": 2,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Add more work in progress",
+        "Increase meetings",
+        "Reduce planning",
+        "Visualize dependencies, identify bottlenecks, and limit work in progress"
+      ],
+      "answer": 3,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive software program, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only morale",
+        "Business case, remaining value, risks, alternatives, and governance decision",
+        "Only schedule progress",
+        "Only budget spent"
+      ],
+      "answer": 1,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Punish the next concern raised",
+        "Ignore the behavior",
+        "Require daily concern reports",
+        "Create psychological safety and respond constructively when concerns are raised"
+      ],
+      "answer": 3,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a fintech payments rollout, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Escalate immediately",
+        "Ask them to accept it",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement",
+        "Explain that the decision is final"
+      ],
+      "answer": 2,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Understand the reason and coach collaborative behavior",
+        "Ignore it because results are strong",
+        "Remove them from the team",
+        "Publicly criticize them"
+      ],
+      "answer": 0,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-grid project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Wait for complaints",
+        "Assume silence means agreement",
+        "Use targeted engagement and structured input methods",
+        "Limit their involvement"
+      ],
+      "answer": 2,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Deny the request",
+        "Micromanage them",
+        "Grant full autonomy immediately",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy"
+      ],
+      "answer": 3,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation initiative, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Ask the team to absorb changes",
+        "Implement every change",
+        "Reject all changes",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance"
+      ],
+      "answer": 3,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Reject it to preserve stability",
+        "Implement it immediately",
+        "Ask the team to avoid change",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital records rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Cancel all meetings",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions",
+        "Increase meeting length",
+        "Invite more people"
+      ],
+      "answer": 1,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Discuss it publicly",
+        "Ignore the failure",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Assign more work"
+      ],
+      "answer": 2,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network deployment, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Share only the register",
+        "Avoid discussion",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Say it was minor"
+      ],
+      "answer": 2,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Only sponsor preference",
+        "Only compression amount",
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only team availability"
+      ],
+      "answer": 2,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an energy grid project, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Reduce quality standards",
+        "Increase final inspection",
+        "Ask customers to accept defects",
+        "Perform root-cause analysis and improve the causing process"
+      ],
+      "answer": 3,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It removes training needs",
+        "It eliminates change management",
+        "It avoids measurement",
+        "It validates assumptions and reduces risk before broader rollout"
+      ],
+      "answer": 3,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an education platform, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Ignore the risk",
+        "Reassess residual exposure and adjust or replace the response",
+        "Close the risk",
+        "Transfer the risk"
+      ],
+      "answer": 1,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "Personal preference",
+        "A weighted scoring model with transparent criteria",
+        "The fastest option only",
+        "The lowest-cost option only"
+      ],
+      "answer": 1,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit community program, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay",
+        "Terminate immediately",
+        "Pay early"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only developer preference",
+        "Only budget",
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only cost"
+      ],
+      "answer": 2,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Define metrics, data sources, cadence, and verification practices",
+        "Report only exceptions",
+        "Use verbal updates",
+        "Ask for optimistic reports"
+      ],
+      "answer": 0,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Visualize dependencies, identify bottlenecks, and limit work in progress",
+        "Increase meetings",
+        "Reduce planning",
+        "Add more work in progress"
+      ],
+      "answer": 0,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a supply-chain project, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only budget spent",
+        "Business case, remaining value, risks, alternatives, and governance decision",
+        "Only schedule progress",
+        "Only morale"
+      ],
+      "answer": 1,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Ignore the behavior",
+        "Punish the next concern raised",
+        "Create psychological safety and respond constructively when concerns are raised",
+        "Require daily concern reports"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital identity platform, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Escalate immediately",
+        "Ask them to accept it",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement",
+        "Explain that the decision is final"
+      ],
+      "answer": 2,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Understand the reason and coach collaborative behavior",
+        "Publicly criticize them",
+        "Ignore it because results are strong",
+        "Remove them from the team"
+      ],
+      "answer": 0,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a renewable-energy construction project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Limit their involvement",
+        "Assume silence means agreement",
+        "Use targeted engagement and structured input methods",
+        "Wait for complaints"
+      ],
+      "answer": 2,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Deny the request",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy",
+        "Micromanage them",
+        "Grant full autonomy immediately"
+      ],
+      "answer": 1,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government permitting portal, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Ask the team to absorb changes",
+        "Reject all changes",
+        "Implement every change",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance"
+      ],
+      "answer": 3,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Ask the team to avoid change",
+        "Reject it to preserve stability",
+        "Implement it immediately",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom 5G rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Increase meeting length",
+        "Cancel all meetings",
+        "Invite more people",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Ignore the failure",
+        "Assign more work",
+        "Discuss it publicly",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps"
+      ],
+      "answer": 3,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a university learning platform, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Share only the register",
+        "Say it was minor"
+      ],
+      "answer": 1,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Only compression amount",
+        "Only sponsor preference",
+        "Only team availability",
+        "Critical path, dependencies, cost, quality, risk, and commitments"
+      ],
+      "answer": 3,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity compliance program, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Perform root-cause analysis and improve the causing process",
+        "Increase final inspection",
+        "Reduce quality standards",
+        "Ask customers to accept defects"
+      ],
+      "answer": 0,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It eliminates change management",
+        "It removes training needs",
+        "It validates assumptions and reduces risk before broader rollout",
+        "It avoids measurement"
+      ],
+      "answer": 2,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical trial system, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Reassess residual exposure and adjust or replace the response",
+        "Transfer the risk",
+        "Ignore the risk",
+        "Close the risk"
+      ],
+      "answer": 0,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "The fastest option only",
+        "Personal preference",
+        "A weighted scoring model with transparent criteria",
+        "The lowest-cost option only"
+      ],
+      "answer": 2,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit modernization, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay",
+        "Pay early",
+        "Terminate immediately"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only developer preference",
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only cost",
+        "Only budget"
+      ],
+      "answer": 1,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit fundraising platform, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Report only exceptions",
+        "Use verbal updates",
+        "Define metrics, data sources, cadence, and verification practices",
+        "Ask for optimistic reports"
+      ],
+      "answer": 2,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Visualize dependencies, identify bottlenecks, and limit work in progress",
+        "Add more work in progress",
+        "Increase meetings",
+        "Reduce planning"
+      ],
+      "answer": 0,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive software program, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only budget spent",
+        "Only morale",
+        "Only schedule progress",
+        "Business case, remaining value, risks, alternatives, and governance decision"
+      ],
+      "answer": 3,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Create psychological safety and respond constructively when concerns are raised",
+        "Require daily concern reports",
+        "Ignore the behavior",
+        "Punish the next concern raised"
+      ],
+      "answer": 0,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a fintech payments rollout, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Escalate immediately",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement",
+        "Ask them to accept it",
+        "Explain that the decision is final"
+      ],
+      "answer": 1,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Ignore it because results are strong",
+        "Publicly criticize them",
+        "Understand the reason and coach collaborative behavior",
+        "Remove them from the team"
+      ],
+      "answer": 2,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-grid project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Assume silence means agreement",
+        "Use targeted engagement and structured input methods",
+        "Wait for complaints",
+        "Limit their involvement"
+      ],
+      "answer": 1,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Micromanage them",
+        "Grant full autonomy immediately",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy",
+        "Deny the request"
+      ],
+      "answer": 2,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation initiative, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Clarify objectives, assess impacts, and establish prioritization and change governance",
+        "Implement every change",
+        "Ask the team to absorb changes",
+        "Reject all changes"
+      ],
+      "answer": 0,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Ask the team to avoid change",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding",
+        "Implement it immediately",
+        "Reject it to preserve stability"
+      ],
+      "answer": 1,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital records rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Invite more people",
+        "Cancel all meetings",
+        "Increase meeting length",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Ignore the failure",
+        "Discuss it publicly",
+        "Assign more work"
+      ],
+      "answer": 0,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network deployment, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Say it was minor",
+        "Avoid discussion",
+        "Share only the register"
+      ],
+      "answer": 0,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only sponsor preference",
+        "Only team availability",
+        "Only compression amount"
+      ],
+      "answer": 0,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an energy grid project, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Perform root-cause analysis and improve the causing process",
+        "Increase final inspection",
+        "Reduce quality standards",
+        "Ask customers to accept defects"
+      ],
+      "answer": 0,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It eliminates change management",
+        "It avoids measurement",
+        "It validates assumptions and reduces risk before broader rollout",
+        "It removes training needs"
+      ],
+      "answer": 2,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an education platform, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Close the risk",
+        "Reassess residual exposure and adjust or replace the response",
+        "Ignore the risk",
+        "Transfer the risk"
+      ],
+      "answer": 1,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "Personal preference",
+        "The lowest-cost option only",
+        "The fastest option only",
+        "A weighted scoring model with transparent criteria"
+      ],
+      "answer": 3,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit community program, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay",
+        "Pay early",
+        "Terminate immediately"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only budget",
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only cost",
+        "Only developer preference"
+      ],
+      "answer": 1,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Use verbal updates",
+        "Define metrics, data sources, cadence, and verification practices",
+        "Ask for optimistic reports",
+        "Report only exceptions"
+      ],
+      "answer": 1,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Increase meetings",
+        "Add more work in progress",
+        "Reduce planning",
+        "Visualize dependencies, identify bottlenecks, and limit work in progress"
+      ],
+      "answer": 3,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a supply-chain project, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only morale",
+        "Business case, remaining value, risks, alternatives, and governance decision",
+        "Only schedule progress",
+        "Only budget spent"
+      ],
+      "answer": 1,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Punish the next concern raised",
+        "Ignore the behavior",
+        "Require daily concern reports",
+        "Create psychological safety and respond constructively when concerns are raised"
+      ],
+      "answer": 3,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital identity platform, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Explain that the decision is final",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement",
+        "Escalate immediately",
+        "Ask them to accept it"
+      ],
+      "answer": 1,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Understand the reason and coach collaborative behavior",
+        "Ignore it because results are strong",
+        "Remove them from the team",
+        "Publicly criticize them"
+      ],
+      "answer": 0,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a renewable-energy construction project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Wait for complaints",
+        "Assume silence means agreement",
+        "Use targeted engagement and structured input methods",
+        "Limit their involvement"
+      ],
+      "answer": 2,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Deny the request",
+        "Micromanage them",
+        "Grant full autonomy immediately",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy"
+      ],
+      "answer": 3,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government permitting portal, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Ask the team to absorb changes",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance",
+        "Reject all changes",
+        "Implement every change"
+      ],
+      "answer": 1,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Reject it to preserve stability",
+        "Implement it immediately",
+        "Ask the team to avoid change",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom 5G rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions",
+        "Cancel all meetings",
+        "Invite more people",
+        "Increase meeting length"
+      ],
+      "answer": 0,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Discuss it publicly",
+        "Ignore the failure",
+        "Assign more work"
+      ],
+      "answer": 0,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a university learning platform, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Say it was minor",
+        "Avoid discussion",
+        "Share only the register"
+      ],
+      "answer": 0,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Only compression amount",
+        "Only team availability",
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only sponsor preference"
+      ],
+      "answer": 2,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity compliance program, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Ask customers to accept defects",
+        "Perform root-cause analysis and improve the causing process",
+        "Reduce quality standards",
+        "Increase final inspection"
+      ],
+      "answer": 1,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It validates assumptions and reduces risk before broader rollout",
+        "It eliminates change management",
+        "It removes training needs",
+        "It avoids measurement"
+      ],
+      "answer": 0,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical trial system, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Close the risk",
+        "Reassess residual exposure and adjust or replace the response",
+        "Transfer the risk",
+        "Ignore the risk"
+      ],
+      "answer": 1,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "Personal preference",
+        "The lowest-cost option only",
+        "A weighted scoring model with transparent criteria",
+        "The fastest option only"
+      ],
+      "answer": 2,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit modernization, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Pay early",
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay",
+        "Terminate immediately"
+      ],
+      "answer": 1,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only budget",
+        "Only cost",
+        "Only developer preference",
+        "Security benefit, compliance, user impact, schedule, cost, and risk"
+      ],
+      "answer": 3,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit fundraising platform, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Ask for optimistic reports",
+        "Define metrics, data sources, cadence, and verification practices",
+        "Report only exceptions",
+        "Use verbal updates"
+      ],
+      "answer": 1,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Increase meetings",
+        "Add more work in progress",
+        "Reduce planning",
+        "Visualize dependencies, identify bottlenecks, and limit work in progress"
+      ],
+      "answer": 3,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive software program, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Business case, remaining value, risks, alternatives, and governance decision",
+        "Only budget spent",
+        "Only morale",
+        "Only schedule progress"
+      ],
+      "answer": 0,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Punish the next concern raised",
+        "Create psychological safety and respond constructively when concerns are raised",
+        "Require daily concern reports",
+        "Ignore the behavior"
+      ],
+      "answer": 1,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a fintech payments rollout, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Escalate immediately",
+        "Ask them to accept it",
+        "Explain that the decision is final",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement"
+      ],
+      "answer": 3,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Remove them from the team",
+        "Publicly criticize them",
+        "Ignore it because results are strong",
+        "Understand the reason and coach collaborative behavior"
+      ],
+      "answer": 3,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-grid project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Use targeted engagement and structured input methods",
+        "Limit their involvement",
+        "Assume silence means agreement",
+        "Wait for complaints"
+      ],
+      "answer": 0,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Micromanage them",
+        "Deny the request",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy",
+        "Grant full autonomy immediately"
+      ],
+      "answer": 2,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing automation initiative, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Ask the team to absorb changes",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance",
+        "Reject all changes",
+        "Implement every change"
+      ],
+      "answer": 1,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Reject it to preserve stability",
+        "Implement it immediately",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding",
+        "Ask the team to avoid change"
+      ],
+      "answer": 2,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital records rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Increase meeting length",
+        "Invite more people",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions",
+        "Cancel all meetings"
+      ],
+      "answer": 2,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Ignore the failure",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Assign more work",
+        "Discuss it publicly"
+      ],
+      "answer": 1,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom network deployment, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach",
+        "Say it was minor",
+        "Share only the register"
+      ],
+      "answer": 1,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Only team availability",
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only sponsor preference",
+        "Only compression amount"
+      ],
+      "answer": 1,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an energy grid project, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Perform root-cause analysis and improve the causing process",
+        "Ask customers to accept defects",
+        "Increase final inspection",
+        "Reduce quality standards"
+      ],
+      "answer": 0,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It validates assumptions and reduces risk before broader rollout",
+        "It avoids measurement",
+        "It removes training needs",
+        "It eliminates change management"
+      ],
+      "answer": 0,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an education platform, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Close the risk",
+        "Transfer the risk",
+        "Ignore the risk",
+        "Reassess residual exposure and adjust or replace the response"
+      ],
+      "answer": 3,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "A weighted scoring model with transparent criteria",
+        "The fastest option only",
+        "Personal preference",
+        "The lowest-cost option only"
+      ],
+      "answer": 0,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit community program, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Pay early",
+        "Terminate immediately",
+        "Review contractual remedies, critical-path impact, recovery options, and root causes",
+        "Accept the delay"
+      ],
+      "answer": 2,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Only developer preference",
+        "Only cost",
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only budget"
+      ],
+      "answer": 2,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Use verbal updates",
+        "Report only exceptions",
+        "Ask for optimistic reports",
+        "Define metrics, data sources, cadence, and verification practices"
+      ],
+      "answer": 3,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Add more work in progress",
+        "Visualize dependencies, identify bottlenecks, and limit work in progress",
+        "Increase meetings",
+        "Reduce planning"
+      ],
+      "answer": 1,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a supply-chain project, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only schedule progress",
+        "Business case, remaining value, risks, alternatives, and governance decision",
+        "Only budget spent",
+        "Only morale"
+      ],
+      "answer": 1,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices that a team member is reluctant to raise concerns. What should the project manager do first?",
+      "options": [
+        "Require daily concern reports",
+        "Create psychological safety and respond constructively when concerns are raised",
+        "Ignore the behavior",
+        "Punish the next concern raised"
+      ],
+      "answer": 1,
+      "explanation": "Psychological safety and constructive responses encourage early escalation and better risk identification.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital identity platform, a stakeholder says a decision was made without their input. What should the project manager do first?",
+      "options": [
+        "Explain that the decision is final",
+        "Acknowledge the concern, review engagement gaps, and clarify future involvement",
+        "Ask them to accept it",
+        "Escalate immediately"
+      ],
+      "answer": 1,
+      "explanation": "The project manager should assess engagement gaps and improve future stakeholder involvement.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly capable but avoids collaboration. What should the project manager do first?",
+      "options": [
+        "Ignore it because results are strong",
+        "Understand the reason and coach collaborative behavior",
+        "Remove them from the team",
+        "Publicly criticize them"
+      ],
+      "answer": 1,
+      "explanation": "Collaboration issues should be addressed through understanding, coaching, and clear expectations.",
+      "domain": "People"
+    },
+    {
+      "question": "In a renewable-energy construction project, a project manager observes that quieter stakeholders are overlooked. What is the best response?",
+      "options": [
+        "Use targeted engagement and structured input methods",
+        "Assume silence means agreement",
+        "Limit their involvement",
+        "Wait for complaints"
+      ],
+      "answer": 0,
+      "explanation": "Targeted engagement and structured input help surface diverse perspectives and prevent surprises.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more autonomy. What should the project manager do?",
+      "options": [
+        "Micromanage them",
+        "Clarify decision boundaries, support needs, and accountability before increasing autonomy",
+        "Deny the request",
+        "Grant full autonomy immediately"
+      ],
+      "answer": 1,
+      "explanation": "Autonomy should increase progressively with clear boundaries, support, and accountability.",
+      "domain": "People"
+    },
+    {
+      "question": "In a government permitting portal, a stakeholder repeatedly changes priorities. What should the project manager do first?",
+      "options": [
+        "Reject all changes",
+        "Implement every change",
+        "Ask the team to absorb changes",
+        "Clarify objectives, assess impacts, and establish prioritization and change governance"
+      ],
+      "answer": 3,
+      "explanation": "Changing priorities require objective alignment, impact assessment, and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes an improvement that could disrupt routines. What should the project manager do?",
+      "options": [
+        "Implement it immediately",
+        "Evaluate benefits, risks, effort, and stakeholder impact before deciding",
+        "Reject it to preserve stability",
+        "Ask the team to avoid change"
+      ],
+      "answer": 1,
+      "explanation": "Improvements should be evaluated objectively for value, risk, effort, and impact.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom 5G rollout, a project manager receives feedback that meetings lack outcomes. What should the project manager do?",
+      "options": [
+        "Cancel all meetings",
+        "Invite more people",
+        "Increase meeting length",
+        "Define purpose, outcomes, agenda, decisions, owners, and follow-up actions"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings require purpose, outcomes, agenda, decision owners, and follow-up.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is disengaged after a setback. What should the project manager do first?",
+      "options": [
+        "Assign more work",
+        "Acknowledge the setback, facilitate learning, and rebuild confidence through achievable steps",
+        "Ignore the failure",
+        "Discuss it publicly"
+      ],
+      "answer": 1,
+      "explanation": "Resilience is supported by acknowledging setbacks, learning, and rebuilding confidence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a university learning platform, a stakeholder asks why a risk was accepted. What should the project manager do?",
+      "options": [
+        "Say it was minor",
+        "Avoid discussion",
+        "Share only the register",
+        "Explain assessment, tolerance, cost-benefit, and monitoring approach"
+      ],
+      "answer": 3,
+      "explanation": "Risk acceptance should be explained through assessment, tolerance, cost-benefit, and monitoring.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to compress a schedule. What should be assessed first?",
+      "options": [
+        "Critical path, dependencies, cost, quality, risk, and commitments",
+        "Only sponsor preference",
+        "Only compression amount",
+        "Only team availability"
+      ],
+      "answer": 0,
+      "explanation": "Schedule compression requires integrated assessment of critical path, dependencies, cost, quality, risk, and commitments.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity compliance program, a project manager identifies repeated rework. What is the best first response?",
+      "options": [
+        "Perform root-cause analysis and improve the causing process",
+        "Ask customers to accept defects",
+        "Increase final inspection",
+        "Reduce quality standards"
+      ],
+      "answer": 0,
+      "explanation": "Repeated rework signals a process or requirements issue that should be addressed at the source.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to use a pilot. What is the best benefit?",
+      "options": [
+        "It eliminates change management",
+        "It avoids measurement",
+        "It validates assumptions and reduces risk before broader rollout",
+        "It removes training needs"
+      ],
+      "answer": 2,
+      "explanation": "Pilots validate assumptions and reduce risk before broader implementation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical trial system, a project manager identifies that a risk response is ineffective. What should the project manager do first?",
+      "options": [
+        "Reassess residual exposure and adjust or replace the response",
+        "Transfer the risk",
+        "Ignore the risk",
+        "Close the risk"
+      ],
+      "answer": 0,
+      "explanation": "Ineffective responses require reassessment of residual exposure and response adjustment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose between options using multiple criteria. What is the best tool?",
+      "options": [
+        "The fastest option only",
+        "A weighted scoring model with transparent criteria",
+        "Personal preference",
+        "The lowest-cost option only"
+      ],
+      "answer": 1,
+      "explanation": "Weighted scoring improves transparency and consistency for multi-criteria decisions.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit modernization, a project manager identifies a vendor delay. What should the project manager do first?",
+      "options": [
+        "Terminate immediately",
+        "Accept the delay",
+        "Pay early",
+        "Review contractual remedies, critical-path impact, recovery options, and root causes"
+      ],
+      "answer": 3,
+      "explanation": "Vendor delays require contract review, impact analysis, recovery planning, and root-cause assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to accept a change that improves security. What should be considered?",
+      "options": [
+        "Security benefit, compliance, user impact, schedule, cost, and risk",
+        "Only cost",
+        "Only developer preference",
+        "Only budget"
+      ],
+      "answer": 0,
+      "explanation": "Security changes require assessment of compliance, user impact, schedule, cost, and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit fundraising platform, a project manager must improve reporting reliability. What is the best approach?",
+      "options": [
+        "Use verbal updates",
+        "Report only exceptions",
+        "Ask for optimistic reports",
+        "Define metrics, data sources, cadence, and verification practices"
+      ],
+      "answer": 3,
+      "explanation": "Reliable reporting requires consistent metrics, sources, cadence, and verification.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve flow across teams. What is the best first step?",
+      "options": [
+        "Reduce planning",
+        "Visualize dependencies, identify bottlenecks, and limit work in progress",
+        "Add more work in progress",
+        "Increase meetings"
+      ],
+      "answer": 1,
+      "explanation": "Flow improves through visualization, bottleneck management, and work-in-progress limits.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive software program, a project manager must determine whether to close a project early. What should be reviewed?",
+      "options": [
+        "Only budget spent",
+        "Only morale",
+        "Only schedule progress",
+        "Business case, remaining value, risks, alternatives, and governance decision"
+      ],
+      "answer": 3,
+      "explanation": "Early closure requires reassessment of value, business case, risks, alternatives, and governance.",
+      "domain": "Business"
+    }
+  ]
+}

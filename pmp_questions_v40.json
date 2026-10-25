@@ -1,0 +1,2165 @@
+{
+  "title": "PMP High-Yield V40",
+  "questions": [
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Require daily reports",
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital operating-room optimization, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Review objectives and assess criteria/engagement adjustment",
+        "Defend decision",
+        "Ask to accept",
+        "Escalate"
+      ],
+      "answer": 0,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Reject permanently",
+        "Grant immediately",
+        "Discuss performance, barriers, readiness, support",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail demand-sensing platform, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Limit formal comms",
+        "Encourage exclusion",
+        "Ignore",
+        "Create inclusive communication and accessible info"
+      ],
+      "answer": 3,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Say minor",
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Share register only",
+        "Avoid"
+      ],
+      "answer": 1,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory predictive-maintenance program, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Avoid change",
+        "Reject",
+        "Implement immediately",
+        "Evaluate benefits, risks, effort, stakeholder impact"
+      ],
+      "answer": 3,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Remove approvals",
+        "Delegate without bounds",
+        "Add approvers",
+        "Identify bottlenecks, streamline authority/info/escalation"
+      ],
+      "answer": 3,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline disruption-management system, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Take over",
+        "Assign more work",
+        "Ignore",
+        "Coach delegation and clarify ownership"
+      ],
+      "answer": 3,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Delay",
+        "Clarify benefit statements, measures, owners, timeline",
+        "Ask trust",
+        "Repeat objectives"
+      ],
+      "answer": 1,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member disengaged after failure. What first?",
+      "options": [
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "Ignore",
+        "More work",
+        "Public discussion"
+      ],
+      "answer": 0,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Fixed percent",
+        "Sponsor date",
+        "Team preference",
+        "Quantified uncertainty, risk, dependency variability, confidence"
+      ],
+      "answer": 3,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building occupancy platform, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Assume immediate",
+        "Remove approval",
+        "Plan submission, prepare materials, manage lead time",
+        "Submit after meeting"
+      ],
+      "answer": 2,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Team used agile before",
+        "Tools modern",
+        "Sponsor prefers",
+        "Requirement uncertainty, feedback, constraints, risk"
+      ],
+      "answer": 3,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content recommendation launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Blame workers",
+        "Change spec",
+        "Analyze variation, standardize, address root causes",
+        "More inspection"
+      ],
+      "answer": 2,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only apology",
+        "Only history",
+        "Only budget"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-governance modernization, a change request urgent? Most relevant?",
+      "options": [
+        "Change small",
+        "Requester senior",
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Team available"
+      ],
+      "answer": 2,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Transfer risk",
+        "Assume ready",
+        "Delay benefits",
+        "Establish ownership, readiness criteria, integration testing, contingency"
+      ],
+      "answer": 3,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality guest-experience rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Replace judgment",
+        "Avoid training",
+        "Reduce variation, ensure critical steps consistently done",
+        "Slow work"
+      ],
+      "answer": 2,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only date",
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only price",
+        "Only location"
+      ],
+      "answer": 1,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a flood-resilience infrastructure project, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "More meetings",
+        "Standardize definitions, sources, automated controls",
+        "Accept",
+        "More manual checks"
+      ],
+      "answer": 1,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Ignore",
+        "Require daily reports",
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively"
+      ],
+      "answer": 3,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital capacity program, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Escalate",
+        "Review objectives and assess criteria/engagement adjustment",
+        "Ask to accept",
+        "Defend decision"
+      ],
+      "answer": 1,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Ignore",
+        "Discuss performance, barriers, readiness, support",
+        "Grant immediately",
+        "Reject permanently"
+      ],
+      "answer": 1,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail ERP migration, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Encourage exclusion",
+        "Ignore",
+        "Create inclusive communication and accessible info",
+        "Limit formal comms"
+      ],
+      "answer": 2,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Say minor",
+        "Avoid",
+        "Share register only"
+      ],
+      "answer": 0,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing quality initiative, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Reject",
+        "Implement immediately",
+        "Avoid change",
+        "Evaluate benefits, risks, effort, stakeholder impact"
+      ],
+      "answer": 3,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Delegate without bounds",
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Add approvers",
+        "Remove approvals"
+      ],
+      "answer": 1,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline maintenance upgrade, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Ignore",
+        "Take over",
+        "Assign more work"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Repeat objectives",
+        "Delay",
+        "Clarify benefit statements, measures, owners, timeline",
+        "Ask trust"
+      ],
+      "answer": 2,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics automation program, a team member disengaged after failure. What first?",
+      "options": [
+        "More work",
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "Ignore",
+        "Public discussion"
+      ],
+      "answer": 1,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Fixed percent",
+        "Sponsor date",
+        "Team preference"
+      ],
+      "answer": 0,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a real-estate development, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Plan submission, prepare materials, manage lead time",
+        "Submit after meeting",
+        "Assume immediate",
+        "Remove approval"
+      ],
+      "answer": 0,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Sponsor prefers",
+        "Team used agile before",
+        "Tools modern",
+        "Requirement uncertainty, feedback, constraints, risk"
+      ],
+      "answer": 3,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a media streaming launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Analyze variation, standardize, address root causes",
+        "More inspection",
+        "Blame workers",
+        "Change spec"
+      ],
+      "answer": 0,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only budget",
+        "Only apology",
+        "Only history"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration program, a change request urgent? Most relevant?",
+      "options": [
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Team available",
+        "Requester senior",
+        "Change small"
+      ],
+      "answer": 0,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Establish ownership, readiness criteria, integration testing, contingency",
+        "Delay benefits",
+        "Transfer risk",
+        "Assume ready"
+      ],
+      "answer": 0,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Slow work",
+        "Replace judgment",
+        "Reduce variation, ensure critical steps consistently done",
+        "Avoid training"
+      ],
+      "answer": 2,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only location",
+        "Only price",
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only date"
+      ],
+      "answer": 2,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a water infrastructure upgrade, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "More meetings",
+        "More manual checks",
+        "Accept",
+        "Standardize definitions, sources, automated controls"
+      ],
+      "answer": 3,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Ignore",
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively",
+        "Require daily reports"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital operating-room optimization, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Escalate",
+        "Review objectives and assess criteria/engagement adjustment",
+        "Defend decision",
+        "Ask to accept"
+      ],
+      "answer": 1,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Discuss performance, barriers, readiness, support",
+        "Ignore",
+        "Reject permanently",
+        "Grant immediately"
+      ],
+      "answer": 0,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail demand-sensing platform, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Ignore",
+        "Create inclusive communication and accessible info",
+        "Encourage exclusion",
+        "Limit formal comms"
+      ],
+      "answer": 1,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Say minor",
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Share register only",
+        "Avoid"
+      ],
+      "answer": 1,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory predictive-maintenance program, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Implement immediately",
+        "Avoid change",
+        "Evaluate benefits, risks, effort, stakeholder impact",
+        "Reject"
+      ],
+      "answer": 2,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Delegate without bounds",
+        "Remove approvals",
+        "Add approvers",
+        "Identify bottlenecks, streamline authority/info/escalation"
+      ],
+      "answer": 3,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline disruption-management system, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Assign more work",
+        "Take over",
+        "Ignore"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Clarify benefit statements, measures, owners, timeline",
+        "Repeat objectives",
+        "Ask trust",
+        "Delay"
+      ],
+      "answer": 0,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member disengaged after failure. What first?",
+      "options": [
+        "Ignore",
+        "More work",
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "Public discussion"
+      ],
+      "answer": 2,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Fixed percent",
+        "Sponsor date",
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Team preference"
+      ],
+      "answer": 2,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building occupancy platform, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Assume immediate",
+        "Remove approval",
+        "Plan submission, prepare materials, manage lead time",
+        "Submit after meeting"
+      ],
+      "answer": 2,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Team used agile before",
+        "Tools modern",
+        "Sponsor prefers",
+        "Requirement uncertainty, feedback, constraints, risk"
+      ],
+      "answer": 3,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content recommendation launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Change spec",
+        "Blame workers",
+        "Analyze variation, standardize, address root causes",
+        "More inspection"
+      ],
+      "answer": 2,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only history",
+        "Only budget",
+        "Only apology"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-governance modernization, a change request urgent? Most relevant?",
+      "options": [
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Team available",
+        "Change small",
+        "Requester senior"
+      ],
+      "answer": 0,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Transfer risk",
+        "Assume ready",
+        "Delay benefits",
+        "Establish ownership, readiness criteria, integration testing, contingency"
+      ],
+      "answer": 3,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality guest-experience rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Avoid training",
+        "Reduce variation, ensure critical steps consistently done",
+        "Slow work",
+        "Replace judgment"
+      ],
+      "answer": 1,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only price",
+        "Only date",
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only location"
+      ],
+      "answer": 2,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a flood-resilience infrastructure project, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "Standardize definitions, sources, automated controls",
+        "More manual checks",
+        "Accept",
+        "More meetings"
+      ],
+      "answer": 0,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively",
+        "Require daily reports",
+        "Ignore"
+      ],
+      "answer": 1,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital capacity program, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Escalate",
+        "Ask to accept",
+        "Defend decision",
+        "Review objectives and assess criteria/engagement adjustment"
+      ],
+      "answer": 3,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Discuss performance, barriers, readiness, support",
+        "Reject permanently",
+        "Ignore",
+        "Grant immediately"
+      ],
+      "answer": 0,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail ERP migration, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Limit formal comms",
+        "Ignore",
+        "Create inclusive communication and accessible info",
+        "Encourage exclusion"
+      ],
+      "answer": 2,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Avoid",
+        "Share register only",
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Say minor"
+      ],
+      "answer": 2,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing quality initiative, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Reject",
+        "Implement immediately",
+        "Evaluate benefits, risks, effort, stakeholder impact",
+        "Avoid change"
+      ],
+      "answer": 2,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Delegate without bounds",
+        "Add approvers",
+        "Remove approvals"
+      ],
+      "answer": 0,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline maintenance upgrade, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Take over",
+        "Coach delegation and clarify ownership",
+        "Ignore",
+        "Assign more work"
+      ],
+      "answer": 1,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Repeat objectives",
+        "Ask trust",
+        "Delay",
+        "Clarify benefit statements, measures, owners, timeline"
+      ],
+      "answer": 3,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics automation program, a team member disengaged after failure. What first?",
+      "options": [
+        "Ignore",
+        "Public discussion",
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "More work"
+      ],
+      "answer": 2,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Team preference",
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Sponsor date",
+        "Fixed percent"
+      ],
+      "answer": 1,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a real-estate development, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Plan submission, prepare materials, manage lead time",
+        "Assume immediate",
+        "Remove approval",
+        "Submit after meeting"
+      ],
+      "answer": 0,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Sponsor prefers",
+        "Team used agile before",
+        "Requirement uncertainty, feedback, constraints, risk",
+        "Tools modern"
+      ],
+      "answer": 2,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a media streaming launch, a process produces inconsistent results. What first?",
+      "options": [
+        "More inspection",
+        "Change spec",
+        "Analyze variation, standardize, address root causes",
+        "Blame workers"
+      ],
+      "answer": 2,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Only budget",
+        "Only history",
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only apology"
+      ],
+      "answer": 2,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration program, a change request urgent? Most relevant?",
+      "options": [
+        "Team available",
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Change small",
+        "Requester senior"
+      ],
+      "answer": 1,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Delay benefits",
+        "Assume ready",
+        "Transfer risk",
+        "Establish ownership, readiness criteria, integration testing, contingency"
+      ],
+      "answer": 3,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Avoid training",
+        "Replace judgment",
+        "Reduce variation, ensure critical steps consistently done",
+        "Slow work"
+      ],
+      "answer": 2,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only location",
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only date",
+        "Only price"
+      ],
+      "answer": 1,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a water infrastructure upgrade, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "Accept",
+        "More manual checks",
+        "More meetings",
+        "Standardize definitions, sources, automated controls"
+      ],
+      "answer": 3,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Require daily reports",
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital operating-room optimization, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Escalate",
+        "Defend decision",
+        "Review objectives and assess criteria/engagement adjustment",
+        "Ask to accept"
+      ],
+      "answer": 2,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Ignore",
+        "Grant immediately",
+        "Reject permanently",
+        "Discuss performance, barriers, readiness, support"
+      ],
+      "answer": 3,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail demand-sensing platform, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Create inclusive communication and accessible info",
+        "Ignore",
+        "Encourage exclusion",
+        "Limit formal comms"
+      ],
+      "answer": 0,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Avoid",
+        "Say minor",
+        "Share register only",
+        "Explain assessment, tolerance, cost-benefit, monitoring"
+      ],
+      "answer": 3,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory predictive-maintenance program, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Implement immediately",
+        "Evaluate benefits, risks, effort, stakeholder impact",
+        "Reject",
+        "Avoid change"
+      ],
+      "answer": 1,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Delegate without bounds",
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Add approvers",
+        "Remove approvals"
+      ],
+      "answer": 1,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline disruption-management system, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Ignore",
+        "Coach delegation and clarify ownership",
+        "Assign more work",
+        "Take over"
+      ],
+      "answer": 1,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Ask trust",
+        "Clarify benefit statements, measures, owners, timeline",
+        "Delay",
+        "Repeat objectives"
+      ],
+      "answer": 1,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member disengaged after failure. What first?",
+      "options": [
+        "More work",
+        "Public discussion",
+        "Ignore",
+        "Acknowledge, facilitate learning, rebuild confidence"
+      ],
+      "answer": 3,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Sponsor date",
+        "Fixed percent",
+        "Team preference"
+      ],
+      "answer": 0,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building occupancy platform, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Assume immediate",
+        "Plan submission, prepare materials, manage lead time",
+        "Submit after meeting",
+        "Remove approval"
+      ],
+      "answer": 1,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Tools modern",
+        "Sponsor prefers",
+        "Team used agile before",
+        "Requirement uncertainty, feedback, constraints, risk"
+      ],
+      "answer": 3,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content recommendation launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Analyze variation, standardize, address root causes",
+        "Change spec",
+        "More inspection",
+        "Blame workers"
+      ],
+      "answer": 0,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Only apology",
+        "Only budget",
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only history"
+      ],
+      "answer": 2,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-governance modernization, a change request urgent? Most relevant?",
+      "options": [
+        "Change small",
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Requester senior",
+        "Team available"
+      ],
+      "answer": 1,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Delay benefits",
+        "Establish ownership, readiness criteria, integration testing, contingency",
+        "Transfer risk",
+        "Assume ready"
+      ],
+      "answer": 1,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality guest-experience rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Slow work",
+        "Replace judgment",
+        "Avoid training",
+        "Reduce variation, ensure critical steps consistently done"
+      ],
+      "answer": 3,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only date",
+        "Only price",
+        "Only location"
+      ],
+      "answer": 0,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a flood-resilience infrastructure project, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "More manual checks",
+        "More meetings",
+        "Standardize definitions, sources, automated controls",
+        "Accept"
+      ],
+      "answer": 2,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Reinforce early escalation is valued and respond constructively",
+        "Require daily reports",
+        "Ignore",
+        "Punish next reporter"
+      ],
+      "answer": 0,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital capacity program, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Ask to accept",
+        "Escalate",
+        "Defend decision",
+        "Review objectives and assess criteria/engagement adjustment"
+      ],
+      "answer": 3,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Grant immediately",
+        "Reject permanently",
+        "Ignore",
+        "Discuss performance, barriers, readiness, support"
+      ],
+      "answer": 3,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail ERP migration, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Create inclusive communication and accessible info",
+        "Encourage exclusion",
+        "Ignore",
+        "Limit formal comms"
+      ],
+      "answer": 0,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Share register only",
+        "Avoid",
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Say minor"
+      ],
+      "answer": 2,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing quality initiative, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Implement immediately",
+        "Evaluate benefits, risks, effort, stakeholder impact",
+        "Avoid change",
+        "Reject"
+      ],
+      "answer": 1,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Remove approvals",
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Delegate without bounds",
+        "Add approvers"
+      ],
+      "answer": 1,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline maintenance upgrade, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Assign more work",
+        "Ignore",
+        "Take over"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Ask trust",
+        "Clarify benefit statements, measures, owners, timeline",
+        "Repeat objectives",
+        "Delay"
+      ],
+      "answer": 1,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics automation program, a team member disengaged after failure. What first?",
+      "options": [
+        "Public discussion",
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "More work",
+        "Ignore"
+      ],
+      "answer": 1,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Sponsor date",
+        "Fixed percent",
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Team preference"
+      ],
+      "answer": 2,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a real-estate development, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Submit after meeting",
+        "Plan submission, prepare materials, manage lead time",
+        "Assume immediate",
+        "Remove approval"
+      ],
+      "answer": 1,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Tools modern",
+        "Requirement uncertainty, feedback, constraints, risk",
+        "Team used agile before",
+        "Sponsor prefers"
+      ],
+      "answer": 1,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a media streaming launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Blame workers",
+        "Analyze variation, standardize, address root causes",
+        "Change spec",
+        "More inspection"
+      ],
+      "answer": 1,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only budget",
+        "Only history",
+        "Only apology"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration program, a change request urgent? Most relevant?",
+      "options": [
+        "Team available",
+        "Requester senior",
+        "Change small",
+        "Delay causes compliance/safety/financial/customer/irreversible impact"
+      ],
+      "answer": 3,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Delay benefits",
+        "Transfer risk",
+        "Assume ready",
+        "Establish ownership, readiness criteria, integration testing, contingency"
+      ],
+      "answer": 3,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Avoid training",
+        "Replace judgment",
+        "Slow work",
+        "Reduce variation, ensure critical steps consistently done"
+      ],
+      "answer": 3,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only location",
+        "Only price",
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only date"
+      ],
+      "answer": 2,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a water infrastructure upgrade, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "Accept",
+        "More manual checks",
+        "Standardize definitions, sources, automated controls",
+        "More meetings"
+      ],
+      "answer": 2,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Require daily reports",
+        "Punish next reporter",
+        "Ignore",
+        "Reinforce early escalation is valued and respond constructively"
+      ],
+      "answer": 3,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital operating-room optimization, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Escalate",
+        "Ask to accept",
+        "Defend decision",
+        "Review objectives and assess criteria/engagement adjustment"
+      ],
+      "answer": 3,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Ignore",
+        "Discuss performance, barriers, readiness, support",
+        "Reject permanently",
+        "Grant immediately"
+      ],
+      "answer": 1,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail demand-sensing platform, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Limit formal comms",
+        "Create inclusive communication and accessible info",
+        "Encourage exclusion",
+        "Ignore"
+      ],
+      "answer": 1,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Say minor",
+        "Avoid",
+        "Share register only",
+        "Explain assessment, tolerance, cost-benefit, monitoring"
+      ],
+      "answer": 3,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory predictive-maintenance program, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Avoid change",
+        "Reject",
+        "Implement immediately",
+        "Evaluate benefits, risks, effort, stakeholder impact"
+      ],
+      "answer": 3,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Add approvers",
+        "Remove approvals",
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Delegate without bounds"
+      ],
+      "answer": 2,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline disruption-management system, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Assign more work",
+        "Take over",
+        "Coach delegation and clarify ownership",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Delay",
+        "Ask trust",
+        "Clarify benefit statements, measures, owners, timeline",
+        "Repeat objectives"
+      ],
+      "answer": 2,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member disengaged after failure. What first?",
+      "options": [
+        "More work",
+        "Public discussion",
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Sponsor date",
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Team preference",
+        "Fixed percent"
+      ],
+      "answer": 1,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building occupancy platform, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Assume immediate",
+        "Plan submission, prepare materials, manage lead time",
+        "Remove approval",
+        "Submit after meeting"
+      ],
+      "answer": 1,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Requirement uncertainty, feedback, constraints, risk",
+        "Team used agile before",
+        "Tools modern",
+        "Sponsor prefers"
+      ],
+      "answer": 0,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content recommendation launch, a process produces inconsistent results. What first?",
+      "options": [
+        "More inspection",
+        "Analyze variation, standardize, address root causes",
+        "Blame workers",
+        "Change spec"
+      ],
+      "answer": 1,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Only apology",
+        "Only budget",
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only history"
+      ],
+      "answer": 2,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-governance modernization, a change request urgent? Most relevant?",
+      "options": [
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Requester senior",
+        "Team available",
+        "Change small"
+      ],
+      "answer": 0,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Establish ownership, readiness criteria, integration testing, contingency",
+        "Delay benefits",
+        "Transfer risk",
+        "Assume ready"
+      ],
+      "answer": 0,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality guest-experience rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Avoid training",
+        "Slow work",
+        "Reduce variation, ensure critical steps consistently done",
+        "Replace judgment"
+      ],
+      "answer": 2,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only date",
+        "Only location",
+        "Only price",
+        "Total cost, capability, quality, capacity, risk, references, terms"
+      ],
+      "answer": 3,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a flood-resilience infrastructure project, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "More manual checks",
+        "Accept",
+        "Standardize definitions, sources, automated controls",
+        "More meetings"
+      ],
+      "answer": 2,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Ignore",
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively",
+        "Require daily reports"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital capacity program, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Ask to accept",
+        "Escalate",
+        "Defend decision",
+        "Review objectives and assess criteria/engagement adjustment"
+      ],
+      "answer": 3,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Discuss performance, barriers, readiness, support",
+        "Ignore",
+        "Reject permanently",
+        "Grant immediately"
+      ],
+      "answer": 0,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail ERP migration, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Limit formal comms",
+        "Ignore",
+        "Create inclusive communication and accessible info",
+        "Encourage exclusion"
+      ],
+      "answer": 2,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Avoid",
+        "Say minor",
+        "Share register only"
+      ],
+      "answer": 0,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a manufacturing quality initiative, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Evaluate benefits, risks, effort, stakeholder impact",
+        "Implement immediately",
+        "Avoid change",
+        "Reject"
+      ],
+      "answer": 0,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Delegate without bounds",
+        "Remove approvals",
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Add approvers"
+      ],
+      "answer": 2,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline maintenance upgrade, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Take over",
+        "Ignore",
+        "Assign more work"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Ask trust",
+        "Delay",
+        "Repeat objectives",
+        "Clarify benefit statements, measures, owners, timeline"
+      ],
+      "answer": 3,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics automation program, a team member disengaged after failure. What first?",
+      "options": [
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "Public discussion",
+        "More work",
+        "Ignore"
+      ],
+      "answer": 0,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Sponsor date",
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Team preference",
+        "Fixed percent"
+      ],
+      "answer": 1,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a real-estate development, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Remove approval",
+        "Submit after meeting",
+        "Plan submission, prepare materials, manage lead time",
+        "Assume immediate"
+      ],
+      "answer": 2,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Team used agile before",
+        "Tools modern",
+        "Sponsor prefers",
+        "Requirement uncertainty, feedback, constraints, risk"
+      ],
+      "answer": 3,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a media streaming launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Change spec",
+        "Analyze variation, standardize, address root causes",
+        "More inspection",
+        "Blame workers"
+      ],
+      "answer": 1,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Only apology",
+        "Only history",
+        "Only budget",
+        "Review remedies, critical path, alternatives, recovery, governance"
+      ],
+      "answer": 3,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud migration program, a change request urgent? Most relevant?",
+      "options": [
+        "Change small",
+        "Requester senior",
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Team available"
+      ],
+      "answer": 2,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Transfer risk",
+        "Assume ready",
+        "Establish ownership, readiness criteria, integration testing, contingency",
+        "Delay benefits"
+      ],
+      "answer": 2,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Reduce variation, ensure critical steps consistently done",
+        "Slow work",
+        "Avoid training",
+        "Replace judgment"
+      ],
+      "answer": 0,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only location",
+        "Only date",
+        "Only price"
+      ],
+      "answer": 0,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a water infrastructure upgrade, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "More meetings",
+        "More manual checks",
+        "Standardize definitions, sources, automated controls",
+        "Accept"
+      ],
+      "answer": 2,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to escalate problems. What first?",
+      "options": [
+        "Require daily reports",
+        "Punish next reporter",
+        "Reinforce early escalation is valued and respond constructively",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Psychological safety encourages early escalation.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital operating-room optimization, a stakeholder says a decision wasn’t aligned with objectives. What first?",
+      "options": [
+        "Defend decision",
+        "Ask to accept",
+        "Escalate",
+        "Review objectives and assess criteria/engagement adjustment"
+      ],
+      "answer": 3,
+      "explanation": "Alignment and engagement gaps should be assessed.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks for more responsibility but missed deadlines. What first?",
+      "options": [
+        "Discuss performance, barriers, readiness, support",
+        "Ignore",
+        "Reject permanently",
+        "Grant immediately"
+      ],
+      "answer": 0,
+      "explanation": "Responsibility should follow performance discussion and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail demand-sensing platform, a project manager sees a member excluded from informal info sharing. Best response?",
+      "options": [
+        "Ignore",
+        "Encourage exclusion",
+        "Limit formal comms",
+        "Create inclusive communication and accessible info"
+      ],
+      "answer": 3,
+      "explanation": "Inclusive communication reduces information asymmetry.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a risk was accepted. What should PM do?",
+      "options": [
+        "Share register only",
+        "Say minor",
+        "Explain assessment, tolerance, cost-benefit, monitoring",
+        "Avoid"
+      ],
+      "answer": 2,
+      "explanation": "Risk acceptance needs transparent rationale.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory predictive-maintenance program, a team member proposes improvement disrupting routines. What first?",
+      "options": [
+        "Avoid change",
+        "Reject",
+        "Evaluate benefits, risks, effort, stakeholder impact",
+        "Implement immediately"
+      ],
+      "answer": 2,
+      "explanation": "Improvements need objective evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager gets feedback decision process too slow. What first?",
+      "options": [
+        "Remove approvals",
+        "Delegate without bounds",
+        "Identify bottlenecks, streamline authority/info/escalation",
+        "Add approvers"
+      ],
+      "answer": 2,
+      "explanation": "Decision speed improves by removing bottlenecks with controls.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline disruption-management system, a team member skilled but struggles to delegate. What first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Ignore",
+        "Assign more work",
+        "Take over"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves with coaching and ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says benefits unclear. What first?",
+      "options": [
+        "Ask trust",
+        "Delay",
+        "Clarify benefit statements, measures, owners, timeline",
+        "Repeat objectives"
+      ],
+      "answer": 2,
+      "explanation": "Benefits need clarity, metrics, owners, timeline.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member disengaged after failure. What first?",
+      "options": [
+        "Public discussion",
+        "Acknowledge, facilitate learning, rebuild confidence",
+        "More work",
+        "Ignore"
+      ],
+      "answer": 1,
+      "explanation": "Resilience needs acknowledgment and learning.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must add buffer. Best basis?",
+      "options": [
+        "Fixed percent",
+        "Team preference",
+        "Quantified uncertainty, risk, dependency variability, confidence",
+        "Sponsor date"
+      ],
+      "answer": 2,
+      "explanation": "Buffers should reflect quantified uncertainty and risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building occupancy platform, a deliverable needs monthly committee approval. What first?",
+      "options": [
+        "Remove approval",
+        "Submit after meeting",
+        "Assume immediate",
+        "Plan submission, prepare materials, manage lead time"
+      ],
+      "answer": 3,
+      "explanation": "Committee approvals need planning and lead-time management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use iterative approach. Most relevant?",
+      "options": [
+        "Tools modern",
+        "Team used agile before",
+        "Requirement uncertainty, feedback, constraints, risk",
+        "Sponsor prefers"
+      ],
+      "answer": 2,
+      "explanation": "Iterative fits uncertainty and feedback availability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content recommendation launch, a process produces inconsistent results. What first?",
+      "options": [
+        "Change spec",
+        "More inspection",
+        "Analyze variation, standardize, address root causes",
+        "Blame workers"
+      ],
+      "answer": 2,
+      "explanation": "Inconsistency needs variation analysis and standardization.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor delivery delayed. What first?",
+      "options": [
+        "Review remedies, critical path, alternatives, recovery, governance",
+        "Only apology",
+        "Only budget",
+        "Only history"
+      ],
+      "answer": 0,
+      "explanation": "Vendor delays need contract, impact, recovery review.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-governance modernization, a change request urgent? Most relevant?",
+      "options": [
+        "Delay causes compliance/safety/financial/customer/irreversible impact",
+        "Team available",
+        "Change small",
+        "Requester senior"
+      ],
+      "answer": 0,
+      "explanation": "Urgency based on consequence of delay.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project’s benefits depend on third-party system. What first?",
+      "options": [
+        "Establish ownership, readiness criteria, integration testing, contingency",
+        "Assume ready",
+        "Transfer risk",
+        "Delay benefits"
+      ],
+      "answer": 0,
+      "explanation": "Third-party dependencies need ownership and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality guest-experience rollout, a project manager must use checklist. Best justification?",
+      "options": [
+        "Reduce variation, ensure critical steps consistently done",
+        "Replace judgment",
+        "Avoid training",
+        "Slow work"
+      ],
+      "answer": 0,
+      "explanation": "Checklists reduce variation for critical steps.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept low bid. Evaluate what?",
+      "options": [
+        "Only location",
+        "Total cost, capability, quality, capacity, risk, references, terms",
+        "Only date",
+        "Only price"
+      ],
+      "answer": 1,
+      "explanation": "Low bids need total value evaluation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a flood-resilience infrastructure project, a team spends excessive time reconciling data. Best response?",
+      "options": [
+        "Standardize definitions, sources, automated controls",
+        "More meetings",
+        "Accept",
+        "More manual checks"
+      ],
+      "answer": 0,
+      "explanation": "Data reconciliation waste reduced by standardization and automation.",
+      "domain": "Process"
+    }
+  ]
+}

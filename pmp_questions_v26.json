@@ -1,0 +1,2165 @@
+{
+  "title": "PMP High-Yield V26",
+  "questions": [
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities",
+        "Make all decisions",
+        "Remove responsibilities"
+      ],
+      "answer": 1,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital onboarding rollout, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Review communication/engagement gap and improve involvement",
+        "Ask them to review emails",
+        "Say it is final"
+      ],
+      "answer": 1,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Remove them",
+        "Discuss value of feedback, set expectations, coach collaboration",
+        "Publicly criticize",
+        "Ignore because results strong"
+      ],
+      "answer": 1,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital onboarding rollout, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "More meetings",
+        "Reduce communication",
+        "Understand barriers and improve inclusive communication",
+        "Require constant availability"
+      ],
+      "answer": 2,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Change priority immediately",
+        "Explain criteria, dependencies, trade-offs",
+        "Say final"
+      ],
+      "answer": 2,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital onboarding rollout, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Ignore standards",
+        "Implement quietly",
+        "Assess whether to follow standard or governed exception/update",
+        "Reject automatically"
+      ],
+      "answer": 2,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Recognize individual and collective contributions",
+        "Continue",
+        "Stop recognition",
+        "Only leaders"
+      ],
+      "answer": 0,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital onboarding rollout, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Delegate",
+        "Avoid",
+        "Promise promotion",
+        "Specific observations, development areas, actionable next steps"
+      ],
+      "answer": 3,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Reduce communication",
+        "Tailor to business outcomes and decisions",
+        "Continue technical",
+        "Ask to learn tech"
+      ],
+      "answer": 1,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital patient-flow program, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Delay work",
+        "Remove handoff",
+        "Clarify criteria, ownership, acceptance",
+        "Manage informally"
+      ],
+      "answer": 2,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Sponsor preference",
+        "Fixed percent",
+        "Identified risks, approved responses, residual exposure, governance",
+        "Team estimate"
+      ],
+      "answer": 2,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital patient-flow program, a deliverable depends on external certification. What first?",
+      "options": [
+        "Remove requirement",
+        "Assume granted",
+        "Identify authority, lead time, evidence, contingency",
+        "Delay all"
+      ],
+      "answer": 2,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only cost",
+        "Only schedule",
+        "Only preference",
+        "Effectiveness, error reduction, cost, maintenance, compliance"
+      ],
+      "answer": 3,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital patient-flow program, a requirement is ambiguous. Best response?",
+      "options": [
+        "Delete",
+        "Let team interpret",
+        "Clarify with stakeholders and document",
+        "Proceed with assumptions"
+      ],
+      "answer": 2,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Variance small",
+        "Whether affects critical path/milestones/benefits",
+        "Sponsor available",
+        "Team tired"
+      ],
+      "answer": 1,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital patient-flow program, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Avoid measurement",
+        "Avoid change management",
+        "Validate assumptions, reduce risk before rollout",
+        "Remove training"
+      ],
+      "answer": 2,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate",
+        "Accept delays",
+        "Pay early"
+      ],
+      "answer": 0,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital patient-flow program, a quality issue systemic. Best approach?",
+      "options": [
+        "Analyze patterns across outputs, process, root causes",
+        "Ask customer ignore",
+        "Blame newest",
+        "Inspect one"
+      ],
+      "answer": 0,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only schedule",
+        "Only developer",
+        "Only budget"
+      ],
+      "answer": 0,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a battery-manufacturing expansion, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only training",
+        "Only go-live",
+        "Readiness, communication, support, adoption metrics",
+        "Only docs"
+      ],
+      "answer": 2,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities",
+        "Make all decisions",
+        "Remove responsibilities"
+      ],
+      "answer": 1,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a battery-manufacturing expansion, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Ask them to review emails",
+        "Say it is final",
+        "Review communication/engagement gap and improve involvement",
+        "Escalate"
+      ],
+      "answer": 2,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Remove them",
+        "Ignore because results strong",
+        "Discuss value of feedback, set expectations, coach collaboration",
+        "Publicly criticize"
+      ],
+      "answer": 2,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a battery-manufacturing expansion, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "Require constant availability",
+        "Understand barriers and improve inclusive communication",
+        "Reduce communication",
+        "More meetings"
+      ],
+      "answer": 1,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Explain criteria, dependencies, trade-offs",
+        "Change priority immediately",
+        "Say final"
+      ],
+      "answer": 1,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a battery-manufacturing expansion, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Assess whether to follow standard or governed exception/update",
+        "Implement quietly",
+        "Ignore standards",
+        "Reject automatically"
+      ],
+      "answer": 0,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Continue",
+        "Only leaders",
+        "Recognize individual and collective contributions",
+        "Stop recognition"
+      ],
+      "answer": 2,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail personalization platform, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Specific observations, development areas, actionable next steps",
+        "Promise promotion",
+        "Avoid",
+        "Delegate"
+      ],
+      "answer": 0,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Tailor to business outcomes and decisions",
+        "Continue technical",
+        "Reduce communication",
+        "Ask to learn tech"
+      ],
+      "answer": 0,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail personalization platform, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Manage informally",
+        "Clarify criteria, ownership, acceptance",
+        "Remove handoff",
+        "Delay work"
+      ],
+      "answer": 1,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Sponsor preference",
+        "Fixed percent",
+        "Team estimate",
+        "Identified risks, approved responses, residual exposure, governance"
+      ],
+      "answer": 3,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail personalization platform, a deliverable depends on external certification. What first?",
+      "options": [
+        "Delay all",
+        "Assume granted",
+        "Identify authority, lead time, evidence, contingency",
+        "Remove requirement"
+      ],
+      "answer": 2,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only schedule",
+        "Only cost",
+        "Only preference",
+        "Effectiveness, error reduction, cost, maintenance, compliance"
+      ],
+      "answer": 3,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail personalization platform, a requirement is ambiguous. Best response?",
+      "options": [
+        "Clarify with stakeholders and document",
+        "Let team interpret",
+        "Delete",
+        "Proceed with assumptions"
+      ],
+      "answer": 0,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Team tired",
+        "Whether affects critical path/milestones/benefits",
+        "Variance small",
+        "Sponsor available"
+      ],
+      "answer": 1,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail personalization platform, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Remove training",
+        "Avoid change management",
+        "Avoid measurement",
+        "Validate assumptions, reduce risk before rollout"
+      ],
+      "answer": 3,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Accept delays",
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate",
+        "Pay early"
+      ],
+      "answer": 1,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a citizen-tax modernization, a quality issue systemic. Best approach?",
+      "options": [
+        "Inspect one",
+        "Analyze patterns across outputs, process, root causes",
+        "Blame newest",
+        "Ask customer ignore"
+      ],
+      "answer": 1,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only budget",
+        "Only schedule",
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only developer"
+      ],
+      "answer": 2,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a citizen-tax modernization, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only docs",
+        "Only training",
+        "Readiness, communication, support, adoption metrics",
+        "Only go-live"
+      ],
+      "answer": 2,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities",
+        "Make all decisions",
+        "Remove responsibilities"
+      ],
+      "answer": 1,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a citizen-tax modernization, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Say it is final",
+        "Ask them to review emails",
+        "Review communication/engagement gap and improve involvement"
+      ],
+      "answer": 3,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Ignore because results strong",
+        "Publicly criticize",
+        "Remove them",
+        "Discuss value of feedback, set expectations, coach collaboration"
+      ],
+      "answer": 3,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a citizen-tax modernization, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "Require constant availability",
+        "Reduce communication",
+        "More meetings",
+        "Understand barriers and improve inclusive communication"
+      ],
+      "answer": 3,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Change priority immediately",
+        "Explain criteria, dependencies, trade-offs",
+        "Say final"
+      ],
+      "answer": 2,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory digital-quality initiative, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Reject automatically",
+        "Implement quietly",
+        "Ignore standards",
+        "Assess whether to follow standard or governed exception/update"
+      ],
+      "answer": 3,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Recognize individual and collective contributions",
+        "Only leaders",
+        "Stop recognition",
+        "Continue"
+      ],
+      "answer": 0,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory digital-quality initiative, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Specific observations, development areas, actionable next steps",
+        "Avoid",
+        "Delegate",
+        "Promise promotion"
+      ],
+      "answer": 0,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Reduce communication",
+        "Continue technical",
+        "Tailor to business outcomes and decisions",
+        "Ask to learn tech"
+      ],
+      "answer": 2,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory digital-quality initiative, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Manage informally",
+        "Remove handoff",
+        "Delay work",
+        "Clarify criteria, ownership, acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Identified risks, approved responses, residual exposure, governance",
+        "Team estimate",
+        "Fixed percent",
+        "Sponsor preference"
+      ],
+      "answer": 0,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a factory digital-quality initiative, a deliverable depends on external certification. What first?",
+      "options": [
+        "Identify authority, lead time, evidence, contingency",
+        "Remove requirement",
+        "Assume granted",
+        "Delay all"
+      ],
+      "answer": 0,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only schedule",
+        "Only preference",
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only cost"
+      ],
+      "answer": 2,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a factory digital-quality initiative, a requirement is ambiguous. Best response?",
+      "options": [
+        "Proceed with assumptions",
+        "Delete",
+        "Clarify with stakeholders and document",
+        "Let team interpret"
+      ],
+      "answer": 2,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Team tired",
+        "Variance small",
+        "Whether affects critical path/milestones/benefits",
+        "Sponsor available"
+      ],
+      "answer": 2,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom private-network deployment, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Remove training",
+        "Avoid change management",
+        "Avoid measurement",
+        "Validate assumptions, reduce risk before rollout"
+      ],
+      "answer": 3,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Accept delays",
+        "Terminate",
+        "Pay early",
+        "Analyze trends, remedies, root causes, recovery"
+      ],
+      "answer": 3,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom private-network deployment, a quality issue systemic. Best approach?",
+      "options": [
+        "Blame newest",
+        "Ask customer ignore",
+        "Analyze patterns across outputs, process, root causes",
+        "Inspect one"
+      ],
+      "answer": 2,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only developer",
+        "Only budget",
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only schedule"
+      ],
+      "answer": 2,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom private-network deployment, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Readiness, communication, support, adoption metrics",
+        "Only go-live",
+        "Only docs",
+        "Only training"
+      ],
+      "answer": 0,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities",
+        "Remove responsibilities",
+        "Make all decisions"
+      ],
+      "answer": 1,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a telecom private-network deployment, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Review communication/engagement gap and improve involvement",
+        "Say it is final",
+        "Ask them to review emails"
+      ],
+      "answer": 1,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Publicly criticize",
+        "Discuss value of feedback, set expectations, coach collaboration",
+        "Remove them",
+        "Ignore because results strong"
+      ],
+      "answer": 1,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-recovery platform, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "Understand barriers and improve inclusive communication",
+        "Reduce communication",
+        "More meetings",
+        "Require constant availability"
+      ],
+      "answer": 0,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Avoid discussion",
+        "Say final",
+        "Explain criteria, dependencies, trade-offs",
+        "Change priority immediately"
+      ],
+      "answer": 2,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-recovery platform, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Assess whether to follow standard or governed exception/update",
+        "Implement quietly",
+        "Reject automatically",
+        "Ignore standards"
+      ],
+      "answer": 0,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Continue",
+        "Recognize individual and collective contributions",
+        "Only leaders",
+        "Stop recognition"
+      ],
+      "answer": 1,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-recovery platform, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Specific observations, development areas, actionable next steps",
+        "Promise promotion",
+        "Delegate",
+        "Avoid"
+      ],
+      "answer": 0,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Tailor to business outcomes and decisions",
+        "Reduce communication",
+        "Continue technical",
+        "Ask to learn tech"
+      ],
+      "answer": 0,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-recovery platform, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Manage informally",
+        "Delay work",
+        "Clarify criteria, ownership, acceptance",
+        "Remove handoff"
+      ],
+      "answer": 2,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Fixed percent",
+        "Team estimate",
+        "Identified risks, approved responses, residual exposure, governance",
+        "Sponsor preference"
+      ],
+      "answer": 2,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline crew-recovery platform, a deliverable depends on external certification. What first?",
+      "options": [
+        "Delay all",
+        "Remove requirement",
+        "Identify authority, lead time, evidence, contingency",
+        "Assume granted"
+      ],
+      "answer": 2,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only schedule",
+        "Only cost",
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only preference"
+      ],
+      "answer": 2,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a university research-governance platform, a requirement is ambiguous. Best response?",
+      "options": [
+        "Let team interpret",
+        "Delete",
+        "Proceed with assumptions",
+        "Clarify with stakeholders and document"
+      ],
+      "answer": 3,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Sponsor available",
+        "Team tired",
+        "Variance small",
+        "Whether affects critical path/milestones/benefits"
+      ],
+      "answer": 3,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a university research-governance platform, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Avoid measurement",
+        "Remove training",
+        "Validate assumptions, reduce risk before rollout",
+        "Avoid change management"
+      ],
+      "answer": 2,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Terminate",
+        "Pay early",
+        "Analyze trends, remedies, root causes, recovery",
+        "Accept delays"
+      ],
+      "answer": 2,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a university research-governance platform, a quality issue systemic. Best approach?",
+      "options": [
+        "Blame newest",
+        "Inspect one",
+        "Ask customer ignore",
+        "Analyze patterns across outputs, process, root causes"
+      ],
+      "answer": 3,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only budget",
+        "Only developer",
+        "Only schedule"
+      ],
+      "answer": 0,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a university research-governance platform, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only docs",
+        "Only training",
+        "Readiness, communication, support, adoption metrics",
+        "Only go-live"
+      ],
+      "answer": 2,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities",
+        "Remove responsibilities"
+      ],
+      "answer": 2,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics control-tower program, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Ask them to review emails",
+        "Review communication/engagement gap and improve involvement",
+        "Escalate",
+        "Say it is final"
+      ],
+      "answer": 1,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Remove them",
+        "Publicly criticize",
+        "Discuss value of feedback, set expectations, coach collaboration",
+        "Ignore because results strong"
+      ],
+      "answer": 2,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics control-tower program, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "Understand barriers and improve inclusive communication",
+        "Require constant availability",
+        "More meetings",
+        "Reduce communication"
+      ],
+      "answer": 0,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Explain criteria, dependencies, trade-offs",
+        "Say final",
+        "Change priority immediately",
+        "Avoid discussion"
+      ],
+      "answer": 0,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Implement quietly",
+        "Reject automatically",
+        "Ignore standards",
+        "Assess whether to follow standard or governed exception/update"
+      ],
+      "answer": 3,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Continue",
+        "Only leaders",
+        "Stop recognition",
+        "Recognize individual and collective contributions"
+      ],
+      "answer": 3,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Avoid",
+        "Promise promotion",
+        "Specific observations, development areas, actionable next steps",
+        "Delegate"
+      ],
+      "answer": 2,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Reduce communication",
+        "Ask to learn tech",
+        "Continue technical",
+        "Tailor to business outcomes and decisions"
+      ],
+      "answer": 3,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics control-tower program, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Clarify criteria, ownership, acceptance",
+        "Remove handoff",
+        "Delay work",
+        "Manage informally"
+      ],
+      "answer": 0,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Identified risks, approved responses, residual exposure, governance",
+        "Fixed percent",
+        "Team estimate",
+        "Sponsor preference"
+      ],
+      "answer": 0,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a security-operations automation initiative, a deliverable depends on external certification. What first?",
+      "options": [
+        "Delay all",
+        "Identify authority, lead time, evidence, contingency",
+        "Assume granted",
+        "Remove requirement"
+      ],
+      "answer": 1,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only cost",
+        "Only schedule",
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only preference"
+      ],
+      "answer": 2,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a security-operations automation initiative, a requirement is ambiguous. Best response?",
+      "options": [
+        "Let team interpret",
+        "Proceed with assumptions",
+        "Delete",
+        "Clarify with stakeholders and document"
+      ],
+      "answer": 3,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Whether affects critical path/milestones/benefits",
+        "Team tired",
+        "Sponsor available",
+        "Variance small"
+      ],
+      "answer": 0,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a security-operations automation initiative, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Remove training",
+        "Avoid change management",
+        "Validate assumptions, reduce risk before rollout",
+        "Avoid measurement"
+      ],
+      "answer": 2,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate",
+        "Accept delays",
+        "Pay early"
+      ],
+      "answer": 0,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a security-operations automation initiative, a quality issue systemic. Best approach?",
+      "options": [
+        "Blame newest",
+        "Inspect one",
+        "Analyze patterns across outputs, process, root causes",
+        "Ask customer ignore"
+      ],
+      "answer": 2,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only budget",
+        "Only schedule",
+        "Only developer",
+        "Long-term maintainability, quality, risk, cost, value"
+      ],
+      "answer": 3,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building energy platform, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Readiness, communication, support, adoption metrics",
+        "Only go-live",
+        "Only training",
+        "Only docs"
+      ],
+      "answer": 0,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Remove responsibilities",
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities"
+      ],
+      "answer": 3,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-building energy platform, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Review communication/engagement gap and improve involvement",
+        "Say it is final",
+        "Ask them to review emails",
+        "Escalate"
+      ],
+      "answer": 0,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Ignore because results strong",
+        "Publicly criticize",
+        "Remove them",
+        "Discuss value of feedback, set expectations, coach collaboration"
+      ],
+      "answer": 3,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-building energy platform, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "More meetings",
+        "Require constant availability",
+        "Understand barriers and improve inclusive communication",
+        "Reduce communication"
+      ],
+      "answer": 2,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Change priority immediately",
+        "Avoid discussion",
+        "Explain criteria, dependencies, trade-offs",
+        "Say final"
+      ],
+      "answer": 2,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-building energy platform, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Implement quietly",
+        "Reject automatically",
+        "Ignore standards",
+        "Assess whether to follow standard or governed exception/update"
+      ],
+      "answer": 3,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Stop recognition",
+        "Continue",
+        "Only leaders",
+        "Recognize individual and collective contributions"
+      ],
+      "answer": 3,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-building energy platform, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Specific observations, development areas, actionable next steps",
+        "Delegate",
+        "Avoid",
+        "Promise promotion"
+      ],
+      "answer": 0,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Ask to learn tech",
+        "Reduce communication",
+        "Continue technical",
+        "Tailor to business outcomes and decisions"
+      ],
+      "answer": 3,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Manage informally",
+        "Delay work",
+        "Remove handoff",
+        "Clarify criteria, ownership, acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Fixed percent",
+        "Team estimate",
+        "Sponsor preference",
+        "Identified risks, approved responses, residual exposure, governance"
+      ],
+      "answer": 3,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a deliverable depends on external certification. What first?",
+      "options": [
+        "Assume granted",
+        "Delay all",
+        "Identify authority, lead time, evidence, contingency",
+        "Remove requirement"
+      ],
+      "answer": 2,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only cost",
+        "Only schedule",
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only preference"
+      ],
+      "answer": 2,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a requirement is ambiguous. Best response?",
+      "options": [
+        "Proceed with assumptions",
+        "Clarify with stakeholders and document",
+        "Let team interpret",
+        "Delete"
+      ],
+      "answer": 1,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Team tired",
+        "Whether affects critical path/milestones/benefits",
+        "Variance small",
+        "Sponsor available"
+      ],
+      "answer": 1,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Validate assumptions, reduce risk before rollout",
+        "Remove training",
+        "Avoid change management",
+        "Avoid measurement"
+      ],
+      "answer": 0,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Accept delays",
+        "Pay early",
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate"
+      ],
+      "answer": 2,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-recommendation launch, a quality issue systemic. Best approach?",
+      "options": [
+        "Blame newest",
+        "Ask customer ignore",
+        "Inspect one",
+        "Analyze patterns across outputs, process, root causes"
+      ],
+      "answer": 3,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only developer",
+        "Only budget",
+        "Only schedule",
+        "Long-term maintainability, quality, risk, cost, value"
+      ],
+      "answer": 3,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-recommendation launch, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only go-live",
+        "Only docs",
+        "Only training",
+        "Readiness, communication, support, adoption metrics"
+      ],
+      "answer": 3,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Criticize publicly",
+        "Remove responsibilities",
+        "Make all decisions",
+        "Clarify ownership, coach, and create decision opportunities"
+      ],
+      "answer": 3,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a streaming-recommendation launch, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Review communication/engagement gap and improve involvement",
+        "Say it is final",
+        "Ask them to review emails",
+        "Escalate"
+      ],
+      "answer": 0,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Remove them",
+        "Ignore because results strong",
+        "Discuss value of feedback, set expectations, coach collaboration",
+        "Publicly criticize"
+      ],
+      "answer": 2,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a streaming-recommendation launch, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "Reduce communication",
+        "Require constant availability",
+        "Understand barriers and improve inclusive communication",
+        "More meetings"
+      ],
+      "answer": 2,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Say final",
+        "Explain criteria, dependencies, trade-offs",
+        "Avoid discussion",
+        "Change priority immediately"
+      ],
+      "answer": 1,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a streaming-recommendation launch, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Implement quietly",
+        "Reject automatically",
+        "Assess whether to follow standard or governed exception/update",
+        "Ignore standards"
+      ],
+      "answer": 2,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Stop recognition",
+        "Only leaders",
+        "Continue",
+        "Recognize individual and collective contributions"
+      ],
+      "answer": 3,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a transit fleet-management system, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Avoid",
+        "Delegate",
+        "Specific observations, development areas, actionable next steps",
+        "Promise promotion"
+      ],
+      "answer": 2,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Reduce communication",
+        "Tailor to business outcomes and decisions",
+        "Ask to learn tech",
+        "Continue technical"
+      ],
+      "answer": 1,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a transit fleet-management system, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Delay work",
+        "Remove handoff",
+        "Manage informally",
+        "Clarify criteria, ownership, acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Sponsor preference",
+        "Team estimate",
+        "Identified risks, approved responses, residual exposure, governance",
+        "Fixed percent"
+      ],
+      "answer": 2,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit fleet-management system, a deliverable depends on external certification. What first?",
+      "options": [
+        "Delay all",
+        "Identify authority, lead time, evidence, contingency",
+        "Remove requirement",
+        "Assume granted"
+      ],
+      "answer": 1,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only schedule",
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only cost",
+        "Only preference"
+      ],
+      "answer": 1,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a transit fleet-management system, a requirement is ambiguous. Best response?",
+      "options": [
+        "Proceed with assumptions",
+        "Delete",
+        "Clarify with stakeholders and document",
+        "Let team interpret"
+      ],
+      "answer": 2,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Variance small",
+        "Team tired",
+        "Sponsor available",
+        "Whether affects critical path/milestones/benefits"
+      ],
+      "answer": 3,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-cost-governance program, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Validate assumptions, reduce risk before rollout",
+        "Avoid measurement",
+        "Avoid change management",
+        "Remove training"
+      ],
+      "answer": 0,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Pay early",
+        "Accept delays",
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate"
+      ],
+      "answer": 2,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-cost-governance program, a quality issue systemic. Best approach?",
+      "options": [
+        "Analyze patterns across outputs, process, root causes",
+        "Inspect one",
+        "Blame newest",
+        "Ask customer ignore"
+      ],
+      "answer": 0,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only schedule",
+        "Only developer",
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only budget"
+      ],
+      "answer": 2,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-cost-governance program, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only training",
+        "Only go-live",
+        "Readiness, communication, support, adoption metrics",
+        "Only docs"
+      ],
+      "answer": 2,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities",
+        "Make all decisions",
+        "Remove responsibilities"
+      ],
+      "answer": 1,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cloud-cost-governance program, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Review communication/engagement gap and improve involvement",
+        "Ask them to review emails",
+        "Say it is final",
+        "Escalate"
+      ],
+      "answer": 0,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Discuss value of feedback, set expectations, coach collaboration",
+        "Ignore because results strong",
+        "Publicly criticize",
+        "Remove them"
+      ],
+      "answer": 0,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cloud-cost-governance program, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "Require constant availability",
+        "More meetings",
+        "Reduce communication",
+        "Understand barriers and improve inclusive communication"
+      ],
+      "answer": 3,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Explain criteria, dependencies, trade-offs",
+        "Say final",
+        "Change priority immediately",
+        "Avoid discussion"
+      ],
+      "answer": 0,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a nonprofit beneficiary-data platform, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Implement quietly",
+        "Reject automatically",
+        "Assess whether to follow standard or governed exception/update",
+        "Ignore standards"
+      ],
+      "answer": 2,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Continue",
+        "Stop recognition",
+        "Only leaders",
+        "Recognize individual and collective contributions"
+      ],
+      "answer": 3,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In a nonprofit beneficiary-data platform, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Promise promotion",
+        "Delegate",
+        "Avoid",
+        "Specific observations, development areas, actionable next steps"
+      ],
+      "answer": 3,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Tailor to business outcomes and decisions",
+        "Continue technical",
+        "Reduce communication",
+        "Ask to learn tech"
+      ],
+      "answer": 0,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In a nonprofit beneficiary-data platform, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Manage informally",
+        "Remove handoff",
+        "Delay work",
+        "Clarify criteria, ownership, acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Fixed percent",
+        "Team estimate",
+        "Sponsor preference",
+        "Identified risks, approved responses, residual exposure, governance"
+      ],
+      "answer": 3,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit beneficiary-data platform, a deliverable depends on external certification. What first?",
+      "options": [
+        "Identify authority, lead time, evidence, contingency",
+        "Remove requirement",
+        "Delay all",
+        "Assume granted"
+      ],
+      "answer": 0,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only preference",
+        "Only schedule",
+        "Only cost"
+      ],
+      "answer": 0,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a requirement is ambiguous. Best response?",
+      "options": [
+        "Let team interpret",
+        "Proceed with assumptions",
+        "Delete",
+        "Clarify with stakeholders and document"
+      ],
+      "answer": 3,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Whether affects critical path/milestones/benefits",
+        "Team tired",
+        "Sponsor available",
+        "Variance small"
+      ],
+      "answer": 0,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Avoid change management",
+        "Validate assumptions, reduce risk before rollout",
+        "Remove training",
+        "Avoid measurement"
+      ],
+      "answer": 1,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Accept delays",
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate",
+        "Pay early"
+      ],
+      "answer": 1,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a quality issue systemic. Best approach?",
+      "options": [
+        "Inspect one",
+        "Blame newest",
+        "Analyze patterns across outputs, process, root causes",
+        "Ask customer ignore"
+      ],
+      "answer": 2,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only schedule",
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only budget",
+        "Only developer"
+      ],
+      "answer": 1,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only go-live",
+        "Only docs",
+        "Only training",
+        "Readiness, communication, support, adoption metrics"
+      ],
+      "answer": 3,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager notices a team member avoids taking ownership. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Remove responsibilities",
+        "Criticize publicly",
+        "Clarify ownership, coach, and create decision opportunities"
+      ],
+      "answer": 3,
+      "explanation": "Ownership grows through clear expectations, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a stakeholder says they were surprised by a decision. What should the project manager do first?",
+      "options": [
+        "Say it is final",
+        "Ask them to review emails",
+        "Escalate",
+        "Review communication/engagement gap and improve involvement"
+      ],
+      "answer": 3,
+      "explanation": "Surprises signal engagement or communication gaps to correct.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is productive but resists feedback. What should the project manager do first?",
+      "options": [
+        "Publicly criticize",
+        "Ignore because results strong",
+        "Remove them",
+        "Discuss value of feedback, set expectations, coach collaboration"
+      ],
+      "answer": 3,
+      "explanation": "Strong performers still need coaching on collaboration and feedback receptiveness.",
+      "domain": "People"
+    },
+    {
+      "question": "In an automotive connected-fleet program, a project manager gets feedback remote members feel disconnected. What first?",
+      "options": [
+        "More meetings",
+        "Reduce communication",
+        "Understand barriers and improve inclusive communication",
+        "Require constant availability"
+      ],
+      "answer": 2,
+      "explanation": "Remote disconnection needs barrier understanding and inclusive practices.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder asks why a low-value feature was prioritized. What should the project manager do?",
+      "options": [
+        "Say final",
+        "Avoid discussion",
+        "Explain criteria, dependencies, trade-offs",
+        "Change priority immediately"
+      ],
+      "answer": 2,
+      "explanation": "Transparent criteria and trade-offs improve acceptance.",
+      "domain": "People"
+    },
+    {
+      "question": "In an automotive connected-fleet program, a team member proposes solution conflicting with standard. What first?",
+      "options": [
+        "Assess whether to follow standard or governed exception/update",
+        "Ignore standards",
+        "Implement quietly",
+        "Reject automatically"
+      ],
+      "answer": 0,
+      "explanation": "Standards changes or exceptions need assessment and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager sees recognition only for individual work. Best response?",
+      "options": [
+        "Stop recognition",
+        "Recognize individual and collective contributions",
+        "Continue",
+        "Only leaders"
+      ],
+      "answer": 1,
+      "explanation": "Balanced recognition reinforces collaboration and individual excellence.",
+      "domain": "People"
+    },
+    {
+      "question": "In an automotive connected-fleet program, a team member asks about leadership readiness. Best approach?",
+      "options": [
+        "Promise promotion",
+        "Avoid",
+        "Specific observations, development areas, actionable next steps",
+        "Delegate"
+      ],
+      "answer": 2,
+      "explanation": "Leadership readiness needs specific, developmental feedback.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder disengaged because updates too technical. What first?",
+      "options": [
+        "Ask to learn tech",
+        "Reduce communication",
+        "Tailor to business outcomes and decisions",
+        "Continue technical"
+      ],
+      "answer": 2,
+      "explanation": "Communication should match stakeholder decision needs.",
+      "domain": "People"
+    },
+    {
+      "question": "In an automotive connected-fleet program, a team member raises unclear handoff concern. What first?",
+      "options": [
+        "Delay work",
+        "Remove handoff",
+        "Manage informally",
+        "Clarify criteria, ownership, acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Unclear handoffs need explicit criteria and ownership.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must determine whether to use contingency. Best basis?",
+      "options": [
+        "Sponsor preference",
+        "Team estimate",
+        "Identified risks, approved responses, residual exposure, governance",
+        "Fixed percent"
+      ],
+      "answer": 2,
+      "explanation": "Contingency ties to identified risks and governance.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a coastal flood-monitoring project, a deliverable depends on external certification. What first?",
+      "options": [
+        "Delay all",
+        "Remove requirement",
+        "Assume granted",
+        "Identify authority, lead time, evidence, contingency"
+      ],
+      "answer": 3,
+      "explanation": "External certifications need early engagement and contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must decide whether to automate a control. What first?",
+      "options": [
+        "Only cost",
+        "Only preference",
+        "Effectiveness, error reduction, cost, maintenance, compliance",
+        "Only schedule"
+      ],
+      "answer": 2,
+      "explanation": "Automation needs holistic control and compliance assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a coastal flood-monitoring project, a requirement is ambiguous. Best response?",
+      "options": [
+        "Let team interpret",
+        "Delete",
+        "Proceed with assumptions",
+        "Clarify with stakeholders and document"
+      ],
+      "answer": 3,
+      "explanation": "Ambiguity should be resolved and documented.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept schedule variance. Most relevant?",
+      "options": [
+        "Variance small",
+        "Team tired",
+        "Whether affects critical path/milestones/benefits",
+        "Sponsor available"
+      ],
+      "answer": 2,
+      "explanation": "Schedule tolerance depends on path, milestones, benefits, risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a coastal flood-monitoring project, a project manager must use pilot. Best benefit?",
+      "options": [
+        "Validate assumptions, reduce risk before rollout",
+        "Avoid change management",
+        "Remove training",
+        "Avoid measurement"
+      ],
+      "answer": 0,
+      "explanation": "Pilots validate and reduce risk.",
+      "domain": "Process"
+    },
+    {
+      "question": "A vendor consistently late. What first?",
+      "options": [
+        "Pay early",
+        "Analyze trends, remedies, root causes, recovery",
+        "Terminate",
+        "Accept delays"
+      ],
+      "answer": 1,
+      "explanation": "Vendor lateness needs evidence, root cause, remedies.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a coastal flood-monitoring project, a quality issue systemic. Best approach?",
+      "options": [
+        "Inspect one",
+        "Analyze patterns across outputs, process, root causes",
+        "Blame newest",
+        "Ask customer ignore"
+      ],
+      "answer": 1,
+      "explanation": "Systemic issues need pattern and root-cause analysis.",
+      "domain": "Process"
+    },
+    {
+      "question": "A change reduces technical debt. What consider?",
+      "options": [
+        "Only budget",
+        "Long-term maintainability, quality, risk, cost, value",
+        "Only schedule",
+        "Only developer"
+      ],
+      "answer": 1,
+      "explanation": "Tech-debt reduction needs long-term value assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a coastal flood-monitoring project, a project manager must improve adoption. What plan first?",
+      "options": [
+        "Only training",
+        "Only go-live",
+        "Only docs",
+        "Readiness, communication, support, adoption metrics"
+      ],
+      "answer": 3,
+      "explanation": "Adoption needs readiness, support, and measurement.",
+      "domain": "Business"
+    }
+  ]
+}

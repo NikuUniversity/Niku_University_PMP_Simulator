@@ -1,0 +1,2165 @@
+{
+  "title": "PMP High-Yield V27",
+  "questions": [
+    {
+      "question": "A project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Remove from decisions",
+        "Criticize hesitation",
+        "Clarify authority, coach, and create low-risk decision opportunities"
+      ],
+      "answer": 3,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital wallet expansion, a stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Acknowledge, review communication gap, improve future engagement",
+        "Say decision final",
+        "Ask to check emails",
+        "Escalate"
+      ],
+      "answer": 0,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Assign more work",
+        "Take over work",
+        "Ignore",
+        "Coach delegation and clarify ownership"
+      ],
+      "answer": 3,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital wallet expansion, a project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Share only with seniors",
+        "Restrict further",
+        "Improve accessibility, transparency, and channels",
+        "Ask members to find info"
+      ],
+      "answer": 2,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Reject both",
+        "Implement both",
+        "Facilitate alignment using criteria and escalate if needed",
+        "Choose senior stakeholder"
+      ],
+      "answer": 2,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital wallet expansion, a team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Reject without discussion",
+        "Approve skip",
+        "Let team decide",
+        "Assess quality, compliance, risk, downstream impact"
+      ],
+      "answer": 3,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Stop recognition",
+        "Continue",
+        "Only seniors",
+        "Establish fair transparent criteria applied consistently"
+      ],
+      "answer": 3,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "In a digital wallet expansion, a team member asks to work outside expertise. What first?",
+      "options": [
+        "Assess readiness, goals, support, risk before deciding",
+        "Ask to leave",
+        "Reject",
+        "Assign without support"
+      ],
+      "answer": 0,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Increase length",
+        "More people",
+        "Cancel meetings",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospital bed-management program, a stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Send full register",
+        "Assume not needed",
+        "Limit info",
+        "Tailor risk communication to role and decisions"
+      ],
+      "answer": 3,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Only duration",
+        "Only budget",
+        "Only hours",
+        "Whether overlap increases rework/quality/dependency risk"
+      ],
+      "answer": 0,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital bed-management program, a deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Treat as crisis",
+        "Hide delay",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Escalate"
+      ],
+      "answer": 2,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Only inspection cost",
+        "Only schedule",
+        "Cost of prevention vs failures, risk, quality level",
+        "Only preference"
+      ],
+      "answer": 2,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital bed-management program, a risk response delayed. What first?",
+      "options": [
+        "Transfer",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Close risk",
+        "Ignore"
+      ],
+      "answer": 1,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use phased rollout. Best reason?",
+      "options": [
+        "Limit exposure, validate adoption, enable correction",
+        "Avoid planning",
+        "Reduce engagement",
+        "Eliminate testing"
+      ],
+      "answer": 0,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospital bed-management program, a requirement conflicts with regulation. What first?",
+      "options": [
+        "Pause affected work, engage compliance/governance",
+        "Ask team decide",
+        "Implement requirement",
+        "Ignore regulation"
+      ],
+      "answer": 0,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only preference",
+        "Only schedule",
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only cost"
+      ],
+      "answer": 2,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a hospital bed-management program, a vendor not providing required progress info. What first?",
+      "options": [
+        "Pay early",
+        "Accept",
+        "Terminate",
+        "Review obligations, request formally, escalate if needed"
+      ],
+      "answer": 3,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "Lowest estimate",
+        "Avoid revisions",
+        "One senior estimate",
+        "Historical data, ranges, assumptions, independent estimates"
+      ],
+      "answer": 3,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a battery-storage manufacturing project, a milestone depends on unverified assumption. What first?",
+      "options": [
+        "Remove milestone",
+        "Assume correct",
+        "Proceed",
+        "Validate or create contingency/fallback"
+      ],
+      "answer": 3,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Reject automatically",
+        "Let team decide",
+        "Accept automatically",
+        "Assess customer value, timing, cost, risk, priorities"
+      ],
+      "answer": 3,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a battery-storage manufacturing project, a project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Clarify authority, coach, and create low-risk decision opportunities",
+        "Make all decisions",
+        "Criticize hesitation",
+        "Remove from decisions"
+      ],
+      "answer": 0,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Say decision final",
+        "Acknowledge, review communication gap, improve future engagement",
+        "Ask to check emails"
+      ],
+      "answer": 2,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "In a battery-storage manufacturing project, a team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Ignore",
+        "Take over work",
+        "Coach delegation and clarify ownership",
+        "Assign more work"
+      ],
+      "answer": 2,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Share only with seniors",
+        "Improve accessibility, transparency, and channels",
+        "Restrict further",
+        "Ask members to find info"
+      ],
+      "answer": 1,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a battery-storage manufacturing project, a stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Implement both",
+        "Choose senior stakeholder",
+        "Facilitate alignment using criteria and escalate if needed",
+        "Reject both"
+      ],
+      "answer": 2,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Reject without discussion",
+        "Let team decide",
+        "Approve skip",
+        "Assess quality, compliance, risk, downstream impact"
+      ],
+      "answer": 3,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail assortment platform, a project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Continue",
+        "Only seniors",
+        "Establish fair transparent criteria applied consistently",
+        "Stop recognition"
+      ],
+      "answer": 2,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks to work outside expertise. What first?",
+      "options": [
+        "Ask to leave",
+        "Assess readiness, goals, support, risk before deciding",
+        "Assign without support",
+        "Reject"
+      ],
+      "answer": 1,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail assortment platform, a project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "More people",
+        "Increase length",
+        "Cancel meetings",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Limit info",
+        "Assume not needed",
+        "Tailor risk communication to role and decisions",
+        "Send full register"
+      ],
+      "answer": 2,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a retail assortment platform, a project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Only budget",
+        "Whether overlap increases rework/quality/dependency risk",
+        "Only hours",
+        "Only duration"
+      ],
+      "answer": 3,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Hide delay",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Treat as crisis",
+        "Escalate"
+      ],
+      "answer": 1,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail assortment platform, a project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Only preference",
+        "Only schedule",
+        "Cost of prevention vs failures, risk, quality level",
+        "Only inspection cost"
+      ],
+      "answer": 2,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "A risk response delayed. What first?",
+      "options": [
+        "Transfer",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Ignore",
+        "Close risk"
+      ],
+      "answer": 1,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a retail assortment platform, a project manager must use phased rollout. Best reason?",
+      "options": [
+        "Limit exposure, validate adoption, enable correction",
+        "Eliminate testing",
+        "Avoid planning",
+        "Reduce engagement"
+      ],
+      "answer": 0,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A requirement conflicts with regulation. What first?",
+      "options": [
+        "Ignore regulation",
+        "Ask team decide",
+        "Pause affected work, engage compliance/governance",
+        "Implement requirement"
+      ],
+      "answer": 2,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a citizen-service portal, a project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only cost",
+        "Only schedule",
+        "Only preference"
+      ],
+      "answer": 0,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "A vendor not providing required progress info. What first?",
+      "options": [
+        "Terminate",
+        "Accept",
+        "Review obligations, request formally, escalate if needed",
+        "Pay early"
+      ],
+      "answer": 2,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a citizen-service portal, a project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "One senior estimate",
+        "Lowest estimate",
+        "Historical data, ranges, assumptions, independent estimates",
+        "Avoid revisions"
+      ],
+      "answer": 2,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "A milestone depends on unverified assumption. What first?",
+      "options": [
+        "Remove milestone",
+        "Validate or create contingency/fallback",
+        "Proceed",
+        "Assume correct"
+      ],
+      "answer": 1,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a citizen-service portal, a project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Assess customer value, timing, cost, risk, priorities",
+        "Reject automatically",
+        "Accept automatically",
+        "Let team decide"
+      ],
+      "answer": 0,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Clarify authority, coach, and create low-risk decision opportunities",
+        "Make all decisions",
+        "Criticize hesitation",
+        "Remove from decisions"
+      ],
+      "answer": 0,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a citizen-service portal, a stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Ask to check emails",
+        "Say decision final",
+        "Escalate",
+        "Acknowledge, review communication gap, improve future engagement"
+      ],
+      "answer": 3,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Assign more work",
+        "Ignore",
+        "Take over work"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory energy-management program, a project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Restrict further",
+        "Share only with seniors",
+        "Improve accessibility, transparency, and channels",
+        "Ask members to find info"
+      ],
+      "answer": 2,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Choose senior stakeholder",
+        "Implement both",
+        "Reject both",
+        "Facilitate alignment using criteria and escalate if needed"
+      ],
+      "answer": 3,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory energy-management program, a team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Reject without discussion",
+        "Let team decide",
+        "Approve skip",
+        "Assess quality, compliance, risk, downstream impact"
+      ],
+      "answer": 3,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Establish fair transparent criteria applied consistently",
+        "Continue",
+        "Only seniors",
+        "Stop recognition"
+      ],
+      "answer": 0,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory energy-management program, a team member asks to work outside expertise. What first?",
+      "options": [
+        "Reject",
+        "Assign without support",
+        "Ask to leave",
+        "Assess readiness, goals, support, risk before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Cancel meetings",
+        "More people",
+        "Increase length",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "In a factory energy-management program, a stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Tailor risk communication to role and decisions",
+        "Limit info",
+        "Assume not needed",
+        "Send full register"
+      ],
+      "answer": 0,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Whether overlap increases rework/quality/dependency risk",
+        "Only hours",
+        "Only budget",
+        "Only duration"
+      ],
+      "answer": 3,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a factory energy-management program, a deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Treat as crisis",
+        "Escalate",
+        "Hide delay",
+        "Assess business impact, expectations, replanning or acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Only inspection cost",
+        "Cost of prevention vs failures, risk, quality level",
+        "Only schedule",
+        "Only preference"
+      ],
+      "answer": 1,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom core-network upgrade, a risk response delayed. What first?",
+      "options": [
+        "Close risk",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Transfer",
+        "Ignore"
+      ],
+      "answer": 1,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use phased rollout. Best reason?",
+      "options": [
+        "Reduce engagement",
+        "Limit exposure, validate adoption, enable correction",
+        "Avoid planning",
+        "Eliminate testing"
+      ],
+      "answer": 1,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom core-network upgrade, a requirement conflicts with regulation. What first?",
+      "options": [
+        "Implement requirement",
+        "Ignore regulation",
+        "Pause affected work, engage compliance/governance",
+        "Ask team decide"
+      ],
+      "answer": 2,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only cost",
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only schedule",
+        "Only preference"
+      ],
+      "answer": 1,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a telecom core-network upgrade, a vendor not providing required progress info. What first?",
+      "options": [
+        "Accept",
+        "Pay early",
+        "Terminate",
+        "Review obligations, request formally, escalate if needed"
+      ],
+      "answer": 3,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "One senior estimate",
+        "Avoid revisions",
+        "Lowest estimate",
+        "Historical data, ranges, assumptions, independent estimates"
+      ],
+      "answer": 3,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a telecom core-network upgrade, a milestone depends on unverified assumption. What first?",
+      "options": [
+        "Proceed",
+        "Remove milestone",
+        "Assume correct",
+        "Validate or create contingency/fallback"
+      ],
+      "answer": 3,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Reject automatically",
+        "Accept automatically",
+        "Let team decide",
+        "Assess customer value, timing, cost, risk, priorities"
+      ],
+      "answer": 3,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline crew-scheduling system, a project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Remove from decisions",
+        "Clarify authority, coach, and create low-risk decision opportunities",
+        "Criticize hesitation"
+      ],
+      "answer": 2,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Say decision final",
+        "Ask to check emails",
+        "Acknowledge, review communication gap, improve future engagement",
+        "Escalate"
+      ],
+      "answer": 2,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-scheduling system, a team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Ignore",
+        "Take over work",
+        "Assign more work"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Restrict further",
+        "Improve accessibility, transparency, and channels",
+        "Share only with seniors",
+        "Ask members to find info"
+      ],
+      "answer": 1,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-scheduling system, a stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Implement both",
+        "Choose senior stakeholder",
+        "Facilitate alignment using criteria and escalate if needed",
+        "Reject both"
+      ],
+      "answer": 2,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Reject without discussion",
+        "Let team decide",
+        "Assess quality, compliance, risk, downstream impact",
+        "Approve skip"
+      ],
+      "answer": 2,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an airline crew-scheduling system, a project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Only seniors",
+        "Stop recognition",
+        "Continue",
+        "Establish fair transparent criteria applied consistently"
+      ],
+      "answer": 3,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks to work outside expertise. What first?",
+      "options": [
+        "Assign without support",
+        "Ask to leave",
+        "Assess readiness, goals, support, risk before deciding",
+        "Reject"
+      ],
+      "answer": 2,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In an airline crew-scheduling system, a project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "More people",
+        "Increase length",
+        "Cancel meetings",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Send full register",
+        "Limit info",
+        "Tailor risk communication to role and decisions",
+        "Assume not needed"
+      ],
+      "answer": 2,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a university research-data platform, a project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Only duration",
+        "Only budget",
+        "Only hours",
+        "Whether overlap increases rework/quality/dependency risk"
+      ],
+      "answer": 0,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Escalate",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Treat as crisis",
+        "Hide delay"
+      ],
+      "answer": 1,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a university research-data platform, a project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Cost of prevention vs failures, risk, quality level",
+        "Only inspection cost",
+        "Only preference",
+        "Only schedule"
+      ],
+      "answer": 0,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "A risk response delayed. What first?",
+      "options": [
+        "Ignore",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Close risk",
+        "Transfer"
+      ],
+      "answer": 1,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a university research-data platform, a project manager must use phased rollout. Best reason?",
+      "options": [
+        "Avoid planning",
+        "Limit exposure, validate adoption, enable correction",
+        "Eliminate testing",
+        "Reduce engagement"
+      ],
+      "answer": 1,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A requirement conflicts with regulation. What first?",
+      "options": [
+        "Ignore regulation",
+        "Pause affected work, engage compliance/governance",
+        "Implement requirement",
+        "Ask team decide"
+      ],
+      "answer": 1,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a university research-data platform, a project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only cost",
+        "Only preference",
+        "Only schedule",
+        "Incremental benefits, costs, risks, opportunity cost, alignment"
+      ],
+      "answer": 3,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "A vendor not providing required progress info. What first?",
+      "options": [
+        "Pay early",
+        "Terminate",
+        "Review obligations, request formally, escalate if needed",
+        "Accept"
+      ],
+      "answer": 2,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics route-optimization program, a project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "One senior estimate",
+        "Historical data, ranges, assumptions, independent estimates",
+        "Avoid revisions",
+        "Lowest estimate"
+      ],
+      "answer": 1,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "A milestone depends on unverified assumption. What first?",
+      "options": [
+        "Validate or create contingency/fallback",
+        "Proceed",
+        "Assume correct",
+        "Remove milestone"
+      ],
+      "answer": 0,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a logistics route-optimization program, a project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Assess customer value, timing, cost, risk, priorities",
+        "Accept automatically",
+        "Let team decide",
+        "Reject automatically"
+      ],
+      "answer": 0,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Clarify authority, coach, and create low-risk decision opportunities",
+        "Criticize hesitation",
+        "Remove from decisions",
+        "Make all decisions"
+      ],
+      "answer": 0,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics route-optimization program, a stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Say decision final",
+        "Acknowledge, review communication gap, improve future engagement",
+        "Ask to check emails"
+      ],
+      "answer": 2,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Assign more work",
+        "Take over work",
+        "Coach delegation and clarify ownership",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics route-optimization program, a project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Improve accessibility, transparency, and channels",
+        "Share only with seniors",
+        "Ask members to find info",
+        "Restrict further"
+      ],
+      "answer": 0,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Facilitate alignment using criteria and escalate if needed",
+        "Reject both",
+        "Choose senior stakeholder",
+        "Implement both"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a logistics route-optimization program, a team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Assess quality, compliance, risk, downstream impact",
+        "Reject without discussion",
+        "Let team decide",
+        "Approve skip"
+      ],
+      "answer": 0,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Stop recognition",
+        "Establish fair transparent criteria applied consistently",
+        "Only seniors",
+        "Continue"
+      ],
+      "answer": 1,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cybersecurity zero-trust initiative, a team member asks to work outside expertise. What first?",
+      "options": [
+        "Reject",
+        "Ask to leave",
+        "Assess readiness, goals, support, risk before deciding",
+        "Assign without support"
+      ],
+      "answer": 2,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Cancel meetings",
+        "Increase length",
+        "More people",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up"
+      ],
+      "answer": 3,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cybersecurity zero-trust initiative, a stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Tailor risk communication to role and decisions",
+        "Assume not needed",
+        "Limit info",
+        "Send full register"
+      ],
+      "answer": 0,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Whether overlap increases rework/quality/dependency risk",
+        "Only budget",
+        "Only hours",
+        "Only duration"
+      ],
+      "answer": 3,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity zero-trust initiative, a deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Treat as crisis",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Escalate",
+        "Hide delay"
+      ],
+      "answer": 1,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Only schedule",
+        "Only inspection cost",
+        "Only preference",
+        "Cost of prevention vs failures, risk, quality level"
+      ],
+      "answer": 3,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cybersecurity zero-trust initiative, a risk response delayed. What first?",
+      "options": [
+        "Ignore",
+        "Transfer",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Close risk"
+      ],
+      "answer": 2,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use phased rollout. Best reason?",
+      "options": [
+        "Eliminate testing",
+        "Avoid planning",
+        "Reduce engagement",
+        "Limit exposure, validate adoption, enable correction"
+      ],
+      "answer": 3,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building controls project, a requirement conflicts with regulation. What first?",
+      "options": [
+        "Implement requirement",
+        "Ask team decide",
+        "Ignore regulation",
+        "Pause affected work, engage compliance/governance"
+      ],
+      "answer": 3,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only cost",
+        "Only schedule",
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only preference"
+      ],
+      "answer": 2,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a smart-building controls project, a vendor not providing required progress info. What first?",
+      "options": [
+        "Accept",
+        "Review obligations, request formally, escalate if needed",
+        "Terminate",
+        "Pay early"
+      ],
+      "answer": 1,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "Avoid revisions",
+        "One senior estimate",
+        "Historical data, ranges, assumptions, independent estimates",
+        "Lowest estimate"
+      ],
+      "answer": 2,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building controls project, a milestone depends on unverified assumption. What first?",
+      "options": [
+        "Validate or create contingency/fallback",
+        "Assume correct",
+        "Proceed",
+        "Remove milestone"
+      ],
+      "answer": 0,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Assess customer value, timing, cost, risk, priorities",
+        "Let team decide",
+        "Accept automatically",
+        "Reject automatically"
+      ],
+      "answer": 0,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a smart-building controls project, a project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Criticize hesitation",
+        "Remove from decisions",
+        "Clarify authority, coach, and create low-risk decision opportunities"
+      ],
+      "answer": 3,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Ask to check emails",
+        "Acknowledge, review communication gap, improve future engagement",
+        "Escalate",
+        "Say decision final"
+      ],
+      "answer": 1,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "In a smart-building controls project, a team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Ignore",
+        "Coach delegation and clarify ownership",
+        "Take over work",
+        "Assign more work"
+      ],
+      "answer": 1,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Ask members to find info",
+        "Restrict further",
+        "Share only with seniors",
+        "Improve accessibility, transparency, and channels"
+      ],
+      "answer": 3,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Reject both",
+        "Facilitate alignment using criteria and escalate if needed",
+        "Implement both",
+        "Choose senior stakeholder"
+      ],
+      "answer": 1,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Assess quality, compliance, risk, downstream impact",
+        "Reject without discussion",
+        "Approve skip",
+        "Let team decide"
+      ],
+      "answer": 0,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Stop recognition",
+        "Only seniors",
+        "Establish fair transparent criteria applied consistently",
+        "Continue"
+      ],
+      "answer": 2,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks to work outside expertise. What first?",
+      "options": [
+        "Assess readiness, goals, support, risk before deciding",
+        "Ask to leave",
+        "Assign without support",
+        "Reject"
+      ],
+      "answer": 0,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Increase length",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up",
+        "More people",
+        "Cancel meetings"
+      ],
+      "answer": 1,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Send full register",
+        "Tailor risk communication to role and decisions",
+        "Limit info",
+        "Assume not needed"
+      ],
+      "answer": 1,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a pharmaceutical serialization program, a project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Whether overlap increases rework/quality/dependency risk",
+        "Only duration",
+        "Only hours",
+        "Only budget"
+      ],
+      "answer": 1,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Escalate",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Treat as crisis",
+        "Hide delay"
+      ],
+      "answer": 1,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content platform launch, a project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Only inspection cost",
+        "Cost of prevention vs failures, risk, quality level",
+        "Only schedule",
+        "Only preference"
+      ],
+      "answer": 1,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "A risk response delayed. What first?",
+      "options": [
+        "Transfer",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Ignore",
+        "Close risk"
+      ],
+      "answer": 1,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content platform launch, a project manager must use phased rollout. Best reason?",
+      "options": [
+        "Avoid planning",
+        "Reduce engagement",
+        "Eliminate testing",
+        "Limit exposure, validate adoption, enable correction"
+      ],
+      "answer": 3,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A requirement conflicts with regulation. What first?",
+      "options": [
+        "Ask team decide",
+        "Implement requirement",
+        "Ignore regulation",
+        "Pause affected work, engage compliance/governance"
+      ],
+      "answer": 3,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a streaming-content platform launch, a project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only preference",
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only cost",
+        "Only schedule"
+      ],
+      "answer": 1,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "A vendor not providing required progress info. What first?",
+      "options": [
+        "Review obligations, request formally, escalate if needed",
+        "Terminate",
+        "Accept",
+        "Pay early"
+      ],
+      "answer": 0,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content platform launch, a project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "Historical data, ranges, assumptions, independent estimates",
+        "One senior estimate",
+        "Avoid revisions",
+        "Lowest estimate"
+      ],
+      "answer": 0,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "A milestone depends on unverified assumption. What first?",
+      "options": [
+        "Proceed",
+        "Assume correct",
+        "Remove milestone",
+        "Validate or create contingency/fallback"
+      ],
+      "answer": 3,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a streaming-content platform launch, a project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Reject automatically",
+        "Let team decide",
+        "Accept automatically",
+        "Assess customer value, timing, cost, risk, priorities"
+      ],
+      "answer": 3,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Make all decisions",
+        "Remove from decisions",
+        "Criticize hesitation",
+        "Clarify authority, coach, and create low-risk decision opportunities"
+      ],
+      "answer": 3,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In a transit real-time information system, a stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Acknowledge, review communication gap, improve future engagement",
+        "Ask to check emails",
+        "Say decision final"
+      ],
+      "answer": 1,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Take over work",
+        "Assign more work",
+        "Coach delegation and clarify ownership",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "In a transit real-time information system, a project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Improve accessibility, transparency, and channels",
+        "Ask members to find info",
+        "Share only with seniors",
+        "Restrict further"
+      ],
+      "answer": 0,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Implement both",
+        "Choose senior stakeholder",
+        "Facilitate alignment using criteria and escalate if needed",
+        "Reject both"
+      ],
+      "answer": 2,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a transit real-time information system, a team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Reject without discussion",
+        "Assess quality, compliance, risk, downstream impact",
+        "Approve skip",
+        "Let team decide"
+      ],
+      "answer": 1,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Only seniors",
+        "Stop recognition",
+        "Establish fair transparent criteria applied consistently",
+        "Continue"
+      ],
+      "answer": 2,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "In a transit real-time information system, a team member asks to work outside expertise. What first?",
+      "options": [
+        "Assign without support",
+        "Ask to leave",
+        "Assess readiness, goals, support, risk before deciding",
+        "Reject"
+      ],
+      "answer": 2,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Increase length",
+        "Cancel meetings",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up",
+        "More people"
+      ],
+      "answer": 2,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "In a cloud-identity governance program, a stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Limit info",
+        "Send full register",
+        "Assume not needed",
+        "Tailor risk communication to role and decisions"
+      ],
+      "answer": 3,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Only duration",
+        "Only hours",
+        "Only budget",
+        "Whether overlap increases rework/quality/dependency risk"
+      ],
+      "answer": 0,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-identity governance program, a deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Hide delay",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Treat as crisis",
+        "Escalate"
+      ],
+      "answer": 1,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Cost of prevention vs failures, risk, quality level",
+        "Only inspection cost",
+        "Only preference",
+        "Only schedule"
+      ],
+      "answer": 0,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-identity governance program, a risk response delayed. What first?",
+      "options": [
+        "Close risk",
+        "Transfer",
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must use phased rollout. Best reason?",
+      "options": [
+        "Eliminate testing",
+        "Limit exposure, validate adoption, enable correction",
+        "Avoid planning",
+        "Reduce engagement"
+      ],
+      "answer": 1,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a cloud-identity governance program, a requirement conflicts with regulation. What first?",
+      "options": [
+        "Implement requirement",
+        "Pause affected work, engage compliance/governance",
+        "Ignore regulation",
+        "Ask team decide"
+      ],
+      "answer": 1,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "A project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only schedule",
+        "Only preference",
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only cost"
+      ],
+      "answer": 2,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "In a cloud-identity governance program, a vendor not providing required progress info. What first?",
+      "options": [
+        "Review obligations, request formally, escalate if needed",
+        "Accept",
+        "Pay early",
+        "Terminate"
+      ],
+      "answer": 0,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "Historical data, ranges, assumptions, independent estimates",
+        "Lowest estimate",
+        "One senior estimate",
+        "Avoid revisions"
+      ],
+      "answer": 0,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit grant-management platform, a milestone depends on unverified assumption. What first?",
+      "options": [
+        "Remove milestone",
+        "Proceed",
+        "Assume correct",
+        "Validate or create contingency/fallback"
+      ],
+      "answer": 3,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Accept automatically",
+        "Let team decide",
+        "Assess customer value, timing, cost, risk, priorities",
+        "Reject automatically"
+      ],
+      "answer": 2,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a nonprofit grant-management platform, a project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Remove from decisions",
+        "Clarify authority, coach, and create low-risk decision opportunities",
+        "Criticize hesitation",
+        "Make all decisions"
+      ],
+      "answer": 1,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Escalate",
+        "Say decision final",
+        "Ask to check emails",
+        "Acknowledge, review communication gap, improve future engagement"
+      ],
+      "answer": 3,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "In a nonprofit grant-management platform, a team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Take over work",
+        "Assign more work",
+        "Coach delegation and clarify ownership",
+        "Ignore"
+      ],
+      "answer": 2,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Ask members to find info",
+        "Improve accessibility, transparency, and channels",
+        "Restrict further",
+        "Share only with seniors"
+      ],
+      "answer": 1,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a nonprofit grant-management platform, a stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Facilitate alignment using criteria and escalate if needed",
+        "Reject both",
+        "Choose senior stakeholder",
+        "Implement both"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Assess quality, compliance, risk, downstream impact",
+        "Reject without discussion",
+        "Let team decide",
+        "Approve skip"
+      ],
+      "answer": 0,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Stop recognition",
+        "Only seniors",
+        "Continue",
+        "Establish fair transparent criteria applied consistently"
+      ],
+      "answer": 3,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member asks to work outside expertise. What first?",
+      "options": [
+        "Ask to leave",
+        "Assign without support",
+        "Assess readiness, goals, support, risk before deciding",
+        "Reject"
+      ],
+      "answer": 2,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Cancel meetings",
+        "More people",
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up",
+        "Increase length"
+      ],
+      "answer": 2,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Tailor risk communication to role and decisions",
+        "Assume not needed",
+        "Limit info",
+        "Send full register"
+      ],
+      "answer": 0,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Only budget",
+        "Only hours",
+        "Whether overlap increases rework/quality/dependency risk",
+        "Only duration"
+      ],
+      "answer": 3,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Hide delay",
+        "Treat as crisis",
+        "Escalate",
+        "Assess business impact, expectations, replanning or acceptance"
+      ],
+      "answer": 3,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager must choose prevention vs inspection. Key consideration?",
+      "options": [
+        "Only inspection cost",
+        "Cost of prevention vs failures, risk, quality level",
+        "Only preference",
+        "Only schedule"
+      ],
+      "answer": 1,
+      "explanation": "Quality strategy compares prevention and failure costs.",
+      "domain": "Process"
+    },
+    {
+      "question": "A risk response delayed. What first?",
+      "options": [
+        "Understand delay, remove obstacles, reinforce ownership",
+        "Transfer",
+        "Ignore",
+        "Close risk"
+      ],
+      "answer": 0,
+      "explanation": "Delayed responses need obstacle removal and accountability.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a hospitality revenue-management rollout, a project manager must use phased rollout. Best reason?",
+      "options": [
+        "Limit exposure, validate adoption, enable correction",
+        "Avoid planning",
+        "Eliminate testing",
+        "Reduce engagement"
+      ],
+      "answer": 0,
+      "explanation": "Phased rollout limits exposure and enables learning.",
+      "domain": "Process"
+    },
+    {
+      "question": "A requirement conflicts with regulation. What first?",
+      "options": [
+        "Implement requirement",
+        "Ask team decide",
+        "Ignore regulation",
+        "Pause affected work, engage compliance/governance"
+      ],
+      "answer": 3,
+      "explanation": "Regulatory conflicts need compliance engagement and governance.",
+      "domain": "Business"
+    },
+    {
+      "question": "In an automotive connected-vehicle program, a project manager must determine whether change improves value. Compare what?",
+      "options": [
+        "Only preference",
+        "Incremental benefits, costs, risks, opportunity cost, alignment",
+        "Only schedule",
+        "Only cost"
+      ],
+      "answer": 1,
+      "explanation": "Value decisions compare benefits, costs, risks, alignment.",
+      "domain": "Business"
+    },
+    {
+      "question": "A vendor not providing required progress info. What first?",
+      "options": [
+        "Terminate",
+        "Review obligations, request formally, escalate if needed",
+        "Pay early",
+        "Accept"
+      ],
+      "answer": 1,
+      "explanation": "Vendor reporting obligations need enforcement and escalation.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive connected-vehicle program, a project manager must improve estimate reliability. Best practice?",
+      "options": [
+        "Avoid revisions",
+        "One senior estimate",
+        "Lowest estimate",
+        "Historical data, ranges, assumptions, independent estimates"
+      ],
+      "answer": 3,
+      "explanation": "Estimates improve with data, ranges, assumptions, perspectives.",
+      "domain": "Process"
+    },
+    {
+      "question": "A milestone depends on unverified assumption. What first?",
+      "options": [
+        "Proceed",
+        "Validate or create contingency/fallback",
+        "Remove milestone",
+        "Assume correct"
+      ],
+      "answer": 1,
+      "explanation": "Critical assumptions need validation or contingency.",
+      "domain": "Process"
+    },
+    {
+      "question": "In an automotive connected-vehicle program, a project manager must accept change improving usability but delaying launch. What first?",
+      "options": [
+        "Assess customer value, timing, cost, risk, priorities",
+        "Let team decide",
+        "Reject automatically",
+        "Accept automatically"
+      ],
+      "answer": 0,
+      "explanation": "Usability improvements need trade-off assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices a team member is hesitant to make decisions. What should the project manager do first?",
+      "options": [
+        "Clarify authority, coach, and create low-risk decision opportunities",
+        "Make all decisions",
+        "Criticize hesitation",
+        "Remove from decisions"
+      ],
+      "answer": 0,
+      "explanation": "Decision capability grows through clear authority, coaching, and progressive opportunities.",
+      "domain": "People"
+    },
+    {
+      "question": "In an automotive connected-vehicle program, a stakeholder says they were not informed about a decision. What should the project manager do first?",
+      "options": [
+        "Acknowledge, review communication gap, improve future engagement",
+        "Ask to check emails",
+        "Say decision final",
+        "Escalate"
+      ],
+      "answer": 0,
+      "explanation": "Communication gaps should be assessed and future engagement improved.",
+      "domain": "People"
+    },
+    {
+      "question": "A team member is highly skilled but avoids delegating. What should the project manager do first?",
+      "options": [
+        "Coach delegation and clarify ownership",
+        "Assign more work",
+        "Take over work",
+        "Ignore"
+      ],
+      "answer": 0,
+      "explanation": "Delegation improves through coaching and clear ownership.",
+      "domain": "People"
+    },
+    {
+      "question": "In a river-flood early-warning project, a project manager observes unequal access to information. What is the best response?",
+      "options": [
+        "Improve accessibility, transparency, and channels",
+        "Ask members to find info",
+        "Restrict further",
+        "Share only with seniors"
+      ],
+      "answer": 0,
+      "explanation": "Equitable information access supports inclusion and better decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A stakeholder requests change conflicting with another’s priority. What first?",
+      "options": [
+        "Facilitate alignment using criteria and escalate if needed",
+        "Reject both",
+        "Implement both",
+        "Choose senior stakeholder"
+      ],
+      "answer": 0,
+      "explanation": "Conflicting priorities need transparent criteria and governance.",
+      "domain": "People"
+    },
+    {
+      "question": "In a river-flood early-warning project, a team member proposes skipping review to meet deadline. What first?",
+      "options": [
+        "Let team decide",
+        "Approve skip",
+        "Assess quality, compliance, risk, downstream impact",
+        "Reject without discussion"
+      ],
+      "answer": 2,
+      "explanation": "Process changes need quality and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "A project manager notices recognition inconsistent. Best response?",
+      "options": [
+        "Continue",
+        "Stop recognition",
+        "Only seniors",
+        "Establish fair transparent criteria applied consistently"
+      ],
+      "answer": 3,
+      "explanation": "Consistent recognition supports fairness and trust.",
+      "domain": "People"
+    },
+    {
+      "question": "In a river-flood early-warning project, a team member asks to work outside expertise. What first?",
+      "options": [
+        "Ask to leave",
+        "Assign without support",
+        "Reject",
+        "Assess readiness, goals, support, risk before deciding"
+      ],
+      "answer": 3,
+      "explanation": "Stretch opportunities need readiness and support.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager gets feedback meetings lack clear outcomes. What first?",
+      "options": [
+        "Define purpose, outcomes, agenda, decisions, owners, follow-up",
+        "Cancel meetings",
+        "Increase length",
+        "More people"
+      ],
+      "answer": 0,
+      "explanation": "Effective meetings need purpose and follow-through.",
+      "domain": "People"
+    },
+    {
+      "question": "In a river-flood early-warning project, a stakeholder feels uninformed about risks. What first?",
+      "options": [
+        "Tailor risk communication to role and decisions",
+        "Send full register",
+        "Limit info",
+        "Assume not needed"
+      ],
+      "answer": 0,
+      "explanation": "Risk communication should be tailored to decisions.",
+      "domain": "People"
+    },
+    {
+      "question": "A project manager must determine whether to fast-track. What first?",
+      "options": [
+        "Only duration",
+        "Only hours",
+        "Only budget",
+        "Whether overlap increases rework/quality/dependency risk"
+      ],
+      "answer": 0,
+      "explanation": "Fast-tracking needs dependency and risk assessment.",
+      "domain": "Process"
+    },
+    {
+      "question": "In a river-flood early-warning project, a deliverable will miss desired date but not contractual. What first?",
+      "options": [
+        "Escalate",
+        "Hide delay",
+        "Assess business impact, expectations, replanning or acceptance",
+        "Treat as crisis"
+      ],
+      "answer": 2,
+      "explanation": "Non-contractual delays still need impact and expectation management.",
+      "domain": "Process"
+    }
+  ]
+}
