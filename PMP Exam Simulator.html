@@ -1,0 +1,704 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>PMP Exam Simulator</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: a computer-based-test frame. A sticky bar carries the clock and a Gantt-style progress strip (one segment per question).
+   Below it, a question card beside a navigator panel. Results show the three exam domains as scored bars. */
+:root {
+  --bg: #EEF1EF;
+  --surface: #FFFFFF;
+  --ink: #12201D;
+  --muted: #51625E;
+  --line: #D3DAD7;
+  --accent: #0F5C55;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #D9ECE8;
+  --flag: #A94B08;
+  --flag-soft: #FBE8D6;
+  --good: #1B7A3E;
+  --good-soft: #DDF1E3;
+  --bad: #B3261E;
+  --bad-soft: #F8DEDC;
+  --d1: #1F6FB2;
+  --d2: #0F5C55;
+  --d3: #7A4FB0;
+  --on-d: #FFFFFF;
+  --font-display: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1715; --surface: #16231F; --ink: #E6EFEC; --muted: #9BB0AA; --line: #2A3B36;
+    --accent: #5CC4B4; --accent-ink: #06201C; --accent-soft: #1B3A35;
+    --flag: #F0A35E; --flag-soft: #3A2A18; --good: #6FD08E; --good-soft: #173222;
+    --bad: #F28B82; --bad-soft: #3A1C1A; --d1: #6FB3F0; --d2: #5CC4B4; --d3: #B796E6; --on-d: #0B1412;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1715; --surface: #16231F; --ink: #E6EFEC; --muted: #9BB0AA; --line: #2A3B36;
+  --accent: #5CC4B4; --accent-ink: #06201C; --accent-soft: #1B3A35;
+  --flag: #F0A35E; --flag-soft: #3A2A18; --good: #6FD08E; --good-soft: #173222;
+  --bad: #F28B82; --bad-soft: #3A1C1A; --d1: #6FB3F0; --d2: #5CC4B4; --d3: #B796E6; --on-d: #0B1412;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.55 var(--font-body);
+  padding-block: 20px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+}
+#app { max-width: 1080px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--font-display); font-stretch: 112%; margin: 0; text-wrap: balance; line-height: 1.1; }
+p { margin: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.label { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+.btn {
+  font: inherit; font-weight: 600; padding: 10px 18px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.primary:hover:not(:disabled) { filter: brightness(1.08); }
+.btn.flagged { background: var(--flag-soft); border-color: var(--flag); color: var(--flag); }
+.btn.small { padding: 6px 12px; font-size: .875rem; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; }
+.chip {
+  display: inline-block; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 4px; border: 1px solid currentColor; color: var(--c, var(--muted)); white-space: nowrap;
+}
+.chip.good { --c: var(--good); } .chip.bad { --c: var(--bad); } .chip.warn { --c: var(--flag); } .chip.acc { --c: var(--accent); }
+
+/* start screen */
+.start { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 32px; align-items: start; padding-top: 8px; }
+.hero h1 { font-size: clamp(2.1rem, 6.5vw, 3.6rem); font-weight: 800; letter-spacing: -.01em; }
+.lede { margin-top: 14px; color: var(--muted); max-width: 52ch; }
+.bp { display: flex; gap: 2px; height: 36px; margin-top: 24px; }
+.bp > span {
+  display: flex; align-items: center; padding-inline: 10px; min-width: 0; overflow: hidden; white-space: nowrap;
+  font-family: var(--font-mono); font-size: .78rem; color: var(--on-d); background: var(--c); border-radius: 3px;
+}
+.bp-cap { margin-top: 8px; }
+fieldset { border: 0; padding: 0; margin: 28px 0 0; min-width: 0; }
+legend { padding: 0; margin-bottom: 10px; }
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.choice {
+  display: grid; gap: 2px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface);
+  cursor: pointer; position: relative;
+}
+.choice input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.choice:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+.choice:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.c-t { font-weight: 600; }
+.c-s { font-size: .85rem; color: var(--muted); }
+.go { margin-top: 28px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.go .btn.primary { padding: 14px 28px; font-size: 1.05rem; }
+.side-col { display: grid; gap: 16px; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 14px 0 0; }
+.facts dt { color: var(--muted); } .facts dd { margin: 0; font-family: var(--font-mono); text-align: right; font-variant-numeric: tabular-nums; }
+.note { margin-top: 14px; font-size: .85rem; color: var(--muted); }
+.hist { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.hist li { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: .9rem; }
+.hist li:last-child { border-bottom: 0; padding-bottom: 0; }
+.hist .pct { font-family: var(--font-mono); font-weight: 500; }
+
+/* exam bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 8px 12px; border-bottom: 1px solid var(--line); }
+.bar-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.bar-id { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-width: 0; }
+.brand { font-family: var(--font-display); font-stretch: 112%; font-weight: 700; }
+.clock { display: flex; align-items: baseline; gap: 10px; }
+.timer { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1; }
+.timer.warn { color: var(--bad); }
+.gantt { display: flex; gap: 2px; height: 10px; margin-top: 10px; }
+.seg { flex: 1; min-width: 0; border-radius: 2px; background: var(--line); }
+.seg.done { background: var(--accent); }
+.seg.flag { background: var(--flag); }
+.seg.cur { outline: 2px solid var(--ink); outline-offset: 1px; }
+.bar-meta { display: flex; justify-content: space-between; margin-top: 8px; font-family: var(--font-mono); font-size: .75rem; color: var(--muted); }
+
+/* question */
+.exam { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 24px; padding-top: 20px; align-items: start; }
+.q-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.q-head .flagbtn { margin-left: auto; }
+.stem { margin-top: 18px; font-size: 1.125rem; line-height: 1.6; white-space: pre-line; max-width: 68ch; }
+.opts { display: grid; gap: 10px; margin-top: 22px; }
+.opt {
+  display: flex; gap: 14px; align-items: flex-start; width: 100%; text-align: left; padding: 14px 16px;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; cursor: pointer;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+.opt:disabled { cursor: default; color: var(--ink); }
+.opt.right { border-color: var(--good); background: var(--good-soft); box-shadow: inset 0 0 0 1px var(--good); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); box-shadow: inset 0 0 0 1px var(--bad); }
+.ltr {
+  flex: none; width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%;
+  border: 1px solid var(--muted); font-family: var(--font-mono); font-size: .8rem; color: var(--muted);
+}
+.opt[aria-checked="true"] .ltr { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.opt.right .ltr { background: var(--good); border-color: var(--good); color: var(--surface); }
+.opt.wrong .ltr { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+.otext { min-width: 0; padding-top: 2px; }
+.fb { margin-top: 18px; padding: 14px 16px; border-radius: 8px; border: 1px solid var(--line); display: grid; gap: 4px; max-width: 68ch; }
+.fb.good { background: var(--good-soft); border-color: var(--good); }
+.fb.bad { background: var(--bad-soft); border-color: var(--bad); }
+.q-foot { display: flex; justify-content: space-between; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
+.q-foot .keys { align-self: center; }
+
+.side h2 { font-size: 1rem; }
+.navgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 6px; margin-top: 14px; }
+.nb {
+  position: relative; height: 40px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  font-family: var(--font-mono); font-size: .85rem; cursor: pointer;
+}
+.nb.ans { background: var(--accent-soft); border-color: var(--accent); }
+.nb.flg::after { content: ""; position: absolute; top: 0; right: 0; border-style: solid; border-width: 0 12px 12px 0; border-color: transparent var(--flag) transparent transparent; border-top-right-radius: 5px; }
+.nb.cur { box-shadow: 0 0 0 2px var(--ink); }
+.legend { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 6px; font-size: .85rem; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 8px; vertical-align: -1px; border: 1px solid var(--line); }
+.legend .l-ans { background: var(--accent-soft); border-color: var(--accent); }
+.legend .l-flag { background: var(--flag); border-color: var(--flag); }
+.side .btn { width: 100%; margin-top: 18px; }
+
+/* review */
+.rv { padding-top: 20px; }
+.rv-top { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; }
+.rv h2 { font-size: 1.6rem; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 16px; }
+.tab { font: inherit; font-size: .9rem; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.tab[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.rows { display: grid; gap: 8px; margin-top: 16px; }
+.row {
+  display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 14px; align-items: center; width: 100%; text-align: left;
+  padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; cursor: pointer;
+}
+.row:hover { border-color: var(--accent); }
+.row .n { font-family: var(--font-mono); color: var(--muted); }
+.row .ex { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row .tags { display: flex; gap: 6px; }
+.empty { padding: 24px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 8px; }
+.confirm { margin-top: 20px; padding: 18px 20px; border: 1px solid var(--flag); background: var(--flag-soft); border-radius: 10px; display: grid; gap: 12px; }
+.confirm .acts { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* results */
+.res { padding-top: 8px; }
+.score { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 32px; align-items: center; }
+.big { font-family: var(--font-display); font-stretch: 118%; font-weight: 800; font-size: clamp(3.6rem, 14vw, 6.5rem); line-height: .95; letter-spacing: -.02em; }
+.big small { font-size: .4em; font-weight: 600; margin-left: 2px; }
+.score h1 { font-size: clamp(1.4rem, 4vw, 2rem); }
+.score .sub { margin-top: 8px; color: var(--muted); }
+.dom { display: grid; grid-template-columns: 170px minmax(0, 1fr) auto; gap: 8px 16px; align-items: center; padding-block: 12px; border-top: 1px solid var(--line); }
+.dom:first-of-type { border-top: 0; }
+.track { height: 12px; border-radius: 6px; background: var(--line); overflow: hidden; }
+.fill { height: 100%; background: var(--c); border-radius: 6px; }
+.dname { font-weight: 600; } .dname small { display: block; font-weight: 400; color: var(--muted); font-size: .8rem; }
+.dstat { display: flex; gap: 10px; align-items: center; justify-content: flex-end; font-family: var(--font-mono); font-size: .85rem; }
+.sect { margin-top: 28px; }
+.sect > h2 { font-size: 1.3rem; margin-bottom: 14px; }
+.acts { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+.rq { margin-top: 14px; }
+.rq .q-head .chip + .chip { margin-left: 0; }
+.rq .opt { cursor: default; position: relative; }
+.rq .tagr { margin-left: auto; padding-left: 10px; flex: none; }
+.rq .exp { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); max-width: 68ch; }
+.rq .exp strong { color: var(--ink); }
+
+@media (max-width: 860px) {
+  .start { grid-template-columns: minmax(0, 1fr); }
+  .exam { grid-template-columns: minmax(0, 1fr); }
+  .score { grid-template-columns: minmax(0, 1fr); }
+  .dom { grid-template-columns: minmax(0, 1fr) auto; }
+  .dom .track { grid-column: 1 / -1; order: 3; }
+  .card { padding: 18px; }
+  .row { grid-template-columns: 30px minmax(0, 1fr); }
+  .row .tags { grid-column: 2; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div id="app"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Question bank (original practice items, answer is always listed first and shuffled at runtime) ---------- */
+  var QUESTIONS = [
+    // People
+    { d: 'people', s: "Two senior developers disagree about the technical approach for a key component. The debate is slowing the team and tension is rising in stand-ups. What should the project manager do FIRST?",
+      o: ["Meet with both developers together and facilitate a discussion so each can explain their reasoning and the group can agree on an approach.",
+          "Choose the approach that fits the schedule best and instruct both developers to follow it.",
+          "Escalate the disagreement to the project sponsor and wait for direction.",
+          "Tell the developers to settle it between themselves and report back when finished."],
+      e: "Collaborating (problem solving) brings out the real concerns and usually produces a lasting resolution. Forcing a decision or escalating at once skips the project manager's job of helping the team resolve conflict at the lowest level first, and leaving it alone lets tension grow." },
+    { d: 'people', s: "During the daily stand-up, a developer says she cannot continue because she is still waiting for access to a test environment owned by the IT operations team. As a servant leader, what should the project manager do?",
+      o: ["Take ownership of the impediment, contact the IT operations manager to get the access, and tell the team when it is resolved.",
+          "Ask the developer to work on a different task and raise the access request again next sprint.",
+          "Tell the developer to submit a formal ticket and follow the standard IT process herself.",
+          "Add the delay to the risk register and review it at the next monthly status meeting."],
+      e: "A servant leader removes impediments so the team can keep delivering. The delay already exists, so it is an issue rather than a risk, and deferring it or leaving it with the developer keeps the team blocked." },
+    { d: 'people', s: "A project manager is launching a project with team members in three time zones who have never worked together. Early on, messages go unanswered and meetings are missed. What should the project manager do?",
+      o: ["Facilitate a session where the team creates a team charter that sets communication norms, core overlap hours, and meeting etiquette.",
+          "Require everyone to be online during the project manager's working hours.",
+          "Send a weekly written status request and track who responds on time.",
+          "Ask the sponsor to approve co-locating the whole team in one office."],
+      e: "Ground rules created with the team build commitment and clarify expectations for virtual work. Imposing hours, tracking responses, or relocating people are unilateral or impractical fixes that do not address how this team will work together." },
+    { d: 'people', s: "A team member who has always been reliable has missed two consecutive deadlines. What should the project manager do FIRST?",
+      o: ["Speak with the team member privately to understand the cause and find out how the project manager can help.",
+          "Reassign the team member's tasks and document the missed deadlines for the performance review.",
+          "Raise the issue in the next team meeting so the team can agree on corrective action.",
+          "Ask the functional manager to replace the team member immediately."],
+      e: "A change in a reliable person's performance usually has a cause such as workload, a skill gap, or a personal issue. A private, supportive conversation comes before any corrective or punitive step." },
+    { d: 'people', s: "The team has agreed to adopt a new test automation tool, but several members have never used it. What should the project manager do?",
+      o: ["Assess the skill gaps and arrange training for the members who need it, adjusting the schedule if required.",
+          "Assign all automation tasks to the one member with the most experience.",
+          "Let team members learn the tool on their own while working on tasks.",
+          "Hire an outside contractor to handle all of the automation work."],
+      e: "Ensuring the team has the skills it needs is a project manager responsibility. Training closes the gap and builds capability, while concentrating the work, relying on trial and error, or outsourcing everything creates bottlenecks or unnecessary cost." },
+    { d: 'people', s: "After a tense review meeting, a normally talkative team member sits quietly and appears upset. What is the best response from the project manager?",
+      o: ["Check in privately, listen without judgment, and ask whether there is anything the project manager can do to help.",
+          "Wait to see whether the behavior continues over the next few weeks before acting.",
+          "Tell the team at the next meeting to keep emotions out of project discussions.",
+          "Ask the team member's colleagues what they think happened."],
+      e: "Emotional intelligence means noticing the signal, showing empathy, and responding respectfully and in private. Waiting, lecturing the group, or gathering gossip does not support the person." },
+    { d: 'people', s: "A functional manager is reluctant to release a needed data engineer for 20 hours a week because the department has its own deadlines. What should the project manager do?",
+      o: ["Negotiate with the functional manager, explain the impact on the project, and look for a schedule that meets both needs.",
+          "Ask the sponsor to order the functional manager to release the engineer.",
+          "Accept the refusal and revise the plan to remove the data engineering work.",
+          "Rebaseline the project and extend the deadline to match the engineer's availability."],
+      e: "Negotiation aimed at a mutually acceptable outcome comes first. Going over the manager's head damages the relationship, and dropping scope or moving the deadline gives up the project's needs before trying to find common ground." },
+    { d: 'people', s: "A newly promoted project manager asks you, an experienced colleague, for help dealing with difficult stakeholders. What is the most effective way to help?",
+      o: ["Share relevant experience, talk through real situations together, and encourage them to develop their own approach.",
+          "Give them a step-by-step script to follow with each stakeholder.",
+          "Offer to attend their stakeholder meetings and lead the conversations.",
+          "Recommend that they read about stakeholder management and ask again later."],
+      e: "Good mentoring shares experience and builds the other person's own judgment. Scripts, taking over, or deferring the request do not develop their capability." },
+    { d: 'people', s: "An agile team asks the project manager to approve the assignment of every task in the sprint backlog. What should the project manager do?",
+      o: ["Encourage the team to self-organize and choose tasks themselves, while staying available to coach and remove obstacles.",
+          "Agree, so the project manager can balance workloads across the team.",
+          "Delegate the task assignments to the most senior developer.",
+          "Ask the product owner to assign all tasks to improve accountability."],
+      e: "Agile teams are self-organizing. Empowering them to pull work builds ownership, while assigning tasks through any single person undermines the team's autonomy." },
+    { d: 'people', s: "Three stakeholders each describe project success differently: lowest cost, earliest launch, and the most features. What should the project manager do?",
+      o: ["Hold a facilitated workshop to build a shared definition of success and record the agreed criteria in the project documents.",
+          "Prioritize the view of the stakeholder with the highest authority.",
+          "Plan for all three goals and tell the team to meet them all.",
+          "Wait until execution begins and see which goal turns out to matter most."],
+      e: "A shared understanding of success must be reached early and documented. Picking by rank, promising everything, or waiting leaves the conflict unresolved and the team without clear direction." },
+    { d: 'people', s: "In hybrid meetings, remote participants rarely get a chance to speak while people in the room dominate the discussion. What should the project manager do?",
+      o: ["Work with the team to update the working agreements so remote voices are heard, such as using a facilitator and a round-robin check-in.",
+          "Move all meetings to the office so everyone is in the same room.",
+          "Ask remote participants to send comments in writing after each meeting.",
+          "Raise the issue with each remote participant's manager."],
+      e: "Team-defined working agreements fix the behavior at its source and keep the team engaged. Forcing everyone on site or moving input to after the meeting excludes people instead of including them." },
+    { d: 'people', s: "A major release failed in production and team morale is low. Several members are blaming one another. What should the project manager do?",
+      o: ["Facilitate a blameless retrospective to understand what happened, capture lessons, and agree on improvements.",
+          "Identify who made the error and address it in a one-to-one conversation with that person.",
+          "Move quickly to the next release to keep the team busy.",
+          "Ask the sponsor to reward the team members who stayed positive."],
+      e: "A blameless retrospective turns the failure into learning and restores trust. Hunting for a culprit, ignoring the issue, or rewarding only some members increases blame and division." },
+    { d: 'people', s: "A team member keeps interrupting and making sarcastic remarks about a colleague in meetings. Other members have stopped contributing. What should the project manager do?",
+      o: ["Address the behavior promptly with the team member in private and remind the team of the agreed ground rules.",
+          "Ignore it, since professionals should resolve their own differences.",
+          "Call out the behavior in front of the whole team to set an example.",
+          "Move the colleague to a different team to avoid contact."],
+      e: "The behavior is damaging team performance, so the project manager acts early, privately, and by reference to the team's own ground rules. Public criticism or moving the victim does not correct the cause." },
+
+    // Process
+    { d: 'process', s: "Midway through execution, the customer asks for an additional reporting feature that was not in the scope baseline. What should the project manager do FIRST?",
+      o: ["Evaluate the impact of the change on scope, schedule, cost, quality, and risk.",
+          "Submit the request to the change control board right away without analysis.",
+          "Ask the team to add the feature, because keeping the customer happy matters most.",
+          "Decline the request because the scope baseline has already been approved."],
+      e: "A change request needs an impact assessment before it goes to the change control board. The project manager neither accepts nor rejects it without understanding the consequences." },
+    { d: 'process', s: "Activity A takes 3 days and has no predecessor.\nActivity B takes 5 days and follows A.\nActivity C takes 4 days and follows A.\nActivity D takes 2 days and follows both B and C.\n\nHow much total float does activity C have?",
+      o: ["1 day", "0 days", "2 days", "4 days"],
+      e: "Path A-B-D is 3 + 5 + 2 = 10 days, the critical path. Path A-C-D is 3 + 4 + 2 = 9 days. Activity C can slip by the difference, 1 day, without delaying the project." },
+    { d: 'process', s: "A project has a budget at completion (BAC) of $500,000. The earned value (EV) is $200,000 and the actual cost (AC) is $250,000. Assuming current cost performance will continue, what is the estimate at completion (EAC)?",
+      o: ["$625,000", "$300,000", "$550,000", "$750,000"],
+      e: "CPI = EV / AC = 200,000 / 250,000 = 0.8. With current cost performance continuing, EAC = BAC / CPI = 500,000 / 0.8 = $625,000. The $550,000 figure assumes future work goes at the original rate." },
+    { d: 'process', s: "To reduce the financial impact of possible equipment damage during transport, the project team buys insurance. Which risk response strategy is this?",
+      o: ["Transfer", "Mitigate", "Avoid", "Accept"],
+      e: "Insurance shifts the financial impact of a threat to a third party, which is risk transfer. The risk itself still exists." },
+    { d: 'process', s: "A risk in the register has a documented contingency plan with a defined trigger. The trigger condition has just occurred. What should the project manager do?",
+      o: ["Implement the contingency plan, then update the risk register and inform the stakeholders.",
+          "Rescore the risk and wait one more reporting period to confirm the trend.",
+          "Create a change request to fund a brand-new response.",
+          "Convene a workshop to brainstorm new options for responding."],
+      e: "A contingency plan exists to be used once its trigger occurs. Acting on the agreed plan is faster and cheaper than reanalyzing, and the register is updated afterward." },
+    { d: 'process', s: "A stakeholder has high power but low interest in the project. Using a power/interest grid, which engagement approach is most appropriate?",
+      o: ["Keep satisfied", "Manage closely", "Keep informed", "Monitor"],
+      e: "High power with low interest calls for keeping the stakeholder satisfied without overloading them. Manage closely is for high power and high interest, keep informed for low power and high interest, and monitor for low on both." },
+    { d: 'process', s: "In the middle of a sprint, a stakeholder asks for an urgent new feature. The sprint goal is still valid. What should the project manager do?",
+      o: ["Have the product owner evaluate the request and, if it is valuable, add it to the backlog to be prioritized for an upcoming sprint.",
+          "Add the feature to the current sprint and drop another item of equal size.",
+          "Reject the request because requirements cannot change during the project.",
+          "Cancel the sprint and replan around the new feature."],
+      e: "The sprint scope is protected while the sprint goal remains valid. New requests go through the product owner into the backlog for upcoming planning. Canceling a sprint is reserved for when the goal becomes obsolete." },
+    { d: 'process', s: "A project to build a new mobile app has unclear requirements that the customer expects to evolve as users give feedback. Which approach is most suitable?",
+      o: ["An adaptive approach with short iterations and frequent customer feedback.",
+          "A predictive approach with a detailed upfront plan and formal change control.",
+          "A predictive approach with a large contingency reserve for scope changes.",
+          "A sequential approach with a phase gate after each deliverable."],
+      e: "Evolving requirements and a need for fast feedback point to an adaptive (agile) approach. Predictive approaches work best when scope is stable and well understood at the start." },
+    { d: 'process', s: "A team of 8 people, including the project manager, is adding 2 more members. How many communication channels will exist after the new members join?",
+      o: ["45", "28", "36", "90"],
+      e: "Channels = n(n - 1) / 2. With 10 people, that is 10 x 9 / 2 = 45. The previous team of 8 had 28 channels. The figure 90 forgets to divide by 2." },
+    { d: 'process', s: "The same module keeps producing defects after each fix. Which technique should the team use to find the underlying causes?",
+      o: ["A cause-and-effect (fishbone) diagram combined with the 5 whys technique.",
+          "A control chart of defect counts per week.",
+          "A Pareto chart of defects by module.",
+          "A scatter diagram of defects against developer experience."],
+      e: "Root cause analysis is done with a cause-and-effect diagram and the 5 whys. A control chart shows stability, a Pareto chart shows where defects concentrate, and a scatter diagram tests a single suspected relationship." },
+    { d: 'process', s: "The buyer's requirements for a software development contract are still unclear and the buyer wants the flexibility to adjust scope as work proceeds. Which contract type best fits?",
+      o: ["Time and materials", "Firm fixed price", "Fixed price with economic price adjustment", "Purchase order"],
+      e: "With unclear scope, time and materials keeps flexibility for both sides. A firm fixed price needs a well-defined scope, and the other options also assume that the work is clearly specified." },
+    { d: 'process', s: "The final deliverable has been completed and tested. Before releasing the team and closing the project, what must the project manager do?",
+      o: ["Obtain formal acceptance of the deliverables from the customer or sponsor.",
+          "Archive the project documents and hold a lessons learned session first.",
+          "Release the team members back to their functional managers immediately.",
+          "Close the project contracts and send the final invoice."],
+      e: "Formal acceptance confirms that the deliverables meet the acceptance criteria. Closure activities such as archiving, releasing resources, and contract closure follow from it." },
+    { d: 'process', s: "The project manager discovers that a developer added a feature nobody requested because they thought customers would like it. What should the project manager do?",
+      o: ["Review the impact of the extra feature, address the gold plating with the developer, and reinforce that work is limited to the approved scope.",
+          "Keep the feature because it adds value without any extra cost to the customer.",
+          "Tell the customer about the feature and charge extra for it.",
+          "Report the developer to the functional manager for disciplinary action."],
+      e: "Gold plating adds unplanned work, risk, and testing effort. The project manager assesses the impact, removes or formally changes the scope, and reinforces scope discipline." },
+    { d: 'process', s: "The project is behind schedule on the critical path. The sponsor approves additional budget but does not want any increase in project risk. Which schedule compression technique should the project manager use?",
+      o: ["Crashing", "Fast tracking", "Resource leveling", "Reducing project scope without approval"],
+      e: "Crashing adds resources to critical path activities, trading cost for time with little added risk. Fast tracking overlaps activities and usually increases risk." },
+    { d: 'process', s: "Which document formally authorizes the project and gives the project manager the authority to apply organizational resources to project activities?",
+      o: ["Project charter", "Project management plan", "Business case", "Scope statement"],
+      e: "The project charter, issued by the sponsor or initiator, authorizes the project and the project manager. The business case justifies the project, and the plan and scope statement are developed afterward." },
+
+    // Business Environment
+    { d: 'business', s: "Midway through the project, a new data-privacy regulation is announced that will apply to the product being built. What should the project manager do?",
+      o: ["Assess how the regulation affects scope, schedule, and cost, consult the compliance team, and submit a change request if needed.",
+          "Wait until the regulation takes effect before deciding whether the project is affected.",
+          "Add the compliance work to the backlog at low priority so the schedule is not affected.",
+          "Ask the team to apply the regulation as they see fit without formal changes."],
+      e: "Compliance requirements must be understood early and handled through the project's change process, with the right experts involved. Delaying or ignoring them creates legal and rework risk." },
+    { d: 'business', s: "A project is on schedule and on budget, but a competitor's new product has sharply reduced the expected market for the project's deliverable. What should the project manager do?",
+      o: ["Inform the sponsor and governance body with an updated assessment so they can decide whether to continue, change, or stop the project.",
+          "Continue as planned, since the project is meeting its baselines.",
+          "Stop work until the sponsor sends new direction.",
+          "Redefine the project objectives so the new market conditions are met."],
+      e: "Meeting the baselines does not matter if the expected benefits are no longer achievable. The project manager raises the change in the external environment so the people accountable for the business case can decide." },
+    { d: 'business', s: "Users are resisting a move from spreadsheets to a new CRM system that is nearly ready. How can the project manager best support the organizational change?",
+      o: ["Work with the sponsor and change managers on a plan that communicates the benefits, provides training, and gathers user feedback.",
+          "Announce a firm go-live date and require users to switch.",
+          "Delay go-live until all resistance disappears.",
+          "Leave adoption to the business owner after handover."],
+      e: "Adoption is part of delivering value. Engagement, clear communication of benefits, training, and feedback loops support the change, while mandates or waiting for resistance to fade do not." }
+  ];
+
+  var DOMAINS = {
+    people:   { name: 'People',               weight: 42, c: '--d1' },
+    process:  { name: 'Process',              weight: 50, c: '--d2' },
+    business: { name: 'Business Environment', weight: 8,  c: '--d3' }
+  };
+  var LETTERS = ['A', 'B', 'C', 'D'];
+  var SIZES = [
+    { n: 10, label: 'Quick drill' },
+    { n: 20, label: 'Half mock' },
+    { n: QUESTIONS.length, label: 'Full bank' }
+  ];
+  function minutesFor(n) { return Math.ceil(n * 230 / 180); } // real exam pace: 230 minutes for 180 questions
+
+  /* ---------- helpers ---------- */
+  var app = document.getElementById('app');
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function fmt(sec) {
+    var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+    var mm = (m < 10 ? '0' : '') + m, ss = (s < 10 ? '0' : '') + s;
+    return h > 0 ? h + ':' + mm + ':' + ss : mm + ':' + ss;
+  }
+  function band(pct) {
+    if (pct >= 80) return { name: 'Above Target', cls: 'good' };
+    if (pct >= 65) return { name: 'Target', cls: 'acc' };
+    if (pct >= 50) return { name: 'Below Target', cls: 'warn' };
+    return { name: 'Needs Improvement', cls: 'bad' };
+  }
+  function isRight(x) { return x.sel !== null && x.opts[x.sel].c; }
+
+  var KEY = 'pmp-exam-simulator-history-v1';
+  function loadHist() { try { var h = JSON.parse(localStorage.getItem(KEY)); return Array.isArray(h) ? h : []; } catch (e) { return []; } }
+  function saveHist(r) { try { var h = loadHist(); h.unshift(r); localStorage.setItem(KEY, JSON.stringify(h.slice(0, 8))); } catch (e) { /* storage unavailable */ } }
+
+  /* ---------- state ---------- */
+  var S = { screen: 'start', sizeIdx: 0, mode: 'exam', qs: [], i: 0, startAt: 0, endAt: 0, timer: null, res: null, filter: 'all', rfilter: 'all', confirm: false };
+
+  function pickSet(n) {
+    var by = { people: [], process: [], business: [] };
+    shuffle(QUESTIONS).forEach(function (q) { by[q.d].push(q); });
+    if (n >= QUESTIONS.length) return shuffle(QUESTIONS);
+    var people = Math.round(n * 0.42), business = Math.max(1, Math.round(n * 0.08)), process = n - people - business;
+    var set = by.people.slice(0, people).concat(by.process.slice(0, process), by.business.slice(0, business));
+    return shuffle(set);
+  }
+
+  function startExam() {
+    var n = SIZES[S.sizeIdx].n;
+    S.qs = pickSet(n).map(function (q) {
+      return { q: q, opts: shuffle(q.o.map(function (t, k) { return { t: t, c: k === 0 }; })), sel: null, flag: false };
+    });
+    S.i = 0; S.res = null; S.confirm = false; S.filter = 'all';
+    S.startAt = Date.now();
+    S.endAt = S.mode === 'exam' ? S.startAt + minutesFor(n) * 60000 : 0;
+    S.screen = 'exam';
+    clearInterval(S.timer);
+    S.timer = setInterval(tick, 1000);
+    render();
+    window.scrollTo(0, 0);
+  }
+
+  function tick() {
+    if (S.screen !== 'exam' && S.screen !== 'review') return;
+    var el = document.getElementById('timer');
+    if (S.mode === 'exam') {
+      var rem = Math.max(0, Math.ceil((S.endAt - Date.now()) / 1000));
+      if (el) { el.textContent = fmt(rem); el.classList.toggle('warn', rem <= 300); }
+      if (rem === 0) finish(true);
+    } else if (el) {
+      el.textContent = fmt(Math.round((Date.now() - S.startAt) / 1000));
+    }
+  }
+
+  function finish(expired) {
+    clearInterval(S.timer);
+    var by = {}, correct = 0;
+    S.qs.forEach(function (x) {
+      var d = x.q.d; by[d] = by[d] || { t: 0, c: 0 };
+      by[d].t++;
+      if (isRight(x)) { by[d].c++; correct++; }
+    });
+    var total = S.qs.length, pct = Math.round(correct / total * 100);
+    S.res = { by: by, correct: correct, total: total, pct: pct, used: Math.round((Date.now() - S.startAt) / 1000), expired: !!expired };
+    saveHist({ ts: Date.now(), n: total, mode: S.mode, pct: pct, correct: correct });
+    S.screen = 'results'; S.rfilter = 'all'; S.confirm = false;
+    render();
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- views ---------- */
+  function startHtml() {
+    var hist = loadHist();
+    var bp = ['people', 'process', 'business'].map(function (k) {
+      var d = DOMAINS[k];
+      return '<span style="flex:' + d.weight + ' 1 0;--c:var(' + d.c + ')" title="' + esc(d.name) + ' ' + d.weight + '%">' + (d.weight >= 20 ? esc(d.name) + ' ' + d.weight + '%' : d.weight + '%') + '</span>';
+    }).join('');
+    var sizes = SIZES.map(function (z, k) {
+      return '<label class="choice"><input type="radio" name="size" value="' + k + '"' + (S.sizeIdx === k ? ' checked' : '') + '>' +
+        '<span class="c-t">' + z.label + '</span><span class="c-s">' + z.n + ' questions · ' + minutesFor(z.n) + ' min timed</span></label>';
+    }).join('');
+    var modes = [['exam', 'Exam mode', 'Timed. Answers revealed at the end.'], ['practice', 'Practice mode', 'Untimed. Explanation after each answer.']].map(function (m) {
+      return '<label class="choice"><input type="radio" name="mode" value="' + m[0] + '"' + (S.mode === m[0] ? ' checked' : '') + '><span class="c-t">' + m[1] + '</span><span class="c-s">' + m[2] + '</span></label>';
+    }).join('');
+    var histHtml = hist.length
+      ? '<ul class="hist">' + hist.slice(0, 5).map(function (h) {
+          return '<li><span>' + new Date(h.ts).toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + ' · ' + h.n + ' Q · ' + (h.mode === 'exam' ? 'Exam' : 'Practice') + '</span><span class="pct">' + h.pct + '% (' + h.correct + '/' + h.n + ')</span></li>';
+        }).join('') + '</ul>'
+      : '<p class="note">No attempts yet. Finished attempts are listed here, on this browser only.</p>';
+    return '<div class="start">' +
+      '<section class="hero"><span class="label">Project Management Professional</span>' +
+      '<h1 style="margin-top:10px">PMP Exam Simulator</h1>' +
+      '<p class="lede">Situational practice questions weighted like the real exam blueprint. Flag items, review before you submit, then see how you scored in each domain.</p>' +
+      '<div class="bp" role="img" aria-label="Exam blueprint: People 42 percent, Process 50 percent, Business Environment 8 percent">' + bp + '</div>' +
+      '<p class="label bp-cap">Exam content outline by domain</p>' +
+      '<fieldset><legend class="label">Length</legend><div class="choices">' + sizes + '</div></fieldset>' +
+      '<fieldset><legend class="label">Mode</legend><div class="choices">' + modes + '</div></fieldset>' +
+      '<div class="go"><button type="button" class="btn primary" data-act="start">Begin exam</button><span class="label">Keys: A–D answer · ← → move · F flag</span></div>' +
+      '</section>' +
+      '<aside class="side-col">' +
+      '<section class="card"><h2 style="font-size:1.1rem">Real exam reference</h2><dl class="facts">' +
+      '<dt>Questions</dt><dd>180</dd><dt>Time allowed</dt><dd>230 min</dd><dt>Breaks</dt><dd>2 × 10 min</dd><dt>Format</dt><dd>Multiple choice and more</dd></dl>' +
+      '<p class="note">Timed runs here use the same pace, about 1.28 minutes per question. This prototype has ' + QUESTIONS.length + ' original practice questions and no scheduled breaks.</p></section>' +
+      '<section class="card"><h2 style="font-size:1.1rem">Recent attempts</h2>' + histHtml + '</section>' +
+      '<p class="note">Not affiliated with PMI. PMP is a registered mark of the Project Management Institute, Inc.</p>' +
+      '</aside></div>';
+  }
+
+  function barHtml() {
+    var n = S.qs.length, answered = 0, flags = 0;
+    var segs = S.qs.map(function (x, k) {
+      if (x.sel !== null) answered++;
+      if (x.flag) flags++;
+      return '<span class="seg' + (x.flag ? ' flag' : x.sel !== null ? ' done' : '') + (S.screen === 'exam' && k === S.i ? ' cur' : '') + '"></span>';
+    }).join('');
+    return '<div class="bar"><div class="bar-row"><div class="bar-id"><span class="brand">PMP Exam Simulator</span>' +
+      '<span class="chip">' + (S.mode === 'exam' ? 'Exam mode' : 'Practice mode') + '</span></div>' +
+      '<div class="clock"><span class="label">' + (S.mode === 'exam' ? 'Time left' : 'Elapsed') + '</span><span class="timer" id="timer">--:--</span></div></div>' +
+      '<div class="gantt" aria-hidden="true">' + segs + '</div>' +
+      '<div class="bar-meta"><span>' + answered + ' of ' + n + ' answered</span><span>' + flags + ' flagged</span></div></div>';
+  }
+
+  function examHtml() {
+    var x = S.qs[S.i], q = x.q, d = DOMAINS[q.d], n = S.qs.length;
+    var shown = S.mode === 'practice' && x.sel !== null;
+    var opts = x.opts.map(function (o, k) {
+      var cls = 'opt';
+      if (shown) { if (o.c) cls += ' right'; else if (k === x.sel) cls += ' wrong'; }
+      return '<button type="button" role="radio" aria-checked="' + (x.sel === k) + '" class="' + cls + '" id="opt-' + k + '" data-act="pick" data-i="' + k + '"' + (shown ? ' disabled' : '') + '>' +
+        '<span class="ltr">' + LETTERS[k] + '</span><span class="otext">' + esc(o.t) + '</span></button>';
+    }).join('');
+    var fb = '';
+    if (shown) {
+      var ok = isRight(x);
+      fb = '<div class="fb ' + (ok ? 'good' : 'bad') + '"><strong>' + (ok ? 'Correct' : 'Not quite') + '</strong><p>' + esc(q.e) + '</p></div>';
+    }
+    var nav = S.qs.map(function (y, k) {
+      return '<button type="button" class="nb' + (y.sel !== null ? ' ans' : '') + (y.flag ? ' flg' : '') + (k === S.i ? ' cur' : '') + '" data-act="go" data-i="' + k + '" aria-label="Question ' + (k + 1) + (y.sel !== null ? ', answered' : ', unanswered') + (y.flag ? ', flagged' : '') + '"' + (k === S.i ? ' aria-current="true"' : '') + '>' + (k + 1) + '</button>';
+    }).join('');
+    var last = S.i === n - 1;
+    return '<div class="exam"><section class="card" aria-label="Question ' + (S.i + 1) + '">' +
+      '<div class="q-head"><span class="label">Question ' + (S.i + 1) + ' of ' + n + '</span><span class="chip" style="--c:var(' + d.c + ')">' + esc(d.name) + '</span>' +
+      '<button type="button" id="flagbtn" class="btn small flagbtn' + (x.flag ? ' flagged' : '') + '" data-act="flag" aria-pressed="' + x.flag + '">' + (x.flag ? 'Flagged for review' : 'Flag for review') + '</button></div>' +
+      '<p class="stem">' + esc(q.s) + '</p>' +
+      '<div class="opts" role="radiogroup" aria-label="Answer choices">' + opts + '</div>' + fb +
+      '<div class="q-foot"><button type="button" class="btn" id="prevbtn" data-act="prev"' + (S.i === 0 ? ' disabled' : '') + '>Previous</button>' +
+      (last ? '<button type="button" class="btn primary" id="nextbtn" data-act="review">Review &amp; submit</button>'
+            : '<button type="button" class="btn primary" id="nextbtn" data-act="next">Next</button>') + '</div></section>' +
+      '<aside class="card side"><h2>Questions</h2><div class="navgrid">' + nav + '</div>' +
+      '<ul class="legend"><li><i class="l-ans"></i>Answered</li><li><i></i>Not answered</li><li><i class="l-flag"></i>Flagged</li></ul>' +
+      '<button type="button" class="btn" data-act="review">Review &amp; submit</button></aside></div>';
+  }
+
+  function reviewHtml() {
+    var n = S.qs.length, un = S.qs.filter(function (x) { return x.sel === null; }).length;
+    var fl = S.qs.filter(function (x) { return x.flag; }).length;
+    var tabs = [['all', 'All (' + n + ')'], ['unanswered', 'Unanswered (' + un + ')'], ['flagged', 'Flagged (' + fl + ')']].map(function (t) {
+      return '<button type="button" class="tab" data-act="filter" data-v="' + t[0] + '" aria-pressed="' + (S.filter === t[0]) + '">' + t[1] + '</button>';
+    }).join('');
+    var rows = S.qs.map(function (x, k) { return { x: x, k: k }; }).filter(function (r) {
+      return S.filter === 'all' || (S.filter === 'unanswered' && r.x.sel === null) || (S.filter === 'flagged' && r.x.flag);
+    }).map(function (r) {
+      var d = DOMAINS[r.x.q.d];
+      return '<button type="button" class="row" data-act="go" data-i="' + r.k + '"><span class="n">' + (r.k + 1) + '</span><span class="ex">' + esc(r.x.q.s.split('\n')[0]) + '</span>' +
+        '<span class="tags">' + (r.x.sel === null ? '<span class="chip warn">Unanswered</span>' : '<span class="chip acc">Answered</span>') + (r.x.flag ? '<span class="chip warn">Flagged</span>' : '') +
+        '<span class="chip" style="--c:var(' + d.c + ')">' + esc(d.name === 'Business Environment' ? 'Business' : d.name) + '</span></span></button>';
+    }).join('');
+    var conf = S.confirm
+      ? '<div class="confirm" role="alertdialog" aria-label="Confirm submit"><p><strong>Submit your exam?</strong> ' + (un ? 'You have ' + un + ' unanswered question' + (un > 1 ? 's' : '') + ', which will be marked incorrect. ' : 'All questions are answered. ') + 'Answers cannot be changed after you submit.</p>' +
+        '<div class="acts"><button type="button" class="btn" data-act="cancel">Keep working</button><button type="button" class="btn primary" id="submitbtn" data-act="submit">Submit exam</button></div></div>'
+      : '';
+    return '<section class="rv"><div class="rv-top"><div><span class="label">Before you submit</span><h2 style="margin-top:6px">Review answers</h2></div>' +
+      '<div class="acts" style="margin:0"><button type="button" class="btn" data-act="back">Back to questions</button><button type="button" class="btn primary" data-act="ask">Submit exam</button></div></div>' +
+      conf + '<div class="tabs">' + tabs + '</div>' +
+      '<div class="rows">' + (rows || '<div class="empty">Nothing here. Every question matches the other filters.</div>') + '</div></section>';
+  }
+
+  function resultsHtml() {
+    var r = S.res, b = band(r.pct);
+    var weakest = null;
+    var doms = ['people', 'process', 'business'].filter(function (k) { return r.by[k]; }).map(function (k) {
+      var v = r.by[k], pct = Math.round(v.c / v.t * 100), bd = band(pct), d = DOMAINS[k];
+      if (!weakest || pct < weakest.pct) weakest = { name: d.name, pct: pct };
+      return '<div class="dom"><div class="dname">' + esc(d.name) + '<small>Blueprint weight ' + d.weight + '%</small></div>' +
+        '<div class="dstat" style="justify-self:end;order:2"><span>' + v.c + '/' + v.t + ' · ' + pct + '%</span><span class="chip ' + bd.cls + '">' + bd.name + '</span></div>' +
+        '<div class="track" aria-hidden="true"><div class="fill" style="width:' + pct + '%;--c:var(' + d.c + ')"></div></div></div>';
+    }).join('');
+    var tabs = [['all', 'All (' + r.total + ')'], ['missed', 'Missed (' + (r.total - r.correct) + ')'], ['flagged', 'Flagged (' + S.qs.filter(function (x) { return x.flag; }).length + ')']].map(function (t) {
+      return '<button type="button" class="tab" data-act="rfilter" data-v="' + t[0] + '" aria-pressed="' + (S.rfilter === t[0]) + '">' + t[1] + '</button>';
+    }).join('');
+    var cards = S.qs.map(function (x, k) { return { x: x, k: k }; }).filter(function (it) {
+      return S.rfilter === 'all' || (S.rfilter === 'missed' && !isRight(it.x)) || (S.rfilter === 'flagged' && it.x.flag);
+    }).map(function (it) {
+      var x = it.x, d = DOMAINS[x.q.d], ok = isRight(x);
+      var opts = x.opts.map(function (o, j) {
+        var cls = 'opt', tag = '';
+        if (o.c) { cls += ' right'; tag = '<span class="chip good tagr">Correct</span>'; }
+        else if (j === x.sel) { cls += ' wrong'; }
+        if (j === x.sel) tag = (o.c ? '<span class="chip good tagr">Your answer · Correct</span>' : '<span class="chip bad tagr">Your answer</span>');
+        return '<div class="' + cls + '"><span class="ltr">' + LETTERS[j] + '</span><span class="otext">' + esc(o.t) + '</span>' + tag + '</div>';
+      }).join('');
+      return '<article class="card rq"><div class="q-head"><span class="label">Question ' + (it.k + 1) + '</span><span class="chip" style="--c:var(' + d.c + ')">' + esc(d.name) + '</span>' +
+        '<span class="chip ' + (x.sel === null ? 'warn' : ok ? 'good' : 'bad') + '">' + (x.sel === null ? 'Unanswered' : ok ? 'Correct' : 'Incorrect') + '</span>' + (x.flag ? '<span class="chip warn">Flagged</span>' : '') + '</div>' +
+        '<p class="stem">' + esc(x.q.s) + '</p><div class="opts">' + opts + '</div><p class="exp"><strong>Why:</strong> ' + esc(x.q.e) + '</p></article>';
+    }).join('');
+    var sub = r.correct + ' of ' + r.total + ' correct in ' + fmt(r.used) + '. ' + (weakest && Object.keys(r.by).length > 1 ? 'Weakest area: ' + weakest.name + ' (' + weakest.pct + '%).' : '');
+    return '<section class="res"><span class="label">' + (S.mode === 'exam' ? 'Exam mode' : 'Practice mode') + ' · ' + r.total + ' questions' + (r.expired ? ' · time expired' : '') + '</span>' +
+      '<div class="score" style="margin-top:14px"><div class="big">' + r.pct + '<small>%</small></div><div><h1>' + b.name + ' overall</h1><p class="sub">' + esc(sub) + '</p></div></div>' +
+      '<div class="card sect"><h2>Performance by domain</h2>' + doms +
+      '<p class="note">Bands here are a prototype estimate (80%+ Above Target, 65%+ Target, 50%+ Below Target). PMI reports domain results in similar categories and does not publish a passing percentage.</p></div>' +
+      '<div class="acts"><button type="button" class="btn primary" data-act="retake">Retake with new questions</button><button type="button" class="btn" data-act="home">Change settings</button></div>' +
+      '<div class="sect"><h2>Review every question</h2><div class="tabs" style="margin-top:0">' + tabs + '</div>' + (cards || '<div class="empty" style="margin-top:14px">No questions match this filter.</div>') + '</div></section>';
+  }
+
+  function render(focusId) {
+    var h = S.screen === 'start' ? startHtml()
+          : S.screen === 'exam' ? barHtml() + examHtml()
+          : S.screen === 'review' ? barHtml() + reviewHtml()
+          : resultsHtml();
+    app.innerHTML = h;
+    if (S.screen === 'exam' || S.screen === 'review') tick();
+    if (focusId) { var el = document.getElementById(focusId); if (el) el.focus({ preventScroll: true }); }
+  }
+
+  /* ---------- actions ---------- */
+  function top() { window.scrollTo({ top: 0 }); }
+  var A = {
+    start: startExam,
+    pick: function (el) {
+      var x = S.qs[S.i], k = +el.dataset.i;
+      if (S.mode === 'practice') { if (x.sel !== null) return; x.sel = k; }
+      else { x.sel = (x.sel === k) ? null : k; }
+      render(x.sel !== null && S.mode === 'exam' ? 'opt-' + k : 'nextbtn');
+    },
+    go: function (el) { S.i = +el.dataset.i; S.screen = 'exam'; S.confirm = false; render(); top(); },
+    prev: function () { if (S.i > 0) { S.i--; render(); top(); } },
+    next: function () { if (S.i < S.qs.length - 1) { S.i++; render(); top(); } },
+    flag: function () { var x = S.qs[S.i]; x.flag = !x.flag; render('flagbtn'); },
+    review: function () { S.screen = 'review'; S.confirm = false; render(); top(); },
+    back: function () { S.screen = 'exam'; S.confirm = false; render(); top(); },
+    ask: function () { S.confirm = true; render('submitbtn'); },
+    cancel: function () { S.confirm = false; render(); },
+    submit: function () { finish(false); },
+    filter: function (el) { S.filter = el.dataset.v; render(); },
+    rfilter: function (el) { S.rfilter = el.dataset.v; render(); },
+    retake: startExam,
+    home: function () { clearInterval(S.timer); S.screen = 'start'; render(); top(); }
+  };
+
+  app.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-act]');
+    if (el && A[el.dataset.act]) A[el.dataset.act](el);
+  });
+  app.addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.name === 'size') S.sizeIdx = +t.value;
+    if (t.name === 'mode') S.mode = t.value;
+  });
+  document.addEventListener('keydown', function (e) {
+    if (S.screen !== 'exam' || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (/^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName || ''))) return;
+    var key = e.key.toLowerCase(), idx = 'abcd'.indexOf(key);
+    if (key.length === 1 && idx > -1 && idx < S.qs[S.i].opts.length) { A.pick({ dataset: { i: idx } }); }
+    else if (key === 'arrowright' || key === 'n') A.next();
+    else if (key === 'arrowleft' || key === 'p') A.prev();
+    else if (key === 'f') A.flag();
+  });
+
+  render();
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,383 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Project Charter Dashboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky charter header, KPI strip, then a two-column grid of charter sections (objectives, timeline, budget, risks, team, scope). */
+:root {
+  --bg: #f3f5f7;
+  --surface: #ffffff;
+  --surface-2: #eaeef2;
+  --line: #d5dce3;
+  --fg: #16212b;
+  --muted: #5a6977;
+  --accent: #0b6e69;
+  --accent-soft: #d3ece9;
+  --good: #1f7a45;
+  --good-soft: #d9efe1;
+  --warn: #9a6200;
+  --warn-soft: #f8e8c4;
+  --crit: #b3261e;
+  --crit-soft: #f8d9d6;
+  --idle: #8793a0;
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e151b; --surface: #16202a; --surface-2: #1e2a35; --line: #2b3a47;
+    --fg: #e6edf3; --muted: #95a5b4; --accent: #4cc2ba; --accent-soft: #123a38;
+    --good: #5ccb8a; --good-soft: #163626; --warn: #e5b04a; --warn-soft: #3b2e12;
+    --crit: #ff8a80; --crit-soft: #442020; --idle: #6f7d8a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e151b; --surface: #16202a; --surface-2: #1e2a35; --line: #2b3a47;
+  --fg: #e6edf3; --muted: #95a5b4; --accent: #4cc2ba; --accent-soft: #123a38;
+  --good: #5ccb8a; --good-soft: #163626; --warn: #e5b04a; --warn-soft: #3b2e12;
+  --crit: #ff8a80; --crit-soft: #442020; --idle: #6f7d8a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 14px; line-height: 1.5;
+  padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+h1, h2, h3 { font-family: var(--f-display); margin: 0; text-wrap: balance; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+
+/* header */
+.head { display: flex; flex-wrap: wrap; gap: 16px 32px; justify-content: space-between; align-items: flex-end; padding-bottom: 16px; border-bottom: 2px solid var(--fg); }
+.head h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.05; font-weight: 700; letter-spacing: -.02em; }
+.head .sub { color: var(--muted); margin-top: 6px; max-width: 60ch; }
+.meta { display: grid; grid-template-columns: repeat(2, auto); gap: 4px 20px; font-size: 13px; }
+.meta dt { color: var(--muted); }
+.meta dd { margin: 0; font-weight: 500; }
+.meta-wrap { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+.sample { font-size: 11px; color: var(--muted); border: 1px dashed var(--line); padding: 2px 8px; border-radius: 4px; }
+button.theme { font: inherit; font-size: 12px; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+button.theme:hover { background: var(--surface-2); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* pills */
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 2px 10px 2px 8px; border-radius: 999px; white-space: nowrap; }
+.pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.pill.good { background: var(--good-soft); color: var(--good); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.pill.crit { background: var(--crit-soft); color: var(--crit); }
+.pill.idle { background: var(--surface-2); color: var(--muted); }
+
+/* kpis */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.kpi .v { font-family: var(--f-display); font-size: 30px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+.kpi .v small { font-size: 14px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.kpi .n { font-size: 12px; color: var(--muted); }
+.kpi.status { border-left: 5px solid var(--warn); }
+
+/* sections */
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.card header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.card h2 { font-size: 18px; font-weight: 600; }
+.c12 { grid-column: span 12; } .c8 { grid-column: span 8; } .c7 { grid-column: span 7; } .c6 { grid-column: span 6; } .c5 { grid-column: span 5; } .c4 { grid-column: span 4; }
+@media (max-width: 900px) { .c8, .c7, .c6, .c5, .c4 { grid-column: span 12; } }
+
+/* objectives */
+.obj { display: flex; flex-direction: column; gap: 14px; }
+.obj-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; }
+.obj-row .t { font-weight: 500; }
+.obj-row .m { color: var(--muted); font-size: 12px; grid-column: 1 / -1; }
+.bar { height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; grid-column: 1 / -1; position: relative; }
+.bar > i { position: absolute; inset: 0 auto 0 0; background: var(--accent); border-radius: 4px; }
+.bar > i.warn { background: var(--warn); } .bar > i.crit { background: var(--crit); } .bar > i.good { background: var(--good); }
+
+/* gantt */
+.scroll { overflow-x: auto; }
+.gantt { min-width: 640px; position: relative; }
+.g-months { display: grid; border-bottom: 1px solid var(--line); }
+.g-months span { font-size: 11px; color: var(--muted); padding: 0 0 6px 6px; border-left: 1px solid var(--line); }
+.g-body { position: relative; }
+.g-row { display: grid; grid-template-columns: 170px 1fr; align-items: center; height: 38px; border-bottom: 1px solid var(--surface-2); }
+.g-row .nm { font-size: 13px; padding-right: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.g-track { position: relative; height: 100%; }
+.g-bar { position: absolute; top: 9px; height: 20px; border-radius: 4px; background: var(--idle); overflow: hidden; }
+.g-bar .done { position: absolute; inset: 0 auto 0 0; background: rgba(255,255,255,.35); }
+.g-bar.good { background: var(--good); } .g-bar.warn { background: var(--warn); } .g-bar.crit { background: var(--crit); } .g-bar.acc { background: var(--accent); }
+.g-ms { position: absolute; top: 11px; width: 16px; height: 16px; background: var(--fg); transform: translateX(-8px) rotate(45deg) scale(.75); border-radius: 2px; }
+.g-today { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px dashed var(--crit); pointer-events: none; }
+.g-today b { position: absolute; top: -20px; left: -18px; font-size: 10px; color: var(--crit); font-weight: 600; font-family: var(--f-mono); background: var(--surface); padding: 0 2px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; background: var(--c); vertical-align: -1px; }
+
+/* budget */
+.budget-total { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px; }
+.budget-total .big { font-family: var(--f-display); font-size: 28px; font-weight: 700; letter-spacing: -.02em; }
+.stack { display: flex; height: 22px; border-radius: 4px; overflow: hidden; background: var(--surface-2); }
+.stack i { display: block; height: 100%; }
+.stack i + i { border-left: 2px solid var(--surface); }
+.b-row { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--surface-2); font-size: 13px; }
+.b-row:last-child { border-bottom: 0; }
+.b-row .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 8px; }
+.b-row .num { text-align: right; min-width: 64px; }
+
+/* risks */
+.rm-wrap { display: grid; grid-template-columns: auto 1fr; gap: 6px 8px; align-items: stretch; }
+.rm-y { writing-mode: vertical-rl; transform: rotate(180deg); text-align: center; font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.rm { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 56px); gap: 3px; }
+.rm div { border-radius: 4px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 4px; padding: 3px; }
+.rm .l { background: var(--good-soft); } .rm .m { background: var(--warn-soft); } .rm .h { background: var(--crit-soft); }
+.rm .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--fg); color: var(--bg); font: 500 11px/22px var(--f-mono); text-align: center; }
+.rm-x { grid-column: 2; text-align: center; font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--surface-2); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+.id { font-family: var(--f-mono); color: var(--muted); }
+
+/* team */
+.raci th, .raci td { text-align: center; padding-right: 4px; }
+.raci th:first-child, .raci td:first-child { text-align: left; }
+.raci td:first-child small { display: block; color: var(--muted); font-size: 12px; }
+.rc { display: inline-block; width: 24px; height: 24px; line-height: 24px; border-radius: 4px; font: 500 12px/24px var(--f-mono); }
+.rc.R { background: var(--accent); color: var(--bg); } .rc.A { background: var(--fg); color: var(--bg); }
+.rc.C { background: var(--accent-soft); color: var(--accent); } .rc.I { background: var(--surface-2); color: var(--muted); }
+
+/* scope */
+.scope { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 560px) { .scope { grid-template-columns: 1fr; } }
+.scope ul { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.scope li { padding-left: 22px; position: relative; font-size: 13px; }
+.scope li::before { position: absolute; left: 0; top: 0; font-family: var(--f-mono); font-weight: 600; }
+.scope .in li::before { content: "+"; color: var(--good); }
+.scope .out li::before { content: "\2212"; color: var(--crit); }
+.assume { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+footer.note { font-size: 12px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .bar > i, .stack i { transition: width .4s ease; } }
+</style>
+
+<div class="wrap" id="app">
+  <div class="head">
+    <div>
+      <div class="label">Project charter &middot; v1.2 approved 12 Aug 2026</div>
+      <h1 id="p-name"></h1>
+      <p class="sub" id="p-purpose"></p>
+    </div>
+    <div class="meta-wrap">
+      <dl class="meta" id="p-meta"></dl>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span class="sample">Sample data &mdash; replace with your project</span>
+        <button class="theme" id="theme" type="button">Theme</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+  <div class="grid">
+    <section class="card c5">
+      <header><h2>Objectives</h2><span class="label">Progress to target</span></header>
+      <div class="obj" id="objectives"></div>
+    </section>
+
+    <section class="card c7">
+      <header><h2>Milestones &amp; phases</h2><span class="label" id="range"></span></header>
+      <div class="scroll"><div class="gantt" id="gantt"></div></div>
+      <div class="legend">
+        <span style="--c:var(--good)">Complete</span><span style="--c:var(--accent)">On track</span>
+        <span style="--c:var(--warn)">At risk</span><span style="--c:var(--idle)">Not started</span>
+        <span style="--c:var(--fg)">Milestone</span>
+      </div>
+    </section>
+
+    <section class="card c5">
+      <header><h2>Budget</h2><span class="label">USD, approved baseline</span></header>
+      <div class="budget-total"><span class="big mono" id="b-spent"></span><span class="mono" id="b-of" style="color:var(--muted)"></span></div>
+      <div class="stack" id="b-stack" role="img" aria-label="Spend by category"></div>
+      <div id="b-rows"></div>
+    </section>
+
+    <section class="card c7">
+      <header><h2>Risk register</h2><span class="label">Top risks by exposure</span></header>
+      <div style="display:grid;grid-template-columns:minmax(0,230px) 1fr;gap:20px;align-items:start" id="risk-layout">
+        <div class="rm-wrap">
+          <div class="rm-y">Impact</div>
+          <div class="rm" id="matrix"></div>
+          <div class="rm-x">Likelihood</div>
+        </div>
+        <div class="scroll"><table id="risks"></table></div>
+      </div>
+    </section>
+
+    <section class="card c7">
+      <header><h2>Team &amp; responsibilities</h2><span class="label">R responsible &middot; A accountable &middot; C consulted &middot; I informed</span></header>
+      <div class="scroll"><table class="raci" id="raci"></table></div>
+    </section>
+
+    <section class="card c5">
+      <header><h2>Scope &amp; assumptions</h2></header>
+      <div class="scope">
+        <div class="in"><div class="label">In scope</div><ul id="in"></ul></div>
+        <div class="out"><div class="label">Out of scope</div><ul id="out"></ul></div>
+      </div>
+      <div><div class="label" style="margin-bottom:8px">Assumptions &amp; constraints</div><ul class="assume" id="assume"></ul></div>
+    </section>
+  </div>
+  <footer class="note" id="foot"></footer>
+</div>
+
+<script>
+/* ---- Edit this object to make the dashboard yours ---- */
+const CHARTER = {
+  name: "Customer Portal Relaunch",
+  purpose: "Replace the legacy account portal with a single self-service experience that cuts support contacts and lifts renewal conversion.",
+  meta: [["Sponsor","Meera Iyer, COO"],["Project lead","Arjun Rao"],["Start","3 Aug 2026"],["Target launch","26 Feb 2027"]],
+  today: null, // null = use today's date; or "2026-10-17"
+  start: "2026-08-01", end: "2027-03-01",
+  status: { label: "At risk", level: "warn", note: "Payments integration is 2 weeks behind" },
+  objectives: [
+    { t: "Reduce portal-related support tickets", m: "Baseline 4,200 / month, target 2,500 / month", pct: 38, lvl: "" },
+    { t: "Raise online renewal conversion", m: "Baseline 41%, target 55%", pct: 24, lvl: "warn" },
+    { t: "Migrate active accounts to new portal", m: "86,000 accounts, target 100% by cutover", pct: 31, lvl: "" },
+    { t: "Reach WCAG 2.2 AA on all core flows", m: "Audit passed on 9 of 12 flows", pct: 75, lvl: "good" }
+  ],
+  phases: [
+    { n: "Discovery & charter", s: "2026-08-03", e: "2026-08-28", st: "good", p: 1 },
+    { n: "Design system & UX", s: "2026-08-24", e: "2026-10-09", st: "good", p: 1 },
+    { n: "Core build", s: "2026-09-14", e: "2026-12-18", st: "acc", p: .5 },
+    { n: "Payments integration", s: "2026-10-05", e: "2026-11-27", st: "warn", p: .45 },
+    { n: "Data migration", s: "2026-11-09", e: "2027-01-22", st: "idle", p: 0 },
+    { n: "UAT & accessibility audit", s: "2027-01-04", e: "2027-02-05", st: "idle", p: 0 },
+    { n: "Cutover & hypercare", s: "2027-02-08", e: "2027-02-26", st: "idle", p: 0 }
+  ],
+  milestones: [
+    { n: "Charter approved", d: "2026-08-12" }, { n: "Design sign-off", d: "2026-10-09" },
+    { n: "Beta to staff", d: "2026-12-04" }, { n: "Go-live", d: "2027-02-22" }
+  ],
+  budget: { total: 480000, cats: [
+    { n: "Engineering", plan: 250000, spent: 112000, c: "var(--accent)" },
+    { n: "Design & research", plan: 70000, spent: 58000, c: "var(--warn)" },
+    { n: "Licences & infrastructure", plan: 85000, spent: 21000, c: "var(--fg)" },
+    { n: "Data migration vendor", plan: 45000, spent: 0, c: "var(--idle)" },
+    { n: "Contingency (10%)", plan: 30000, spent: 4000, c: "var(--crit)" }
+  ]},
+  risks: [
+    { id: "R1", t: "Payments provider API changes delay integration", l: 3, i: 3, o: "Arjun R.", st: "warn", m: "Weekly sync with provider; sandbox contract tests" },
+    { id: "R2", t: "Legacy data quality blocks account migration", l: 2, i: 3, o: "Kavya N.", st: "warn", m: "Profile data by Nov; dry run on 5% sample" },
+    { id: "R3", t: "Support team capacity during hypercare", l: 2, i: 2, o: "Dev S.", st: "good", m: "Temp hires approved; runbook drafted" },
+    { id: "R4", t: "Scope growth from regional requests", l: 3, i: 2, o: "Meera I.", st: "crit", m: "Change board each fortnight; backlog freeze Jan 4" }
+  ],
+  team: [
+    { n: "Meera Iyer", r: "Sponsor", raci: ["A","I","A","I","A"] },
+    { n: "Arjun Rao", r: "Project lead", raci: ["R","A","R","A","R"] },
+    { n: "Kavya Nair", r: "Engineering manager", raci: ["C","R","R","C","C"] },
+    { n: "Dev Sharma", r: "Support operations", raci: ["I","C","C","R","R"] },
+    { n: "Isha Menon", r: "UX lead", raci: ["C","R","C","I","I"] }
+  ],
+  raciCols: ["Budget","Design","Build","Training","Launch"],
+  inScope: ["Account, billing and renewal self-service", "Single sign-on with existing identity provider", "Migration of all active accounts", "Web and mobile-responsive release", "WCAG 2.2 AA conformance"],
+  outScope: ["Native mobile apps", "Changes to the billing engine", "Partner and reseller portal", "Languages beyond English and Hindi at launch"],
+  assume: ["Identity provider contract renewed by 30 Sep", "Fixed launch freeze window 15 Dec to 3 Jan", "Budget changes above 5% need sponsor approval"],
+};
+
+const $ = id => document.getElementById(id);
+const fmtUSD = n => "$" + n.toLocaleString("en-US");
+const D = s => new Date(s + "T00:00:00");
+const day = 864e5;
+const fmtDate = d => d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const C = CHARTER;
+const today = C.today ? D(C.today) : new Date(new Date().toDateString());
+
+$("p-name").textContent = C.name;
+$("p-purpose").textContent = C.purpose;
+$("p-meta").innerHTML = C.meta.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("");
+
+/* KPIs */
+const spent = C.budget.cats.reduce((a, c) => a + c.spent, 0);
+const plan = C.budget.cats.reduce((a, c) => a + c.plan, 0);
+const t0 = D(C.phases[0].s), t1 = D(C.phases[C.phases.length - 1].e);
+const timePct = Math.max(0, Math.min(100, Math.round((today - t0) / (t1 - t0) * 100)));
+const daysToLaunch = Math.round((D(C.milestones[C.milestones.length - 1].d) - today) / day);
+const objAvg = Math.round(C.objectives.reduce((a, o) => a + o.pct, 0) / C.objectives.length);
+const openRisks = C.risks.filter(r => r.st !== "good").length;
+$("kpis").innerHTML = `
+  <div class="kpi status"><span class="label">Overall status</span><span class="v">${esc(C.status.label)}</span><span class="n">${esc(C.status.note)}</span></div>
+  <div class="kpi"><span class="label">Time elapsed</span><span class="v mono">${timePct}<small>%</small></span><span class="n">${daysToLaunch} days to go-live</span></div>
+  <div class="kpi"><span class="label">Budget spent</span><span class="v mono">${Math.round(spent / C.budget.total * 100)}<small>%</small></span><span class="n">${fmtUSD(spent)} of ${fmtUSD(C.budget.total)}</span></div>
+  <div class="kpi"><span class="label">Objectives progress</span><span class="v mono">${objAvg}<small>%</small></span><span class="n">Average across ${C.objectives.length} objectives</span></div>
+  <div class="kpi"><span class="label">Open risks</span><span class="v mono">${openRisks}<small> of ${C.risks.length}</small></span><span class="n">Need attention this fortnight</span></div>`;
+
+/* Objectives */
+$("objectives").innerHTML = C.objectives.map(o => `
+  <div class="obj-row"><span class="t">${esc(o.t)}</span><span class="mono">${o.pct}%</span>
+  <span class="m">${esc(o.m)}</span>
+  <div class="bar" role="progressbar" aria-valuenow="${o.pct}" aria-valuemin="0" aria-valuemax="100" aria-label="${esc(o.t)}"><i class="${o.lvl}" style="width:${o.pct}%"></i></div></div>`).join("");
+
+/* Gantt */
+const gs = D(C.start), ge = D(C.end), span = ge - gs;
+const pos = d => ((d - gs) / span * 100);
+const months = [];
+for (let d = new Date(gs); d < ge; d = new Date(d.getFullYear(), d.getMonth() + 1, 1)) months.push(new Date(d));
+const mw = months.map((m, i) => {
+  const nx = months[i + 1] || ge; return (nx - m) / span * 100;
+});
+$("range").textContent = fmtDate(gs).replace(/^1 /, "") + " to " + fmtDate(new Date(ge - day)).replace(/^\d+ /, "");
+const monthHead = `<div class="g-row" style="height:auto;border:0"><div></div><div class="g-months" style="grid-template-columns:${mw.map(w => w + "fr").join(" ")}">${months.map(m => `<span>${m.toLocaleDateString("en-GB", { month: "short" })}${m.getMonth() === 0 ? " " + m.getFullYear() : ""}</span>`).join("")}</div></div>`;
+const rows = C.phases.map(p => {
+  const l = pos(D(p.s)), w = pos(D(p.e)) - l;
+  return `<div class="g-row"><div class="nm" title="${esc(p.n)}">${esc(p.n)}</div><div class="g-track"><div class="g-bar ${p.st}" style="left:${l}%;width:${w}%" title="${esc(p.n)}: ${fmtDate(D(p.s))} to ${fmtDate(D(p.e))}"><div class="done" style="width:${p.p * 100}%"></div></div></div></div>`;
+}).join("");
+const msRow = `<div class="g-row"><div class="nm">Milestones</div><div class="g-track">${C.milestones.map(m => `<div class="g-ms" style="left:${pos(D(m.d))}%" title="${esc(m.n)}: ${fmtDate(D(m.d))}"></div>`).join("")}</div></div>`;
+const tl = pos(today);
+const todayLine = tl >= 0 && tl <= 100 ? `<div style="position:absolute;left:170px;right:0;top:0;bottom:0;pointer-events:none"><div class="g-today" style="left:${tl}%"><b>Today</b></div></div>` : "";
+$("gantt").innerHTML = monthHead + `<div class="g-body">${rows}${msRow}${todayLine}</div>`;
+
+/* Budget */
+$("b-spent").textContent = fmtUSD(spent);
+$("b-of").textContent = "spent of " + fmtUSD(C.budget.total) + " approved";
+$("b-stack").innerHTML = C.budget.cats.filter(c => c.spent > 0).map(c => `<i style="width:${c.spent / C.budget.total * 100}%;background:${c.c}" title="${esc(c.n)}: ${fmtUSD(c.spent)}"></i>`).join("");
+$("b-rows").innerHTML = C.budget.cats.map(c => {
+  const pct = c.plan ? Math.round(c.spent / c.plan * 100) : 0;
+  const cls = pct > 80 ? "crit" : pct > 60 ? "warn" : "idle";
+  return `<div class="b-row"><span><span class="sw" style="background:${c.c}"></span>${esc(c.n)}</span><span class="num mono">${fmtUSD(c.spent)} <span style="color:var(--muted)">/ ${fmtUSD(c.plan)}</span></span><span class="pill ${cls}">${pct}%</span></div>`;
+}).join("");
+
+/* Risks */
+const cell = (i, l) => {
+  const score = i * l; const cls = score >= 6 ? "h" : score >= 3 ? "m" : "l";
+  const dots = C.risks.filter(r => r.i === i && r.l === l).map(r => `<span class="dot" title="${esc(r.t)}">${esc(r.id.replace("R", ""))}</span>`).join("");
+  return `<div class="${cls}">${dots}</div>`;
+};
+let mx = ""; for (let i = 3; i >= 1; i--) for (let l = 1; l <= 3; l++) mx += cell(i, l);
+$("matrix").innerHTML = mx;
+const lbl = { good: "Controlled", warn: "Watch", crit: "Act now" };
+$("risks").innerHTML = `<thead><tr><th>ID</th><th>Risk and mitigation</th><th>Owner</th><th>Status</th></tr></thead><tbody>` +
+  C.risks.map(r => `<tr><td class="id">${esc(r.id)}</td><td><strong style="font-weight:500">${esc(r.t)}</strong><br><span style="color:var(--muted);font-size:12px">${esc(r.m)}</span></td><td style="white-space:nowrap">${esc(r.o)}</td><td><span class="pill ${r.st}">${lbl[r.st]}</span></td></tr>`).join("") + `</tbody>`;
+if (window.matchMedia("(max-width: 700px)").matches) $("risk-layout").style.gridTemplateColumns = "1fr";
+
+/* RACI */
+$("raci").innerHTML = `<thead><tr><th>Person</th>${C.raciCols.map(c => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>` +
+  C.team.map(p => `<tr><td>${esc(p.n)}<small>${esc(p.r)}</small></td>${p.raci.map(x => `<td><span class="rc ${x}">${x}</span></td>`).join("")}</tr>`).join("") + `</tbody>`;
+
+/* Scope */
+$("in").innerHTML = C.inScope.map(x => `<li>${esc(x)}</li>`).join("");
+$("out").innerHTML = C.outScope.map(x => `<li>${esc(x)}</li>`).join("");
+$("assume").innerHTML = C.assume.map(x => `<li>${esc(x)}</li>`).join("");
+$("foot").textContent = "Status as of " + fmtDate(today) + ". Figures are sample data.";
+
+/* Theme toggle */
+$("theme").addEventListener("click", () => {
+  const r = document.documentElement;
+  const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+});
+</script>
+
+</body></html>

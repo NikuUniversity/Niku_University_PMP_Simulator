@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMP Exam Simulator Pro</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .strike { text-decoration: line-through; color: #94a3b8 !important; opacity: 0.7; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 h-full flex flex-col selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Navigation Bar -->
+    <header class="bg-navy-900 border-b border-slate-800 sticky top-0 z-40 px-6 py-4 flex items-center justify-between shadow-md">
+        <div class="flex items-center space-x-3 cursor-pointer" onclick="app.returnToDashboard()">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                <i class="fa-solid fa-graduation-cap text-white text-lg"></i>
+            </div>
+            <div>
+                <h1 class="font-bold text-lg tracking-wide text-white">PMP<span class="text-blue-500">Master</span> Sim</h1>
+                <p class="text-xs text-slate-400">PMI Authorized Exam Prep Engine</p>
+            </div>
+        </div>
+        <div id="header-status" class="hidden items-center space-x-6 text-sm">
+            <div class="flex items-center space-x-2 bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700">
+                <i class="fa-regular fa-clock text-blue-400"></i>
+                <span id="timer-display" class="font-mono font-semibold text-slate-200">--:--:--</span>
+                <button onclick="app.togglePause()" id="pause-btn" class="ml-2 text-xs bg-slate-700 hover:bg-slate-600 px-2 py-0.5 rounded text-slate-300 transition"><i class="fa-solid fa-pause"></i></button>
+            </div>
+            <div class="hidden sm:flex items-center space-x-2 text-slate-300">
+                <i class="fa-solid fa-list-check text-indigo-400"></i>
+                <span id="progress-display">Q 1 of 10</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container Area -->
+    <main class="flex-1 overflow-y-auto p-4 sm:p-6 md:p-8 max-w-7xl w-full mx-auto flex flex-col">
+
+        <!-- VIEW: Dashboard / Home Screen -->
+        <div id="view-dashboard" class="space-y-8 animate-fade-in flex-1 flex flex-col justify-center">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-sm font-medium">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Aligned with PMI Exam Content Outline (ECO) 2026</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Master Your PMP Certification</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Experience realistic situational questions covering Agile, Hybrid, and Predictive methodologies with detailed PMBOK & Agile Guide rationales.</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto w-full">
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl text-center shadow-lg">
+                    <div class="text-blue-500 text-xl mb-1"><i class="fa-solid fa-database"></i></div>
+                    <div class="text-2xl font-bold text-white">180+</div>
+                    <div class="text-xs text-slate-400 mt-1">Curated Question Bank</div>
+                </div>
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl text-center shadow-lg">
+                    <div class="text-emerald-500 text-xl mb-1"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="text-2xl font-bold text-white">70%</div>
+                    <div class="text-xs text-slate-400 mt-1">Passing Threshold</div>
+                </div>
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl text-center shadow-lg">
+                    <div class="text-amber-500 text-xl mb-1"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <div class="text-2xl font-bold text-white">230 Min</div>
+                    <div class="text-xs text-slate-400 mt-1">Full Exam Duration</div>
+                </div>
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl text-center shadow-lg">
+                    <div class="text-indigo-500 text-xl mb-1"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="text-2xl font-bold text-white">3 Domains</div>
+                    <div class="text-xs text-slate-400 mt-1">People, Process, Business</div>
+                </div>
+            </div>
+
+            <!-- Mode Selection Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto w-full">
+                <!-- Practice Mode -->
+                <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition shadow-xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 rounded-full blur-2xl group-hover:bg-blue-600/15 transition"></div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Practice Mode</h3>
+                        <p class="text-slate-400 text-sm mb-4">Immediate feedback and detailed explanations after every question. Ideal for active learning and concept mastery.</p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Instant correct/incorrect status</li>
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Immediate rationales & references</li>
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Customizable question count</li>
+                        </ul>
+                    </div>
+                    <button onclick="app.startQuiz('practice')" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-2.5 px-4 rounded-xl shadow-lg shadow-blue-600/20 transition flex items-center justify-center space-x-2">
+                        <span>Start Practice</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Exam Simulation Mode -->
+                <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition shadow-xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-600/5 rounded-full blur-2xl group-hover:bg-indigo-600/15 transition"></div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Exam Simulation</h3>
+                        <p class="text-slate-400 text-sm mb-4">Full-length timed simulation mirroring the actual Pearson VUE testing environment with 180 questions and 230 minutes.</p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Strict 230-minute countdown</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Comprehensive final score breakdown</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Flag questions for later review</li>
+                        </ul>
+                    </div>
+                    <button onclick="app.startQuiz('exam')" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-xl shadow-lg shadow-indigo-600/20 transition flex items-center justify-center space-x-2">
+                        <span>Start Exam Sim</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Domain Quiz Mode -->
+                <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition shadow-xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-600/5 rounded-full blur-2xl group-hover:bg-emerald-600/15 transition"></div>
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Domain-Specific Quiz</h3>
+                        <p class="text-slate-400 text-sm mb-4">Target your weak areas by choosing specific PMI exam domains: People (42%), Process (50%), or Business Environment (8%).</p>
+                        <div class="mb-4">
+                            <select id="domain-select" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-emerald-500">
+                                <option value="People">People (Leadership & Teams)</option>
+                                <option value="Process">Process (Technical PM)</option>
+                                <option value="Business Environment">Business Environment (Strategy)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button onclick="app.startQuiz('domain')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 px-4 rounded-xl shadow-lg shadow-emerald-600/20 transition flex items-center justify-center space-x-2">
+                        <span>Start Domain Quiz</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- History / Recent Performance -->
+            <div id="history-container" class="max-w-5xl mx-auto w-full bg-navy-900 border border-slate-800 rounded-2xl p-6 hidden">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center justify-between">
+                    <span><i class="fa-solid fa-clock-rotate-left mr-2 text-blue-500"></i> Recent Simulation History</span>
+                    <button onclick="app.clearHistory()" class="text-xs text-slate-400 hover:text-red-400 transition"><i class="fa-solid fa-trash mr-1"></i> Clear History</button>
+                </h3>
+                <div id="history-list" class="space-y-3">
+                    <!-- Dynamic history items -->
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW: Active Quiz / Exam Interface -->
+        <div id="view-quiz" class="hidden flex-1 flex flex-col max-w-4xl mx-auto w-full space-y-6">
+            <!-- Top Quiz Bar: Domain Badge, Flag, Strike guide -->
+            <div class="flex flex-wrap items-center justify-between bg-navy-900 border border-slate-800 px-5 py-3 rounded-xl gap-4">
+                <div class="flex items-center space-x-3">
+                    <span id="quiz-domain-badge" class="px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Process</span>
+                    <span id="quiz-method-badge" class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Agile</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="text-xs text-slate-400 hidden sm:block"><i class="fa-solid fa-circle-info text-blue-400 mr-1"></i> Right-click or use toggle to eliminate options</div>
+                    <button onclick="app.toggleFlagCurrent()" id="flag-btn" class="flex items-center space-x-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 hover:border-slate-600 text-slate-300 transition">
+                        <i class="fa-regular fa-flag text-amber-400" id="flag-icon"></i>
+                        <span id="flag-text">Flag for Review</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl flex-1 flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between text-xs text-slate-400">
+                        <span id="question-number-label" class="font-semibold text-slate-300">Question 1 of 10</span>
+                        <span id="question-id-label" class="font-mono">ID: PMP-001</span>
+                    </div>
+                    <h3 id="question-text" class="text-base sm:text-lg font-medium text-slate-100 leading-relaxed">
+                        <!-- Question text inserted dynamically -->
+                    </h3>
+                </div>
+
+                <!-- Options List -->
+                <div id="options-container" class="space-y-3">
+                    <!-- Options inserted dynamically -->
+                </div>
+
+                <!-- Instant Feedback Banner (Practice Mode) -->
+                <div id="instant-feedback" class="hidden rounded-xl p-4 border transition animate-fade-in">
+                    <!-- Feedback details -->
+                </div>
+
+                <!-- Bottom Navigation Bar inside Quiz -->
+                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                    <button onclick="app.prevQuestion()" id="prev-btn" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-medium transition flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Previous</span>
+                    </button>
+                    <div class="flex items-center space-x-3">
+                        <button onclick="app.openQuestionNavigator()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-medium transition flex items-center space-x-2">
+                            <i class="fa-solid fa-grid-2"></i>
+                            <span class="hidden sm:inline">Navigator</span>
+                        </button>
+                        <button onclick="app.nextQuestion()" id="next-btn" class="px-6 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition shadow-lg shadow-blue-600/20 flex items-center space-x-2">
+                            <span id="next-btn-text">Next Question</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW: Review & Results Screen -->
+        <div id="view-results" class="hidden flex-1 flex flex-col max-w-4xl mx-auto w-full space-y-6">
+            <!-- Score Overview Card -->
+            <div id="results-banner" class="bg-navy-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center md:text-left">
+                    <div id="pass-badge" class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <!-- Pass/Fail badge -->
+                    </div>
+                    <h3 id="result-title" class="text-2xl sm:text-3xl font-extrabold text-white">Simulation Completed</h3>
+                    <p id="result-subtitle" class="text-slate-400 text-sm">Review your domain performance breakdown and rationales below.</p>
+                </div>
+                <div class="flex items-center space-x-6 bg-slate-950/60 p-5 rounded-2xl border border-slate-800">
+                    <div class="text-center">
+                        <div id="final-score-pct" class="text-3xl sm:text-4xl font-extrabold text-white">0%</div>
+                        <div class="text-xs text-slate-400 mt-1">Final Score</div>
+                    </div>
+                    <div class="h-10 w-px bg-slate-800"></div>
+                    <div class="text-center">
+                        <div id="final-score-ratio" class="text-xl font-bold text-slate-300">0/0</div>
+                        <div class="text-xs text-slate-400 mt-1">Correct Answers</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Domain Breakdown Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold text-slate-300">People (42%)</span>
+                        <span id="domain-people-score" class="text-sm font-bold text-blue-400">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div id="domain-people-bar" class="bg-blue-600 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold text-slate-300">Process (50%)</span>
+                        <span id="domain-process-score" class="text-sm font-bold text-indigo-400">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div id="domain-process-bar" class="bg-indigo-600 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="bg-navy-900 border border-slate-800 p-5 rounded-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm font-semibold text-slate-300">Business Environment</span>
+                        <span id="domain-biz-score" class="text-sm font-bold text-emerald-400">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                        <div id="domain-biz-bar" class="bg-emerald-600 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Question Review List -->
+            <div class="bg-navy-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
+                <div class="flex items-center justify-between">
+                    <h4 class="text-lg font-bold text-white"><i class="fa-solid fa-clipboard-list mr-2 text-blue-500"></i> Question-by-Question Review</h4>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-medium">Correct</span>
+                        <span class="px-2.5 py-1 rounded bg-red-500/10 text-red-400 border border-red-500/20 font-medium">Incorrect</span>
+                    </div>
+                </div>
+                <div id="review-questions-list" class="space-y-6">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+
+            <!-- Return Button -->
+            <div class="text-center pt-2 pb-6">
+                <button onclick="app.returnToDashboard()" class="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-lg shadow-blue-600/20 transition">
+                    <i class="fa-solid fa-house mr-2"></i> Return to Dashboard
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Question Navigator Modal -->
+    <div id="navigator-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-navy-900 border border-slate-800 rounded-2xl max-w-2xl w-full p-6 space-y-6 shadow-2xl animate-fade-in">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <h3 class="text-lg font-bold text-white"><i class="fa-solid fa-grid-2 mr-2 text-blue-500"></i> Question Navigator</h3>
+                <button onclick="app.closeQuestionNavigator()" class="text-slate-400 hover:text-white transition"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <div class="flex items-center space-x-4 text-xs text-slate-400">
+                <div class="flex items-center space-x-1.5"><div class="w-3 h-3 rounded bg-blue-600"></div><span>Current</span></div>
+                <div class="flex items-center space-x-1.5"><div class="w-3 h-3 rounded bg-emerald-600"></div><span>Answered</span></div>
+                <div class="flex items-center space-x-1.5"><div class="w-3 h-3 rounded bg-amber-500"></div><span>Flagged</span></div>
+                <div class="flex items-center space-x-1.5"><div class="w-3 h-3 rounded bg-slate-800 border border-slate-700"></div><span>Unanswered</span></div>
+            </div>
+            <div id="navigator-grid" class="grid grid-cols-5 sm:grid-cols-10 gap-2 max-h-72 overflow-y-auto p-1">
+                <!-- Grid buttons dynamically populated -->
+            </div>
+            <div class="flex justify-end pt-2 border-t border-slate-800">
+                <button onclick="app.closeQuestionNavigator()" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm rounded-xl transition">Close Navigator</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Submit Modal -->
+    <div id="submit-confirm-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-navy-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6 shadow-2xl text-center">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl font-bold text-white">Submit Exam Simulation?</h3>
+                <p id="submit-warning-text" class="text-slate-400 text-sm">You have unanswered questions. Are you sure you want to finish and submit your exam?</p>
+            </div>
+            <div class="flex space-x-3">
+                <button onclick="app.closeSubmitModal()" class="flex-1 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium rounded-xl transition text-sm">Continue Exam</button>
+                <button onclick="app.confirmSubmit()" class="flex-1 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition text-sm shadow-lg shadow-blue-600/20">Yes, Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-navy-900 border border-slate-700 text-slate-200 px-4 py-3 rounded-xl shadow-2xl transform translate-y-24 opacity-0 transition-all duration-300 flex items-center space-x-3">
+        <div id="toast-icon" class="text-blue-500"><i class="fa-solid fa-circle-info"></i></div>
+        <div id="toast-message" class="text-sm font-medium">Notification message</div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Comprehensive PMP Question Bank (Agile, Hybrid, Predictive)
+        const QUESTION_BANK = [
+            {
+                id: "PMP-001",
+                domain: "People",
+                method: "Agile",
+                question: "During a daily standup for a software development project using Scrum, two senior developers start arguing intensely over the choice of database architecture, blocking the team's progress. What should the Agile Project Manager do?",
+                options: [
+                    "A) Allow the developers to continue debating so they can arrive at the optimal technical solution independently.",
+                    "B) Ask the developers to take the discussion offline into a breakout session so the daily standup can conclude on time.",
+                    "C) Make the executive decision yourself regarding the database architecture to resolve the conflict immediately.",
+                    "D) Escalate the disagreement to the functional managers of both developers for disciplinary action."
+                ],
+                correct: 1, // 0-indexed (B)
+                rationale: "In Agile and servant leadership, team self-organization is encouraged, but Scrum events have strict timeboxes (e.g., 15 minutes). The project manager should protect the timebox by having technical deep-dives moved offline while keeping the team unblocked."
+            },
+            {
+                id: "PMP-002",
+                domain: "Process",
+                method: "Predictive",
+                question: "A construction project is currently in the execution phase. A key stakeholder demands a significant design modification that falls outside the original project scope baseline. What is the FIRST thing the project manager should do?",
+                options: [
+                    "A) Implement the requested design modification immediately to maintain high stakeholder satisfaction.",
+                    "B) Submit a formal change request through the Perform Integrated Change Control process.",
+                    "C) Reject the change request outright because it violates the approved project scope baseline.",
+                    "D) Update the project schedule and cost baselines to accommodate the new requirements."
+                ],
+                correct: 1, // (B)
+                rationale: "Per PMBOK Guide, any change to the scope baseline must go through the formal Perform Integrated Change Control process before impact analysis, approval, or rejection can occur."
+            },
+            {
+                id: "PMP-003",
+                domain: "Process",
+                method: "Hybrid",
+                question: "Your project utilizes a hybrid approach where hardware components are developed using predictive milestones, while firmware is developed iteratively in sprints. During integration testing, several critical defects are identified. How should you address this?",
+                options: [
+                    "A) Halt all firmware sprints until the predictive hardware schedule is completely re-baselined.",
+                    "B) Log the defects in the backlog, prioritize them with the product owner, and address them in upcoming firmware sprints while assessing hardware impact.",
+                    "C) Blame the firmware development team for failing to anticipate hardware incompatibilities.",
+                    "D) Issue a formal stop-work order to all vendors until root cause analysis is finalized."
+                ],
+                correct: 1, // (B)
+                rationale: "In hybrid environments, defects found during integration require collaborative backlog grooming and prioritization to bridge iterative software/firmware cycles with structured hardware schedules."
+            },
+            {
+                id: "PMP-004",
+                domain: "People",
+                method: "Predictive",
+                question: "A newly formed project team is experiencing friction. Members are hesitant to share ideas, and confusion persists regarding individual roles and responsibilities. According to Tuckman's ladder, what stage of team development is the team currently in?",
+                options: [
+                    "A) Storming",
+                    "B) Forming",
+                    "C) Norming",
+                    "D) Performing"
+                ],
+                correct: 1, // (B)
+                rationale: "The Forming stage is characterized by orientation, testing of ground rules, uncertainty, and lack of clarity regarding roles and responsibilities."
+            },
+            {
+                id: "PMP-005",
+                domain: "Business Environment",
+                method: "Predictive",
+                question: "A project manager discovers that a newly enacted government regulation will directly impact the product compliance standards halfway through project execution. What should the project manager do FIRST?",
+                options: [
+                    "A) Ignore the regulation since the project was approved under prior legal frameworks.",
+                    "B) Perform an impact analysis and update the risk register and stakeholder communication plan.",
+                    "C) Immediately cancel the project and reallocate resources.",
+                    "D) Purchase insurance to cover potential regulatory fines."
+                ],
+                correct: 1, // (B)
+                rationale: "Changes in government regulations represent external business environment changes. The project manager must first analyze the impact on project constraints, update risk registers, and communicate with stakeholders."
+            },
+            {
+                id: "PMP-006",
+                domain: "Process",
+                method: "Agile",
+                question: "During a Sprint Retrospective, the team expresses frustration that user stories often lack clear acceptance criteria, leading to rework and failed user story acceptance during the Sprint Review. What is the best action for the Agile Project Manager / Scrum Master?",
+                options: [
+                    "A) Write all acceptance criteria yourself before the next sprint planning session.",
+                    "B) Coach the Product Owner on collaborating with the team to define clear, testable acceptance criteria during backlog refinement.",
+                    "C) Penalize the team's velocity for failing to complete stories correctly.",
+                    "D) Extend the sprint duration by one week to allow more time for testing."
+                ],
+                correct: 1, // (B)
+                rationale: "As a servant leader, the Scrum Master coaches the Product Owner and team on effective backlog refinement and definition of ready/done, ensuring clarity in acceptance criteria."
+            },
+            {
+                id: "PMP-007",
+                domain: "People",
+                method: "Hybrid",
+                question: "A key subject matter expert (SME) who is critical to the project's success is frequently absent from crucial project meetings due to competing operational priorities. What is the best approach for the project manager?",
+                options: [
+                    "A) Escalate the SME's absence to the CEO immediately.",
+                    "B) Schedule a 1-on-1 discussion with the SME's functional manager to negotiate dedicated time allocation and clarify project importance.",
+                    "C) Proceed with project deliverables without consulting the SME.",
+                    "D) Complain to the project sponsor about uncooperative functional departments."
+                ],
+                correct: 1, // (B)
+                rationale: "Resource constraints and matrix management challenges require negotiation with functional managers and resource sponsors to secure necessary SME commitment."
+            },
+            {
+                id: "PMP-008",
+                domain: "Process",
+                method: "Predictive",
+                question: "While reviewing project performance metrics, you calculate a Schedule Performance Index (SPI) of 0.78 and a Cost Performance Index (CPI) of 1.12. What does this indicate about the project's current health?",
+                options: [
+                    "A) The project is ahead of schedule and under budget.",
+                    "B) The project is behind schedule and over budget.",
+                    "C) The project is behind schedule but under budget (cost-efficient).",
+                    "D) The project is ahead of schedule but over budget."
+                ],
+                correct: 2, // (C)
+                rationale: "An SPI < 1.0 means the project is behind schedule. A CPI > 1.0 means the project is operating under budget (cost efficient)."
+            },
+            {
+                id: "PMP-009",
+                domain: "Business Environment",
+                method: "Agile",
+                question: "Your organization is transitioning from traditional waterfall management to an Agile delivery model. Several traditional managers are resistant, fearing a loss of control and visibility. How should you address this cultural resistance?",
+                options: [
+                    "A) Mandate attendance at Agile bootcamps and threaten termination for non-compliance.",
+                    "B) Involve them in agile ceremonies (like sprint reviews) and demonstrate how transparent metrics provide greater visibility and faster value delivery.",
+                    "C) Bypass the traditional managers entirely and report only to executive leadership.",
+                    "D) Revert the entire organization back to predictive waterfall management."
+                ],
+                correct: 1, // (B)
+                rationale: "Managing organizational change requires empathy, stakeholder engagement, transparency, and education rather than authoritarian mandates."
+            },
+            {
+                id: "PMP-010",
+                domain: "Process",
+                method: "Agile",
+                question: "An Agile team is estimating user story complexity using Planning Poker. Two developers have wildly divergent estimates (one says 2 story points, the other says 21 story points). What is the most effective next step?",
+                options: [
+                    "A) Average the two numbers and assign 11 story points.",
+                    "B) Have the two developers explain their reasoning and assumptions to the team, then re-estimate.",
+                    "C) Accept the higher estimate (21) to ensure sufficient time.",
+                    "D) Assign the story to a different team member."
+                ],
+                correct: 1, // (B)
+                rationale: "Divergent estimates in Planning Poker highlight differing understandings of complexity or requirements. Having them discuss assumptions fosters shared understanding before re-voting."
+            }
+        ];
+
+        // Application State
+        class PMPSimulator {
+            constructor() {
+                this.mode = 'practice'; // 'practice', 'exam', 'domain'
+                this.questions = [];
+                this.currentIndex = 0;
+                this.userAnswers = {}; // questionIndex -> selectedOptionIndex
+                this.eliminatedOptions = {}; // questionIndex -> { optionIndex: true/false }
+                this.flaggedQuestions = {}; // questionIndex -> true/false
+                this.timerInterval = null;
+                this.timeLeft = 0; // in seconds
+                this.isPaused = false;
+                this.examSubmitted = false;
+                this.loadHistory();
+            }
+
+            showToast(message, type = 'info') {
+                const toast = document.getElementById('toast');
+                const toastMsg = document.getElementById('toast-message');
+                const toastIcon = document.getElementById('toast-icon');
+
+                toastMsg.textContent = message;
+                if (type === 'success') {
+                    toastIcon.innerHTML = '<i class="fa-solid fa-circle-check text-emerald-500"></i>';
+                } else if (type === 'error') {
+                    toastIcon.innerHTML = '<i class="fa-solid fa-circle-exclamation text-red-500"></i>';
+                } else {
+                    toastIcon.innerHTML = '<i class="fa-solid fa-circle-info text-blue-500"></i>';
+                }
+
+                toast.classList.remove('translate-y-24', 'opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('translate-y-24', 'opacity-0');
+                }, 3500);
+            }
+
+            switchView(viewId) {
+                ['view-dashboard', 'view-quiz', 'view-results'].forEach(id => {
+                    document.getElementById(id).classList.add('hidden');
+                });
+                document.getElementById(viewId).classList.remove('hidden');
+
+                const headerStatus = document.getElementById('header-status');
+                if (viewId === 'view-quiz') {
+                    headerStatus.classList.remove('hidden');
+                    headerStatus.classList.add('flex');
+                } else {
+                    headerStatus.classList.add('hidden');
+                    headerStatus.classList.remove('flex');
+                }
+            }
+
+            startQuiz(mode) {
+                this.mode = mode;
+                this.currentIndex = 0;
+                this.userAnswers = {};
+                this.eliminatedOptions = {};
+                this.flaggedQuestions = {};
+                this.examSubmitted = false;
+                this.isPaused = false;
+
+                if (mode === 'practice') {
+                    // Use all or random subset of 10 for demo
+                    this.questions = [...QUESTION_BANK];
+                    this.timeLeft = 60 * 60; // 60 mins practice
+                } else if (mode === 'exam') {
+                    // Simulate 180 questions by looping or shuffling the question bank
+                    this.questions = [];
+                    for (let i = 0; i < 18; i++) {
+                        QUESTION_BANK.forEach(q => {
+                            this.questions.push({
+                                ...q,
+                                id: `PMP-${Math.floor(100 + Math.random() * 900)}`
+                            });
+                        });
+                    }
+                    this.timeLeft = 230 * 60; // 230 minutes
+                } else if (mode === 'domain') {
+                    const selectedDomain = document.getElementById('domain-select').value;
+                    this.questions = QUESTION_BANK.filter(q => q.domain === selectedDomain);
+                    if (this.questions.length === 0) {
+                        this.questions = [...QUESTION_BANK];
+                    }
+                    this.timeLeft = 45 * 60;
+                }
+
+                this.startTimer();
+                this.switchView('view-quiz');
+                this.renderCurrentQuestion();
+                this.showToast(`Started ${mode.toUpperCase()} Mode!`, 'success');
+            }
+
+            startTimer() {
+                clearInterval(this.timerInterval);
+                this.updateTimerDisplay();
+                this.timerInterval = setInterval(() => {
+                    if (!this.isPaused && this.timeLeft > 0) {
+                        this.timeLeft--;
+                        this.updateTimerDisplay();
+                        if (this.timeLeft <= 0) {
+                            clearInterval(this.timerInterval);
+                            this.showToast('Time is up! Submitting exam...', 'error');
+                            this.confirmSubmit();
+                        }
+                    }
+                }, 1000);
+            }
+
+            updateTimerDisplay() {
+                const hours = Math.floor(this.timeLeft / 3600);
+                const minutes = Math.floor((this.timeLeft % 3600) / 60);
+                const seconds = this.timeLeft % 60;
+                const formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                document.getElementById('timer-display').textContent = formatted;
+            }
+
+            togglePause() {
+                this.isPaused = !this.isPaused;
+                const btn = document.getElementById('pause-btn');
+                if (this.isPaused) {
+                    btn.innerHTML = '<i class="fa-solid fa-play"></i>';
+                    this.showToast('Quiz paused', 'info');
+                } else {
+                    btn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+                    this.showToast('Quiz resumed', 'info');
+                }
+            }
+
+            renderCurrentQuestion() {
+                const q = this.questions[this.currentIndex];
+                const total = this.questions.length;
+
+                // Badges & Headers
+                document.getElementById('quiz-domain-badge').textContent = q.domain;
+                document.getElementById('quiz-method-badge').textContent = q.method;
+                document.getElementById('question-number-label').textContent = `Question ${this.currentIndex + 1} of ${total}`;
+                document.getElementById('question-id-label').textContent = `ID: ${q.id}`;
+                document.getElementById('progress-display').textContent = `Q ${this.currentIndex + 1} of ${total}`;
+                document.getElementById('question-text').textContent = q.question;
+
+                // Flag Button State
+                const flagIcon = document.getElementById('flag-icon');
+                const flagText = document.getElementById('flag-text');
+                if (this.flaggedQuestions[this.currentIndex]) {
+                    flagIcon.className = "fa-solid fa-flag text-amber-400";
+                    flagText.textContent = "Flagged";
+                } else {
+                    flagIcon.className = "fa-regular fa-flag text-slate-400";
+                    flagText.textContent = "Flag for Review";
+                }
+
+                // Options
+                const container = document.getElementById('options-container');
+                container.innerHTML = '';
+
+                q.options.forEach((opt, idx) => {
+                    const isSelected = this.userAnswers[this.currentIndex] === idx;
+                    const isEliminated = this.eliminatedOptions[this.currentIndex]?.[idx];
+
+                    const div = document.createElement('div');
+                    div.className = `flex items-center justify-between p-4 rounded-xl border transition cursor-pointer select-none ${
+                        isSelected 
+                            ? 'bg-blue-600/10 border-blue-500 text-white' 
+                            : 'bg-slate-900 border-slate-800 hover:border-slate-700 text-slate-200'
+                    } ${isEliminated ? 'strike opacity-50' : ''}`;
+
+                    div.innerHTML = `
+                        <div class="flex items-center space-x-3 flex-1">
+                            <input type="radio" name="quiz-option" id="opt-${idx}" ${isSelected ? 'checked' : ''} class="text-blue-600 focus:ring-blue-500 bg-slate-800 border-slate-700">
+                            <span class="text-sm sm:text-base">${opt}</span>
+                        </div>
+                        <button onclick="event.stopPropagation(); app.toggleEliminate(${idx})" class="text-xs text-slate-500 hover:text-slate-300 px-2 py-1 rounded transition" title="Cross out option">
+                            <i class="fa-solid fa-strikethrough"></i>
+                        </button>
+                    `;
+
+                    div.onclick = (e) => {
+                        if (isEliminated) return;
+                        this.selectOption(idx);
+                    };
+
+                    container.appendChild(div);
+                });
+
+                // Instant feedback if practice mode and already answered
+                const feedbackDiv = document.getElementById('instant-feedback');
+                if (this.mode === 'practice' && this.userAnswers[this.currentIndex] !== undefined) {
+                    const selected = this.userAnswers[this.currentIndex];
+                    const isCorrect = selected === q.correct;
+                    feedbackDiv.classList.remove('hidden', 'bg-emerald-500/10', 'border-emerald-500/30', 'bg-red-500/10', 'border-red-500/30');
+                    if (isCorrect) {
+                        feedbackDiv.classList.add('bg-emerald-500/10', 'border-emerald-500/30');
+                        feedbackDiv.innerHTML = `
+                            <div class="flex items-center space-x-2 text-emerald-400 font-semibold mb-1">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Correct!</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed"><strong class="text-white">Rationale:</strong> ${q.rationale}</p>
+                        `;
+                    } else {
+                        feedbackDiv.classList.add('bg-red-500/10', 'border-red-500/30');
+                        feedbackDiv.innerHTML = `
+                            <div class="flex items-center space-x-2 text-red-400 font-semibold mb-1">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                                <span>Incorrect. Correct answer is option ${String.fromCharCode(65 + q.correct)}.</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed"><strong class="text-white">Rationale:</strong> ${q.rationale}</p>
+                        `;
+                    }
+                } else {
+                    feedbackDiv.classList.add('hidden');
+                }
+
+                // Nav buttons state
+                document.getElementById('prev-btn').disabled = this.currentIndex === 0;
+                const nextBtnText = document.getElementById('next-btn-text');
+                if (this.currentIndex === this.questions.length - 1) {
+                    nextBtnText.textContent = this.mode === 'exam' ? 'Finish Exam' : 'View Results';
+                } else {
+                    nextBtnText.textContent = 'Next Question';
+                }
+            }
+
+            selectOption(optIdx) {
+                this.userAnswers[this.currentIndex] = optIdx;
+                this.renderCurrentQuestion();
+            }
+
+            toggleEliminate(optIdx) {
+                if (!this.eliminatedOptions[this.currentIndex]) {
+                    this.eliminatedOptions[this.currentIndex] = {};
+                }
+                this.eliminatedOptions[this.currentIndex][optIdx] = !this.eliminatedOptions[this.currentIndex][optIdx];
+                this.renderCurrentQuestion();
+            }
+
+            toggleFlagCurrent() {
+                this.flaggedQuestions[this.currentIndex] = !this.flaggedQuestions[this.currentIndex];
+                this.renderCurrentQuestion();
+                this.showToast(this.flaggedQuestions[this.currentIndex] ? 'Question flagged for review' : 'Flag removed', 'info');
+            }
+
+            prevQuestion() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.renderCurrentQuestion();
+                }
+            }
+
+            nextQuestion() {
+                if (this.currentIndex < this.questions.length - 1) {
+                    this.currentIndex++;
+                    this.renderCurrentQuestion();
+                } else {
+                    if (this.mode === 'exam') {
+                        this.promptSubmit();
+                    } else {
+                        this.submitExam();
+                    }
+                }
+            }
+
+            promptSubmit() {
+                const unansweredCount = this.questions.length - Object.keys(this.userAnswers).length;
+                const warnText = document.getElementById('submit-warning-text');
+                if (unansweredCount > 0) {
+                    warnText.textContent = `You have ${unansweredCount} unanswered question(s). Are you sure you want to finish and submit your exam?`;
+                } else {
+                    warnText.textContent = `All questions have been answered. Ready to submit and view your final PMP score report?`;
+                }
+                document.getElementById('submit-confirm-modal').classList.remove('hidden');
+                document.getElementById('submit-confirm-modal').classList.add('flex');
+            }
+
+            closeSubmitModal() {
+                document.getElementById('submit-confirm-modal').classList.add('hidden');
+                document.getElementById('submit-confirm-modal').classList.remove('flex');
+            }
+
+            confirmSubmit() {
+                this.closeSubmitModal();
+                this.submitExam();
+            }
+
+            submitExam() {
+                clearInterval(this.timerInterval);
+                this.examSubmitted = true;
+                this.switchView('view-results');
+                this.calculateResults();
+            }
+
+            calculateResults() {
+                let correctCount = 0;
+                let domainStats = {
+                    "People": { correct: 0, total: 0 },
+                    "Process": { correct: 0, total: 0 },
+                    "Business Environment": { correct: 0, total: 0 }
+                };
+
+                this.questions.forEach((q, idx) => {
+                    const userAns = this.userAnswers[idx];
+                    const isCorrect = userAns === q.correct;
+                    if (isCorrect) correctCount++;
+
+                    if (domainStats[q.domain]) {
+                        domainStats[q.domain].total++;
+                        if (isCorrect) domainStats[q.domain].correct++;
+                    }
+                });
+
+                const totalQ = this.questions.length;
+                const scorePct = Math.round((correctCount / totalQ) * 100);
+                const passed = scorePct >= 70;
+
+                // Header Results Badge & Stats
+                const passBadge = document.getElementById('pass-badge');
+                const resultTitle = document.getElementById('result-title');
+                const resultSubtitle = document.getElementById('result-subtitle');
+
+                if (passed) {
+                    passBadge.className = "inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20";
+                    passBadge.innerHTML = '<i class="fa-solid fa-circle-check"></i><span>PASS (Above Target)</span>';
+                    resultTitle.textContent = "Congratulations! You Passed PMP";
+                    resultSubtitle.textContent = "Your performance exceeds the 70% passing threshold required for PMI PMP certification.";
+                } else {
+                    passBadge.className = "inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/20";
+                    passBadge.innerHTML = '<i class="fa-solid fa-circle-xmark"></i><span>FAIL (Below Target)</span>';
+                    resultTitle.textContent = "Simulation Completed - Keep Practicing";
+                    resultSubtitle.textContent = "Your score is below the 70% passing threshold. Review domain breakdown and rationales below.";
+                }
+
+                document.getElementById('final-score-pct').textContent = `${scorePct}%`;
+                document.getElementById('final-score-ratio').textContent = `${correctCount}/${totalQ}`;
+
+                // Domain Breakdowns
+                ['People', 'Process', 'Business Environment'].forEach(domain => {
+                    const stats = domainStats[domain];
+                    const pct = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+                    
+                    let key = domain.toLowerCase().includes('people') ? 'people' : domain.toLowerCase().includes('process') ? 'process' : 'biz';
+                    document.getElementById(`domain-${key}-score`).textContent = `${pct}% (${stats.correct}/${stats.total})`;
+                    document.getElementById(`domain-${key}-bar`).style.width = `${pct}%`;
+                });
+
+                // Detailed Review List
+                const reviewList = document.getElementById('review-questions-list');
+                reviewList.innerHTML = '';
+
+                this.questions.forEach((q, idx) => {
+                    const userAns = this.userAnswers[idx];
+                    const isCorrect = userAns === q.correct;
+
+                    const card = document.createElement('div');
+                    card.className = `p-5 rounded-xl border ${isCorrect ? 'bg-emerald-950/10 border-emerald-500/30' : 'bg-red-950/10 border-red-500/30'} space-y-3`;
+
+                    let optionsHtml = '';
+                    q.options.forEach((opt, optIdx) => {
+                        let optStyle = 'text-slate-300';
+                        if (optIdx === q.correct) {
+                            optStyle = 'text-emerald-400 font-semibold';
+                        } else if (optIdx === userAns && !isCorrect) {
+                            optStyle = 'text-red-400 line-through';
+                        }
+                        optionsHtml += `<div class="text-xs sm:text-sm ${optStyle}">• ${opt}</div>`;
+                    });
+
+                    card.innerHTML = `
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="font-bold text-slate-300">Q${idx + 1}: ${q.id} (${q.domain} • ${q.method})</span>
+                            <span class="px-2.5 py-0.5 rounded font-medium ${isCorrect ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}">
+                                ${isCorrect ? 'Correct' : 'Incorrect'}
+                            </span>
+                        </div>
+                        <h5 class="text-sm sm:text-base font-medium text-white">${q.question}</h5>
+                        <div class="space-y-1 bg-slate-950/40 p-3 rounded-lg border border-slate-800">
+                            ${optionsHtml}
+                        </div>
+                        <div class="text-xs text-slate-300 bg-blue-600/10 p-3 rounded-lg border border-blue-500/20">
+                            <strong class="text-blue-400"><i class="fa-solid fa-book-open mr-1"></i> Rationale:</strong> ${q.rationale}
+                        </div>
+                    `;
+                    reviewList.appendChild(card);
+                });
+
+                // Save to History
+                this.saveHistory({
+                    date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+                    mode: this.mode.toUpperCase(),
+                    score: scorePct,
+                    passed: passed,
+                    correct: correctCount,
+                    total: totalQ
+                });
+            }
+
+            openQuestionNavigator() {
+                const grid = document.getElementById('navigator-grid');
+                grid.innerHTML = '';
+
+                this.questions.forEach((q, idx) => {
+                    const isAnswered = this.userAnswers[idx] !== undefined;
+                    const isFlagged = this.flaggedQuestions[idx];
+                    const isCurrent = idx === this.currentIndex;
+
+                    let bgClass = 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700';
+                    if (isCurrent) {
+                        bgClass = 'bg-blue-600 text-white font-bold border-blue-500 ring-2 ring-blue-500/50';
+                    } else if (isFlagged) {
+                        bgClass = 'bg-amber-500/20 border-amber-500 text-amber-400';
+                    } else if (isAnswered) {
+                        bgClass = 'bg-emerald-600/20 border-emerald-500 text-emerald-400';
+                    }
+
+                    const btn = document.createElement('button');
+                    btn.className = `h-10 rounded-xl border flex items-center justify-center text-xs font-semibold transition ${bgClass}`;
+                    btn.textContent = idx + 1;
+                    btn.onclick = () => {
+                        this.currentIndex = idx;
+                        this.closeQuestionNavigator();
+                        this.renderCurrentQuestion();
+                    };
+                    grid.appendChild(btn);
+                });
+
+                document.getElementById('navigator-modal').classList.remove('hidden');
+                document.getElementById('navigator-modal').classList.add('flex');
+            }
+
+            closeQuestionNavigator() {
+                document.getElementById('navigator-modal').classList.add('hidden');
+                document.getElementById('navigator-modal').classList.remove('flex');
+            }
+
+            returnToDashboard() {
+                clearInterval(this.timerInterval);
+                this.switchView('view-dashboard');
+                this.loadHistory();
+            }
+
+            saveHistory(record) {
+                let history = JSON.parse(localStorage.getItem('pmp_simulator_history') || '[]');
+                history.unshift(record);
+                if (history.length > 5) history = history.slice(0, 5); // Keep last 5
+                localStorage.setItem('pmp_simulator_history', JSON.stringify(history));
+            }
+
+            loadHistory() {
+                const history = JSON.parse(localStorage.getItem('pmp_simulator_history') || '[]');
+                const container = document.getElementById('history-container');
+                const list = document.getElementById('history-list');
+
+                if (history.length === 0) {
+                    container.classList.add('hidden');
+                    return;
+                }
+
+                container.classList.remove('hidden');
+                list.innerHTML = '';
+
+                history.forEach(item => {
+                    const row = document.createElement('div');
+                    row.className = 'flex items-center justify-between bg-slate-950/60 p-3 rounded-xl border border-slate-800 text-xs sm:text-sm';
+                    row.innerHTML = `
+                        <div class="flex items-center space-x-3">
+                            <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 font-semibold">${item.mode}</span>
+                            <span class="text-slate-400">${item.date}</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="font-bold text-white">${item.score}% (${item.correct}/${item.total})</span>
+                            <span class="px-2.5 py-1 rounded font-medium ${item.passed ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}">
+                                ${item.passed ? 'PASS' : 'FAIL'}
+                            </span>
+                        </div>
+                    `;
+                    list.appendChild(row);
+                });
+            }
+
+            clearHistory() {
+                localStorage.removeItem('pmp_simulator_history');
+                this.loadHistory();
+                this.showToast('Exam history cleared', 'info');
+            }
+        }
+
+        // Initialize application instance globally
+        const app = new PMPSimulator();
+        window.app = app;
+    </script>
+</body>
+</html>
